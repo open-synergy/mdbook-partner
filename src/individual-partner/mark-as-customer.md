@@ -1,0 +1,1 @@
+# Menandai Sebagai Konsumen
