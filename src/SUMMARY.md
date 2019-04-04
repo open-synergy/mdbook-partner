@@ -1,10 +1,12 @@
 # Summary
 
 - [Company Partner](./company-partner.md)
+    - [Penjelasan](./company-partner/penjelasan.md)
     - [Membuat Company Partner](./company-partner/membuat.md)
     - [Menandai Sebagai Konsumen](./company-partner/mark-as-customer.md)
     - [Menandai Sebagai Supplier](./company-partner/mark-as-supplier.md)
 - [Individual Partner](./individual-partner.md)
+    - [Penjelasan](./individual-partner/penjelasan.md)
     - [Membuat Individual Partner](./individual-partner/membuat.md)
     - [Menandai Sebagai Konsumen](./individual-partner/mark-as-customer.md)
     - [Menandai Sebagai Supplier](./individual-partner/mark-as-supplier.md)
