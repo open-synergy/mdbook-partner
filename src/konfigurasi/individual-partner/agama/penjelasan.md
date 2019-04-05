@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../../img/agama/form.png)
+![](../../../img/agama/form.png)
 
 #### <a name="field-name">Religion</a>
 
