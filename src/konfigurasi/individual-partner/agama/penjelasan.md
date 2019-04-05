@@ -1,16 +1,16 @@
-# Etnis
+# Agama
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../img/etnis/form.png)
+![](../../../../img/agama/form.png)
 
-#### <a name="field-name">Ethnicity</a>
+#### <a name="field-name">Religion</a>
 
-Nama etnis
+Nama agama
 
 #### <a name="field-code">Code</a>
 
-Kode etnis
+Kode agama
 
 #### <a name="field-active">Active</a>
 

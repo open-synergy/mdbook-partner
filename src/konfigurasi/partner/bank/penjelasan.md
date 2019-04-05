@@ -1,8 +1,8 @@
-# Bank
+# Penjelasan
 
 ### <a name="bagian-form">HEADER</a>
 
-![](../../img/bank/form.png)
+![](../../../../img/bank/form.png)
 
 #### <a name="field-name">Name</a>
 

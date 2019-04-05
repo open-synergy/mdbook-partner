@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../img/jenjang-pendidikan/form.png)
+![](../../../../img/jenjang-pendidikan/form.png)
 
 #### <a name="field-name">Education Level</a>
 
