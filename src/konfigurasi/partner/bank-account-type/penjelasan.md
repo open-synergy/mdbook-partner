@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../../img/bank-account-type/header.png)
+![](../../../img/bank-account-type/header.png)
 
 #### <a name="field-name">Name</a>
 
