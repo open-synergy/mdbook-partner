@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../../img/propinsi/form.png)
+![](../../../img/propinsi/form.png)
 
 #### <a name="field-name">State Name</a>
 
