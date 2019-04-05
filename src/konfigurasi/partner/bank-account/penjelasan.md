@@ -2,7 +2,7 @@
 
 ### <a name="bagian-form">HEADER</a>
 
-![](../../../../img/bank-account/form.png)
+![](../../../img/bank-account/form.png)
 
 #### <a name="field-state">Bank Account Type</a>
 
