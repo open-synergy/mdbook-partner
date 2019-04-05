@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../../img/titel-akademik/form.png)
+![](../../../img/titel-akademik/form.png)
 
 #### <a name="field-name">Name</a>
 
