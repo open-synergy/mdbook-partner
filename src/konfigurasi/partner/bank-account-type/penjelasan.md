@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../img/bank-account-type/header.png)
+![](../../../../img/bank-account-type/header.png)
 
 #### <a name="field-name">Name</a>
 
@@ -14,8 +14,8 @@ Kode tipe akun bank
 
 ### <a name="bagian-detail-fields">DETAIL FIELDS</a>
 
-![](../../img/bank-account-type/detail-fields.png)
-![](../../img/bank-account-type/detail-fields-form.png)
+![](../../../../img/bank-account-type/detail-fields.png)
+![](../../../../img/bank-account-type/detail-fields-form.png)
 
 ### <a name="bagian-detail-fields-name">Field Name</a>
 
@@ -42,7 +42,7 @@ Mendefinisikan maksimal *size*(ukuran) pada field
 
 ### <a name="bagian-footer">FOOTER</a>
 
-![](../../img/bank-account-type/footer.png)
+![](../../../../img/bank-account-type/footer.png)
 
 #### <a name="field-format-layout">Format Layout</a>
 

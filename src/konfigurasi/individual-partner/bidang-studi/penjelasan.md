@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../img/bidang-studi/form.png)
+![](../../../../img/bidang-studi/form.png)
 
 #### <a name="field-name">Field of Study</a>
 
