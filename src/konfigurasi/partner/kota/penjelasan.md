@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../../img/kota/form.png)
+![](../../../img/kota/form.png)
 
 #### <a name="field-name">ZIP</a>
 
