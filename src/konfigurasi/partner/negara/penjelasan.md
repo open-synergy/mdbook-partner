@@ -2,7 +2,7 @@
 
 ### <a name="bagian-negara">HEADER</a>
 
-![](../../../../img/negara/form.png)
+![](../../../img/negara/form.png)
 
 #### <a name="field-name">Country Name</a>
 
