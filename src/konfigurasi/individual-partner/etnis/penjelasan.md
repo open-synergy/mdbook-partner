@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../../img/etnis/form.png)
+![](../../../img/etnis/form.png)
 
 #### <a name="field-name">Ethnicity</a>
 
