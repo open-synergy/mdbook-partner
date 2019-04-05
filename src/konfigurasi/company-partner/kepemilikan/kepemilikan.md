@@ -2,7 +2,7 @@
 
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../../img/kepemilikan/form.png)
+![](../../../img/kepemilikan/form.png)
 
 #### <a name="field-name">Ownership Type</a>
 
