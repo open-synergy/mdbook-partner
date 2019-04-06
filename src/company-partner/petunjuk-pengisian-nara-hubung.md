@@ -42,13 +42,13 @@ Pop-up **Contacts** akan muncul
 ## <a name="pengisian">Pengisian Data Nara Hubung</a>
 
 1. Pilih **Contact Type**. Lanjutkan langkah ke-3 apabila **Standalone Contact** yang dipilih. Lanjutkan ke langkah ke-4 apabila **Attach to Existing Contact** yang dipilih.
-2. Isi **Name**.
-3. Pilih **Name**.
-4. Pilih **Tags**.
-5. Isi **Job Position**.
-6. Pilih **Department**.
-7. Isi **Email**.
-8. Isi **Phone**
-9. Isi **Mobile**
+2. Isi **Name**. Harus diisi.
+3. Pilih **Name**. Harus diisi.
+4. Pilih **Tags**. Tidak harus diisi.
+5. Isi **Job Position**. Tidak harus diisi.
+6. Pilih **Department**. Tidak harus diisi.
+7. Isi **Email**. Tidak harus diisi.
+8. Isi **Phone**. Tidak harus diisi.
+9. Isi **Mobile**. Tidak harus diisi.
 10. Aktifkan **Use Company Address**.
 11. Pastikan pilihan **Address Type** adalah **Contact**
