@@ -1,5 +1,7 @@
 # Summary
 
+[Pra-Kata](./prakata.md)
+[Terminologi](./terminologi.md)
 - [Company Partner](./company-partner.md)
     - [Penjelasan](./company-partner/penjelasan.md)
     - [Petunjuk Pengisian](./company-partner/petunjuk-pengisian.md)
