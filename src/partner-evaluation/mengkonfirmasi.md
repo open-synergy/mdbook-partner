@@ -6,7 +6,7 @@
 
 ![](../img/partner-evaluation/status-draft.png)
 
-* User yang mengkonfirmasi harus memiliki akses untuk mengkonfirmasi partner evaluation.
+* Checklist **[Can Confirm](./penjelasan.md#field-can-confirm)** pada tab **[Policies](./penjelasan.md#tab-policies)** harus berada pada kondisi aktif.
 
 
 ## B. INSTRUKSI KERJA
@@ -26,3 +26,4 @@
 ![](../img/partner-evaluation/status-waiting-for-approval.png)
 
 * Data partner evaluation tidak dapat dimodifikasi.
+* Isian **[Confirmation](./penjelasan.md#field-confirmation)** akan terisi dengan user yang mengkonfirmasi dan waktu konfirmasi (sesuai dengan waktu server).

@@ -4,7 +4,7 @@
 
 ![](../img/partner-evaluation/status-waiting-for-approval.png)
 
-* User yang menyetujui harus memiliki akses untuk menyetujui partner evaluation.
+* Checklist **[Can Approve](./penjelasan.md#field-can-approve)** pada tab **[Policies](./penjelasan.md#tab-policies)** harus berada pada kondisi aktif.
 
 
 ## B. INSTRUKSI KERJA
@@ -22,3 +22,5 @@
 * Status partner evaluation akan berubah menjadi **Ready To Start**.
 
 ![](../img/partner-evaluation/status-ready-to-prosess.png)
+
+* Isian **[Approval](./penjelasan.md#field-approval)** akan terisi dengan user yang menyetujui dan waktu persetujuan (sesuai dengan waktu server).

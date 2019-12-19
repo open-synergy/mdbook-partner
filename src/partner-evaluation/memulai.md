@@ -4,7 +4,7 @@
 
 ![](../img/partner-evaluation/status-waiting-for-approval.png)
 
-* User yang memulai harus memiliki akses untuk memulai partner evaluation.
+* Checklist **[Can Start](./penjelasan.md#field-can-start)** pada tab **[Policies](./penjelasan.md#tab-policies)** harus berada pada kondisi aktif.
 
 
 ## B. INSTRUKSI KERJA
@@ -31,3 +31,4 @@ Pop-up form **Start Evaluation** akan muncul
 ![](../img/partner-evaluation/status-on-progress.png)
 
 * Isian **Real Date Start** akan berubah sesuai dengan nilai yang diinput pada langkah ke-5
+* Isian **[Start](./penjelasan.md#field-start)** akan terisi dengan user yang memulai dan waktu mulai (sesuai dengan waktu server).

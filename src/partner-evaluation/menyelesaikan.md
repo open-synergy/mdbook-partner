@@ -4,7 +4,7 @@
 
 ![](../img/partner-evaluation/status-on-progress.png)
 
-* User yang menyelesaikan harus memiliki akses untuk menyelesaikan partner evaluation.
+* Checklist **[Can Finish](./penjelasan.md#field-can-finish)** pada tab **[Policies](./penjelasan.md#tab-policies)** harus berada pada kondisi aktif.
 
 
 ## B. INSTRUKSI KERJA
@@ -31,6 +31,7 @@ Pop-up form **Finish Evaluation** akan muncul
 
 ![](../img/partner-evaluation/status-done.png)
 
-* Isian **Real Date End** akan berubah sesuai dengan nilai yang diinput pada langkah ke-5
-* Data penilaian dengan **Method** == Automatic pada tabel **Measurement Items** akan diisi secara otomatis
-* Isian **Result** akan diisi sesuai dengan (1) komputasi otomatis, atau (2) sesuai dengan nilai yang diinput pada langkah ke-6
+* Isian **[Real Date End](./penjelasan.md#field-real-date-end)** akan berubah sesuai dengan nilai yang diinput pada langkah ke-5
+* Data penilaian dengan **[Method](./penjelasan.md#field-method)** == Automatic pada tabel **[Measurement Items](./penjelasan.md#tabel-measurement-items)** akan diisi secara otomatis
+* Isian **[Result](./penjelasan.md#field-result)** akan diisi sesuai dengan (1) komputasi otomatis, atau (2) sesuai dengan nilai yang diinput pada langkah ke-6
+* Isian **[Finish](./penjelasan.md#field-finish)** akan terisi dengan user yang menyelesaikan dan waktu penyelesaian (sesuai dengan waktu server).
