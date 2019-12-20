@@ -1,0 +1,2091 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Odoo - Partner Management</title>
+        
+        <meta name="robots" content="noindex" />
+        
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500" rel="stylesheet" type="text/css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "light" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div id="sidebar-scrollbox" class="sidebar-scrollbox">
+                <ol class="chapter"><li class="expanded affix "><a href="prakata.html">Pra-Kata</a></li><li class="expanded affix "><a href="terminologi.html">Terminologi</a></li><li class="expanded "><a href="company-partner.html"><strong aria-hidden="true">1.</strong> Company Partner</a></li><li><ol class="section"><li class="expanded "><a href="company-partner/penjelasan.html"><strong aria-hidden="true">1.1.</strong> Penjelasan</a></li><li class="expanded "><a href="company-partner/petunjuk-pengisian.html"><strong aria-hidden="true">1.2.</strong> Petunjuk Pengisian</a></li><li><ol class="section"><li class="expanded "><a href="company-partner/petunjuk-pengisian-informasi-usaha.html"><strong aria-hidden="true">1.2.1.</strong> Petunjuk Pengisian Informasi Usaha</a></li><li class="expanded "><a href="company-partner/petunjuk-pengisian-kontak.html"><strong aria-hidden="true">1.2.2.</strong> Petunjuk Pengisian Kontak</a></li><li class="expanded "><a href="company-partner/petunjuk-pengisian-nara-hubung.html"><strong aria-hidden="true">1.2.3.</strong> Petunjuk Pengisian Nara Hubung</a></li></ol></li><li class="expanded "><a href="company-partner/membuat.html"><strong aria-hidden="true">1.3.</strong> Membuat</a></li><li class="expanded "><a href="company-partner/sunting.html"><strong aria-hidden="true">1.4.</strong> Menyunting</a></li><li class="expanded "><a href="company-partner/hapus.html"><strong aria-hidden="true">1.5.</strong> Menghapus</a></li><li><ol class="section"><li class="expanded "><a href="company-partner/hapus-satu.html"><strong aria-hidden="true">1.5.1.</strong> Menghapus Satu Per Satu</a></li><li class="expanded "><a href="company-partner/hapus-masal.html"><strong aria-hidden="true">1.5.2.</strong> Menghapus Beberapa Data Sekaligus</a></li></ol></li><li class="expanded "><a href="company-partner/mark-as-customer.html"><strong aria-hidden="true">1.6.</strong> Menandai Sebagai Konsumen</a></li><li class="expanded "><a href="company-partner/mark-as-supplier.html"><strong aria-hidden="true">1.7.</strong> Menandai Sebagai Supplier</a></li><li class="expanded "><a href="company-partner/unmark-as-customer.html"><strong aria-hidden="true">1.8.</strong> Menandai Sebagai Bukan Konsumen</a></li><li class="expanded "><a href="company-partner/unmark-as-supplier.html"><strong aria-hidden="true">1.9.</strong> Menandai Sebagai Bukan Supplier</a></li></ol></li><li class="expanded "><a href="individual-partner.html"><strong aria-hidden="true">2.</strong> Individual Partner</a></li><li><ol class="section"><li class="expanded "><a href="individual-partner/penjelasan.html"><strong aria-hidden="true">2.1.</strong> Penjelasan</a></li><li class="expanded "><a href="individual-partner/petunjuk-pengisian.html"><strong aria-hidden="true">2.2.</strong> Petunjuk Pengisian</a></li><li><ol class="section"><li class="expanded "><a href="individual-partner/petunjuk-pengisian-informasi-usaha.html"><strong aria-hidden="true">2.2.1.</strong> Petunjuk Pengisian Informasi Usaha</a></li><li class="expanded "><a href="individual-partner/petunjuk-pengisian-kontak.html"><strong aria-hidden="true">2.2.2.</strong> Petunjuk Pengisian Kontak</a></li><li class="expanded "><a href="individual-partner/petunjuk-pengisian-nara-hubung.html"><strong aria-hidden="true">2.2.3.</strong> Petunjuk Pengisian Nara Hubung</a></li></ol></li><li class="expanded "><a href="individual-partner/membuat.html"><strong aria-hidden="true">2.3.</strong> Membuat Individual Partner</a></li><li class="expanded "><a href="individual-partner/sunting.html"><strong aria-hidden="true">2.4.</strong> Menyunting</a></li><li class="expanded "><a href="individual-partner/hapus.html"><strong aria-hidden="true">2.5.</strong> Menghapus</a></li><li><ol class="section"><li class="expanded "><a href="individual-partner/hapus-satu.html"><strong aria-hidden="true">2.5.1.</strong> Menghapus Satu Per Satu</a></li><li class="expanded "><a href="individual-partner/hapus-masal.html"><strong aria-hidden="true">2.5.2.</strong> Menghapus Beberapa Data Sekaligus</a></li></ol></li><li class="expanded "><a href="individual-partner/mark-as-customer.html"><strong aria-hidden="true">2.6.</strong> Menandai Sebagai Konsumen</a></li><li class="expanded "><a href="individual-partner/mark-as-supplier.html"><strong aria-hidden="true">2.7.</strong> Menandai Sebagai Supplier</a></li><li class="expanded "><a href="individual-partner/unmark-as-customer.html"><strong aria-hidden="true">2.8.</strong> Menandai Sebagai Bukan Konsumen</a></li><li class="expanded "><a href="individual-partner/unmark-as-supplier.html"><strong aria-hidden="true">2.9.</strong> Menandai Sebagai Bukan Supplier</a></li></ol></li><li class="expanded "><a href="risk-limit-change-request.html"><strong aria-hidden="true">3.</strong> Risk Limit Change Request</a></li><li><ol class="section"><li class="expanded "><a href="risk-limit-change-request/penjelasan.html"><strong aria-hidden="true">3.1.</strong> Penjelasan Risk Limit Change Request</a></li><li class="expanded "><a href="risk-limit-change-request/membuat.html"><strong aria-hidden="true">3.2.</strong> Membuat Risk Limit Change Request</a></li><li class="expanded "><a href="risk-limit-change-request/konfirmasi.html"><strong aria-hidden="true">3.3.</strong> Mengkonfirmasi Risk Limit Change Request</a></li><li class="expanded "><a href="risk-limit-change-request/validasi.html"><strong aria-hidden="true">3.4.</strong> Memvalidasi Risk Limit Change Request</a></li><li class="expanded "><a href="risk-limit-change-request/batal.html"><strong aria-hidden="true">3.5.</strong> Membatalkan Risk Limit Change Request</a></li><li class="expanded "><a href="risk-limit-change-request/restart.html"><strong aria-hidden="true">3.6.</strong> Merestart Risk Limit Change Request</a></li></ol></li><li class="expanded "><a href="partner-evaluation.html"><strong aria-hidden="true">4.</strong> Partner Evaluation</a></li><li><ol class="section"><li class="expanded "><a href="partner-evaluation/penjelasan.html"><strong aria-hidden="true">4.1.</strong> Penjelasan Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/membuat.html"><strong aria-hidden="true">4.2.</strong> Membuat Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/mengedit.html"><strong aria-hidden="true">4.3.</strong> Mengedit Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/menghapus.html"><strong aria-hidden="true">4.4.</strong> Menghapus Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/mengkonfirmasi.html"><strong aria-hidden="true">4.5.</strong> Mengkonfirmasi Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/menyetujui.html"><strong aria-hidden="true">4.6.</strong> Menyetujui Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/memulai.html"><strong aria-hidden="true">4.7.</strong> Memulai Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/mengisi.html"><strong aria-hidden="true">4.8.</strong> Mengisi Penilaian Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/memilih-jawaban-qualitative.html"><strong aria-hidden="true">4.9.</strong> Memilih Jawaban Item Evaluasi Qualitative</a></li><li class="expanded "><a href="partner-evaluation/mengisi-jawaban-quantitative.html"><strong aria-hidden="true">4.10.</strong> Mengisi Jawaban Item Evaluasi Quantitative</a></li><li class="expanded "><a href="partner-evaluation/menyelesaikan.html"><strong aria-hidden="true">4.11.</strong> Menyelesaikan Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/membatalkan.html"><strong aria-hidden="true">4.12.</strong> Membatalkan Partner Evaluation</a></li><li class="expanded "><a href="partner-evaluation/merestart.html"><strong aria-hidden="true">4.13.</strong> Merestart Partner Evaluation</a></li></ol></li><li class="expanded "><a href="konfigurasi.html"><strong aria-hidden="true">5.</strong> Konfigurasi</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner.html"><strong aria-hidden="true">5.1.</strong> Partner</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner/bank/bank.html"><strong aria-hidden="true">5.1.1.</strong> Bank</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner/bank/penjelasan.html"><strong aria-hidden="true">5.1.1.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/partner/bank/membuat-data-bank.html"><strong aria-hidden="true">5.1.1.2.</strong> Membuat Data Bank</a></li></ol></li><li class="expanded "><a href="konfigurasi/partner/bank-account-type/bank-account-type.html"><strong aria-hidden="true">5.1.2.</strong> Bank Account Type</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner/bank-account-type/penjelasan.html"><strong aria-hidden="true">5.1.2.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/partner/bank-account-type/membuat-data-bank-account-type.html"><strong aria-hidden="true">5.1.2.2.</strong> Membuat Data Bank Account Type</a></li></ol></li><li class="expanded "><a href="konfigurasi/partner/bank-account/bank-account.html"><strong aria-hidden="true">5.1.3.</strong> Bank Account</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner/bank-account/penjelasan.html"><strong aria-hidden="true">5.1.3.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/partner/bank-account/membuat-data-bank-account.html"><strong aria-hidden="true">5.1.3.2.</strong> Membuat Data Bank Account</a></li></ol></li><li class="expanded "><a href="konfigurasi/partner/negara/negara.html"><strong aria-hidden="true">5.1.4.</strong> Negara</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner/negara/penjelasan.html"><strong aria-hidden="true">5.1.4.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/partner/negara/membuat-data-negara.html"><strong aria-hidden="true">5.1.4.2.</strong> Membuat Data Negara</a></li></ol></li><li class="expanded "><a href="konfigurasi/partner/propinsi/propinsi.html"><strong aria-hidden="true">5.1.5.</strong> Propinsi</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner/propinsi/penjelasan.html"><strong aria-hidden="true">5.1.5.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/partner/propinsi/membuat-data-propinsi.html"><strong aria-hidden="true">5.1.5.2.</strong> Membuat Data Propinsi</a></li></ol></li><li class="expanded "><a href="konfigurasi/partner/kota/kota.html"><strong aria-hidden="true">5.1.6.</strong> Kota/Lokasi</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner/kota/penjelasan.html"><strong aria-hidden="true">5.1.6.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/partner/kota/membuat-data-kota.html"><strong aria-hidden="true">5.1.6.2.</strong> Membuat Data Kota/Lokasi</a></li></ol></li><li class="expanded "><a href="konfigurasi/partner/unit-administrasi/unit-administrasi.html"><strong aria-hidden="true">5.1.7.</strong> Unit Administrasi</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/partner/unit-administrasi/penjelasan.html"><strong aria-hidden="true">5.1.7.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/partner/unit-administrasi/membuat-data-unit-administrasi.html"><strong aria-hidden="true">5.1.7.2.</strong> Membuat Data Unit Administrasi</a></li></ol></li></ol></li><li class="expanded "><a href="konfigurasi/company-partner.html"><strong aria-hidden="true">5.2.</strong> Company Partner</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/company-partner/kepemilikan/kepemilikan.html"><strong aria-hidden="true">5.2.1.</strong> Kepemilikan</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/company-partner/kepemilikan/penjelasan.html"><strong aria-hidden="true">5.2.1.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/company-partner/kepemilikan/membuat-data-kepemilikan.html"><strong aria-hidden="true">5.2.1.2.</strong> Membuat Data Kepemilikan</a></li></ol></li><li class="expanded "><a href="konfigurasi/company-partner/bidang-usaha/bidang-usaha.html"><strong aria-hidden="true">5.2.2.</strong> Bidang Usaha</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/company-partner/bidang-usaha/penjelasan.html"><strong aria-hidden="true">5.2.2.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/company-partner/bidang-usaha/membuat-data-bidang-usaha.html"><strong aria-hidden="true">5.2.2.2.</strong> Membuat Data Bidang Usaha</a></li></ol></li><li class="expanded "><a href="konfigurasi/company-partner/unit-kerja/unit-kerja.html"><strong aria-hidden="true">5.2.3.</strong> Unit Kerja</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/company-partner/unit-kerja/penjelasan.html"><strong aria-hidden="true">5.2.3.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/company-partner/unit-kerja/membuat-data-unit-kerja.html"><strong aria-hidden="true">5.2.3.2.</strong> Membuat Data Unit Kerja</a></li></ol></li></ol></li><li class="expanded "><a href="konfigurasi/individual-partner.html"><strong aria-hidden="true">5.3.</strong> Individual Partner</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/individual-partner/titel-akademik/titel-akademik.html"><strong aria-hidden="true">5.3.1.</strong> Titel Akademik</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/individual-partner/titel-akademik/penjelasan.html"><strong aria-hidden="true">5.3.1.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/individual-partner/titel-akademik/membuat-data-titel-akademik.html"><strong aria-hidden="true">5.3.1.2.</strong> Membuat Data Titel Akademik</a></li></ol></li><li class="expanded "><a href="konfigurasi/individual-partner/jenjang-pendidikan/jenjang-pendidikan.html"><strong aria-hidden="true">5.3.2.</strong> Jenjang Pendidikan</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/individual-partner/jenjang-pendidikan/penjelasan.html"><strong aria-hidden="true">5.3.2.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/individual-partner/jenjang-pendidikan/membuat-data-jenjang-pendidikan.html"><strong aria-hidden="true">5.3.2.2.</strong> Membuat Data Jenjang Pendidikan</a></li></ol></li><li class="expanded "><a href="konfigurasi/individual-partner/bidang-studi/bidang-studi.html"><strong aria-hidden="true">5.3.3.</strong> Bidang Studi</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/individual-partner/bidang-studi/penjelasan.html"><strong aria-hidden="true">5.3.3.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/individual-partner/bidang-studi/membuat-data-bidang-studi.html"><strong aria-hidden="true">5.3.3.2.</strong> Membuat Data Bidang Studi</a></li></ol></li><li class="expanded "><a href="konfigurasi/individual-partner/jenjang-karir/jenjang-karir.html"><strong aria-hidden="true">5.3.4.</strong> Jenjang Karir</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/individual-partner/jenjang-karir/penjelasan.html"><strong aria-hidden="true">5.3.4.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/individual-partner/jenjang-karir/membuat-data-jenjang-karir.html"><strong aria-hidden="true">5.3.4.2.</strong> Membuat Data Jenjang Karir</a></li></ol></li><li class="expanded "><a href="konfigurasi/individual-partner/etnis/etnis.html"><strong aria-hidden="true">5.3.5.</strong> Etnis</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/individual-partner/etnis/penjelasan.html"><strong aria-hidden="true">5.3.5.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/individual-partner/etnis/membuat-data-etnis.html"><strong aria-hidden="true">5.3.5.2.</strong> Membuat Data Etnis</a></li></ol></li><li class="expanded "><a href="konfigurasi/individual-partner/agama/agama.html"><strong aria-hidden="true">5.3.6.</strong> Agama</a></li><li><ol class="section"><li class="expanded "><a href="konfigurasi/individual-partner/agama/penjelasan.html"><strong aria-hidden="true">5.3.6.1.</strong> Penjelasan</a></li><li class="expanded "><a href="konfigurasi/individual-partner/agama/membuat-data-etnis.html"><strong aria-hidden="true">5.3.6.2.</strong> Membuat Data Etnis</a></li></ol></li></ol></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar" class="menu-bar">
+                    <div id="menu-bar-sticky-container">
+                        <div class="left-buttons">
+                            <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                                <i class="fa fa-bars"></i>
+                            </button>
+                            <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                                <i class="fa fa-paint-brush"></i>
+                            </button>
+                            <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                                <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                                <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                            </ul>
+                            
+                            <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                                <i class="fa fa-search"></i>
+                            </button>
+                            
+                        </div>
+
+                        <h1 class="menu-title">Odoo - Partner Management</h1>
+
+                        <div class="right-buttons">
+                            <a href="print.html" title="Print this book" aria-label="Print this book">
+                                <i id="print-button" class="fa fa-print"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1><a class="header" href="#pra-kata" id="pra-kata">Pra-Kata</a></h1>
+<h1><a class="header" href="#terminologi" id="terminologi">Terminologi</a></h1>
+<h1><a class="header" href="#company-partner" id="company-partner">Company Partner</a></h1>
+<p><strong>Company Partner</strong> adalah fitur untuk mendata semua entitas luar berupa badan hukum.</p>
+<ul>
+<li><a href="./company-partner/penjelasan.html">Penjelasan</a></li>
+<li><a href="./company-partner/petunjuk-pengisian.html">Petunjuk Pengisian</a></li>
+<li><a href="./company-partner/membuat.html">Membuat</a></li>
+<li><a href="./company-partner/sunting.html">Menyunting</a></li>
+<li><a href="./company-partner/mark-as-customer.html">Menandai Sebagai Konsumen</a></li>
+<li><a href="./company-partner/mark-as-supplier.html">Menandai Sebagai Supplier</a></li>
+<li><a href="./company-partner/unmark-as-customer.html">Menandai Sebagai Bukan Konsumen</a></li>
+<li><a href="./company-partner/unmark-as-supplier.html">Menandai Sebagai Bukan Supplier</a></li>
+</ul>
+<h1><a class="header" href="#penjelasan" id="penjelasan">Penjelasan</a></h1>
+<p>Informasi pada Company Partner dibagi menjadi beberapa area, diantaranya:</p>
+<ul>
+<li><a href="company-partner/penjelasan.html#bagian-header">Header</a></li>
+<li><a href="company-partner/penjelasan.html#tab-contacts">Tab Contacts</a></li>
+<li><a href="company-partner/penjelasan.html#tab-affiliates">Tab Affiliates</a></li>
+<li><a href="company-partner/penjelasan.html#tab-internal-notes">Tab Internal Notes</a></li>
+<li><a href="company-partner/penjelasan.html#tab-sales-purchases">Tab Sales &amp; Purchases</a></li>
+<li><a href="company-partner/penjelasan.html#tab-id-numbers">Tab ID Numbers</a></li>
+<li><a href="company-partner/penjelasan.html#tab-payment-follow-up">Tab Payment Follow-up</a></li>
+<li><a href="company-partner/penjelasan.html#tab-accounting">Tab Accounting</a></li>
+<li><a href="company-partner/penjelasan.html#tab-consignee">Tab Consignee</a></li>
+<li><a href="company-partner/penjelasan.html#tab-point-of-sale">Tab Point Of Sale</a></li>
+</ul>
+<h3><a class="header" href="#a-namebagian-headerheadera" id="a-namebagian-headerheadera"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="company-partner/../img/company-partner/header.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-imageimagea" id="a-namefield-imageimagea"><a name="field-image">Image</a></a></h4>
+<p><img src="company-partner/../img/company-partner/image.png" alt="" /><br/>
+Foto/gambar untuk logo perusahaan</p>
+<h4><a class="header" href="#a-namefield-namenamea" id="a-namefield-namenamea"><a name="field-name">Name</a></a></h4>
+<p>Nama Perusahaan</p>
+<h4><a class="header" href="#a-namefield-tagstagsa" id="a-namefield-tagstagsa"><a name="field-tags">Tags</a></a></h4>
+<p><em>Tags</em> Perusahaan</p>
+<h4><a class="header" href="#a-namefield-smart-buttonsmart-buttona" id="a-namefield-smart-buttonsmart-buttona"><a name="field-smart-button">Smart Button</a></a></h4>
+<p><img src="company-partner/../img/company-partner/header-smart-button.png" alt="" /><br/></p>
+<p>Tombol-tombol yang berfungsi sebagai <em>Shortcut</em> untuk masuk ke dalam menu yang berkaitan dan juga sebagai pemberi informasi mengenai seberapa banyak data, total, dll <br /></p>
+<h4><a class="header" href="#a-namefield-addressaddressa" id="a-namefield-addressaddressa"><a name="field-address">Address</a></a></h4>
+<p>Mendefinisikan alamat. Terbagi atas beberapa isian, yaitu:<br /></p>
+<ul>
+<li><strong>Street:</strong> Alamat perusahan</li>
+<li><strong>Number:</strong> Nomor jalan perusahan</li>
+<li><strong>City completion:</strong> Informasi kota secara lengkap</li>
+<li><strong>City:</strong> Kota dimana perusahaan berada</li>
+<li><strong>State:</strong> Provinsi dimana perusahaan berada</li>
+<li><strong>Zip:</strong> Nomor kode POS perusahaan</li>
+<li><strong>Country:</strong> Negara dimana perusahaan berada</li>
+</ul>
+<h4><a class="header" href="#a-namefield-lau1local-admin-unit-1a" id="a-namefield-lau1local-admin-unit-1a"><a name="field-lau1">Local Admin. Unit 1</a></a></h4>
+<p>Mendefinisikan unit administrasi dimana levelnya adalah 1</p>
+<h4><a class="header" href="#a-namefield-lau2local-admin-unit-2a" id="a-namefield-lau2local-admin-unit-2a"><a name="field-lau2">Local Admin. Unit 2</a></a></h4>
+<p>Mendefinisikan unit administrasi dimana levelnya adalah 2</p>
+<h4><a class="header" href="#a-namefield-lau3local-admin-unit-3a" id="a-namefield-lau3local-admin-unit-3a"><a name="field-lau3">Local Admin. Unit 3</a></a></h4>
+<p>Mendefinisikan unit administrasi dimana levelnya adalah 3</p>
+<h4><a class="header" href="#a-namefield-websitewebsitea" id="a-namefield-websitewebsitea"><a name="field-website">Website</a></a></h4>
+<p>Alamat website perusahaan</p>
+<h4><a class="header" href="#a-namefield-sectormain-sectora" id="a-namefield-sectormain-sectora"><a name="field-sector">Main Sector</a></a></h4>
+<p>Bidang usaha utama perusahaan</p>
+<h4><a class="header" href="#a-namefield-sector2secondary-sectorsa" id="a-namefield-sector2secondary-sectorsa"><a name="field-sector2">Secondary Sectors</a></a></h4>
+<p>Bidang usaha kedua perusahaan</p>
+<h4><a class="header" href="#a-namefield-phonephonea" id="a-namefield-phonephonea"><a name="field-phone">Phone</a></a></h4>
+<p>Nomor telepon perusahaan</p>
+<h4><a class="header" href="#a-namefield-mobilemobilea" id="a-namefield-mobilemobilea"><a name="field-mobile">Mobile</a></a></h4>
+<p>Nomor handphone/mobile perusahaan</p>
+<h4><a class="header" href="#a-namefield-faxfaxa" id="a-namefield-faxfaxa"><a name="field-fax">Fax</a></a></h4>
+<p>Nomor fax perusahaan</p>
+<h4><a class="header" href="#a-namefield-emailemaila" id="a-namefield-emailemaila"><a name="field-email">Email</a></a></h4>
+<p>Alamat email perusahaan</p>
+<h4><a class="header" href="#a-namefield-titletitlea" id="a-namefield-titletitlea"><a name="field-title">Title</a></a></h4>
+<p>Bentuk usaha perusahaan</p>
+<h4><a class="header" href="#a-namefield-ownership-typeownership-typea" id="a-namefield-ownership-typeownership-typea"><a name="field-ownership-type">Ownership Type</a></a></h4>
+<p>Tipe kepemilikan perusahaan</p>
+<h3><a class="header" href="#a-nametab-contactstab-contactsa" id="a-nametab-contactstab-contactsa"><a name="tab-contacts">TAB CONTACTS</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-contacts.png" alt="" />
+<img src="company-partner/../img/company-partner/tab-contacts-form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-contact-imageimagea" id="a-namefield-contact-imageimagea"><a name="field-contact-image">Image</a></a></h4>
+<p><img src="company-partner/../img/company-partner/image.png" alt="" /><br/>
+Foto kontak</p>
+<h4><a class="header" href="#a-namefield-contact-namenamea" id="a-namefield-contact-namenamea"><a name="field-contact-name">Name</a></a></h4>
+<p>Nama kontak</p>
+<h4><a class="header" href="#a-namefield-contact-typecontact-typea" id="a-namefield-contact-typecontact-typea"><a name="field-contact-type">Contact Type</a></a></h4>
+<p>Tipe kontak. Terbagi atas 2 tipe, yaitu:<br /></p>
+<ul>
+<li><strong>Standalone Contact:</strong> Jika dipilih, maka data kontak merupakan data yang berdiri sendiri</li>
+<li><strong>Attached to existing Contact:</strong> Jika dipilih, maka data kontak terhubung pada data <em>partner</em> yang sudah ada</li>
+</ul>
+<blockquote>
+<p><strong>Catatan:</strong> Jika tipe <em>Standalone Contact</em> dipilih, maka field <em>Name</em> akan berupa isian. Jika tipe <em>Attached to existing Contact</em> dipilih, maka field <em>Name</em> akan berupa pilihan</p>
+</blockquote>
+<h4><a class="header" href="#a-namefield-contact-tagstagsa" id="a-namefield-contact-tagstagsa"><a name="field-contact-tags">Tags</a></a></h4>
+<p><em>Tags</em> kontak</p>
+<h4><a class="header" href="#a-namefield-contact-job-posisitionjob-positiona" id="a-namefield-contact-job-posisitionjob-positiona"><a name="field-contact-job-posisition">Job Position</a></a></h4>
+<p>Posisi/jabatan kontak</p>
+<h4><a class="header" href="#a-namefield-contact-job-departmentdepartmenta" id="a-namefield-contact-job-departmentdepartmenta"><a name="field-contact-job-department">Department</a></a></h4>
+<p>Departemen tempat berkerjanya kontak</p>
+<h4><a class="header" href="#a-namefield-contact-job-emailemaila" id="a-namefield-contact-job-emailemaila"><a name="field-contact-job-email">Email</a></a></h4>
+<p>Alamat email kontak</p>
+<h4><a class="header" href="#a-namefield-contact-job-phonephonea" id="a-namefield-contact-job-phonephonea"><a name="field-contact-job-phone">Phone</a></a></h4>
+<p>Nomor telepon kontak</p>
+<h4><a class="header" href="#a-namefield-contact-job-mobilemobilea" id="a-namefield-contact-job-mobilemobilea"><a name="field-contact-job-mobile">Mobile</a></a></h4>
+<p>Nomor handphone/mobile kontak</p>
+<h4><a class="header" href="#a-namefield-contact-company-addressuse-company-addressa" id="a-namefield-contact-company-addressuse-company-addressa"><a name="field-contact-company-address">Use Company Address</a></a></h4>
+<p>Jika dipilih, maka alamat kontak akan menggunakan alamat perusahaan.</p>
+<h4><a class="header" href="#a-namefield-contact-job-address-typeaddress-typea" id="a-namefield-contact-job-address-typeaddress-typea"><a name="field-contact-job-address-type">Address Type</a></a></h4>
+<p>Tipe alamat. Terbagi atas 5 tipe, yaitu:<br /></p>
+<ul>
+<li><strong>Default:</strong> Todo</li>
+<li><strong>Invoice:</strong> Todo</li>
+<li><strong>Shipping:</strong> Todo</li>
+<li><strong>Contact:</strong> Todo</li>
+<li><strong>Other:</strong> Todo</li>
+</ul>
+<h4><a class="header" href="#a-namefield-contact-lau1local-admin-unit-1a" id="a-namefield-contact-lau1local-admin-unit-1a"><a name="field-contact-lau1">Local Admin. Unit 1</a></a></h4>
+<p>Mendefinisikan unit administrasi dimana levelnya adalah 1</p>
+<h4><a class="header" href="#a-namefield-contact-lau2local-admin-unit-2a" id="a-namefield-contact-lau2local-admin-unit-2a"><a name="field-contact-lau2">Local Admin. Unit 2</a></a></h4>
+<p>Mendefinisikan unit administrasi dimana levelnya adalah 2</p>
+<h3><a class="header" href="#a-nametab-affiliatestab-affiliatesa" id="a-nametab-affiliatestab-affiliatesa"><a name="tab-affiliates">TAB AFFILIATES</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-affiliates.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-affiliatesaffiliatesa" id="a-namefield-affiliatesaffiliatesa"><a name="field-affiliates">Affiliates</a></a></h4>
+<p>Mendefinisikan afiliasi</p>
+<h3><a class="header" href="#a-nametab-internal-notestab-internal-notesa" id="a-nametab-internal-notestab-internal-notesa"><a name="tab-internal-notes">TAB INTERNAL NOTES</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-internal-notes.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-internal-notesinternal-notesa" id="a-namefield-internal-notesinternal-notesa"><a name="field-internal-notes">Internal Notes</a></a></h4>
+<p>Catatan internal terkait <em>Partner</em></p>
+<h3><a class="header" href="#a-nametab-sales-purchasestab-sales--purchasesa" id="a-nametab-sales-purchasestab-sales--purchasesa"><a name="tab-sales-purchases">TAB SALES &amp; PURCHASES</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-sales-purchases.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-user-idsalespersona" id="a-namefield-sale-purchase-user-idsalespersona"><a name="field-sale-purchase-user-id">Salesperson</a></a></h4>
+<p>Mendefinisikan <em>Salesperson</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-section-idsales-teama" id="a-namefield-sale-purchase-section-idsales-teama"><a name="field-sale-purchase-section-id">Sales Team</a></a></h4>
+<p>Mendefinisikan <em>Sales Team</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-refcontact-referencea" id="a-namefield-sale-purchase-refcontact-referencea"><a name="field-sale-purchase-ref">Contact Reference</a></a></h4>
+<p>Referensi <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-languagelanguangea" id="a-namefield-sale-purchase-languagelanguangea"><a name="field-sale-purchase-language">Languange</a></a></h4>
+<p>Mendefinisikan bahasa yang digunakan</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-datedatea" id="a-namefield-sale-purchase-datedatea"><a name="field-sale-purchase-date">Date</a></a></h4>
+<p>Tanggal</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-partner-product-ullogistic-unita" id="a-namefield-sale-purchase-partner-product-ullogistic-unita"><a name="field-sale-purchase-partner-product-ul">Logistic Unit</a></a></h4>
+<p>Mendefinisikan <em>Logistic Unit</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-product-pricelistsale-pricelista" id="a-namefield-sale-purchase-property-product-pricelistsale-pricelista"><a name="field-sale-purchase-property-product-pricelist">Sale Pricelist</a></a></h4>
+<p>Mendefinisikan daftar harga penjualan</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-product-pricelist-purchasepurchase-pricelista" id="a-namefield-sale-purchase-property-product-pricelist-purchasepurchase-pricelista"><a name="field-sale-purchase-property-product-pricelist-purchase">Purchase Pricelist</a></a></h4>
+<p>Mendefinisikan daftar harga pembelian</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-customercustomera" id="a-namefield-sale-purchase-customercustomera"><a name="field-sale-purchase-customer">Customer</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> akan ditandai sebagai <em>Customer</em>(Pelanggan)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-suppliersuppliera" id="a-namefield-sale-purchase-suppliersuppliera"><a name="field-sale-purchase-supplier">Supplier</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> akan ditandai sebagai <em>Supplier</em>(Pemasok)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-acticeactivea" id="a-namefield-sale-purchase-acticeactivea"><a name="field-sale-purchase-actice">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-publishpublisha" id="a-namefield-sale-purchase-publishpublisha"><a name="field-sale-purchase-publish">Publish</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> akan ter-<em>publish</em> pada website </p>
+<h4><a class="header" href="#a-namefield-sale-purchase-opt-outopt-outa" id="a-namefield-sale-purchase-opt-outopt-outa"><a name="field-sale-purchase-opt-out">Opt-Out</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> tidak akan menerima email untuk <em>Mass Mailing</em> dan <em>Marketing Campaign</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-notify-emailreceive-inbox-notifications-by-emaila" id="a-namefield-sale-purchase-notify-emailreceive-inbox-notifications-by-emaila"><a name="field-sale-purchase-notify-email">Receive Inbox Notifications by Email</a></a></h4>
+<p>Terbagi atas 2 pilihan, yaitu:<br /></p>
+<ul>
+<li><strong>Never:</strong> Jika dipilih, <em>Partner</em> tidak akan menerima notifikasi email</li>
+<li><strong>All Messages:</strong> Jika dipilih, <em>Partner</em> akan menerima notifikasi email</li>
+</ul>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-stock-customercustomer-locationa" id="a-namefield-sale-purchase-property-stock-customercustomer-locationa"><a name="field-sale-purchase-property-stock-customer">Customer Location</a></a></h4>
+<p>Mendefinisikan lokasi <em>Customer</em>(Pelanggan)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-stock-customer-promotioncustomer-promotion-locationa" id="a-namefield-sale-purchase-property-stock-customer-promotioncustomer-promotion-locationa"><a name="field-sale-purchase-property-stock-customer-promotion">Customer Promotion Location</a></a></h4>
+<p>Mendefinisikan lokasi <em>Customer Promotion</em>(Promosi Pelanggan)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-stock-supplier-promotionsupplier-promotion-locationa" id="a-namefield-sale-purchase-property-stock-supplier-promotionsupplier-promotion-locationa"><a name="field-sale-purchase-property-stock-supplier-promotion">Supplier Promotion Location</a></a></h4>
+<p>Mendefinisikan lokasi <em>Supplier Promotion</em>(Promosi Pemasok)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-stock-suppliersupplier-locationa" id="a-namefield-sale-purchase-property-stock-suppliersupplier-locationa"><a name="field-sale-purchase-property-stock-supplier">Supplier Location</a></a></h4>
+<p>Mendefinisikan lokasi <em>Supplier</em>(Pemasok)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-delivery-carrierdelivery-methoda" id="a-namefield-sale-purchase-property-delivery-carrierdelivery-methoda"><a name="field-sale-purchase-property-delivery-carrier">Delivery Method</a></a></h4>
+<p>Mendefinisikan metode pengiriman yang digunakan</p>
+<h3><a class="header" href="#a-nametab-id-numberstab-id-numbersa" id="a-nametab-id-numberstab-id-numbersa"><a name="tab-id-numbers">TAB ID NUMBERS</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-id-numbers.png" alt="" />
+<img src="company-partner/../img/company-partner/tab-id-numbers-form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-id-number-category-idcategorya" id="a-namefield-id-number-category-idcategorya"><a name="field-id-number-category-id">Category</a></a></h4>
+<p>Mendefinisikan kategori dari nomor identitas yang akan digunakan<br/>
+<em>Ex:</em> SIM, KTP</p>
+<h4><a class="header" href="#a-namefield-id-number-nameid-numbera" id="a-namefield-id-number-nameid-numbera"><a name="field-id-number-name">ID Number</a></a></h4>
+<p>Nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-partner-issued-idissued-bya" id="a-namefield-id-number-partner-issued-idissued-bya"><a name="field-id-number-partner-issued-id">Issued By</a></a></h4>
+<p>Mendefinisikan siapa yang mengeluarkan nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-partner-date-issuedissued-ona" id="a-namefield-id-number-partner-date-issuedissued-ona"><a name="field-id-number-partner-date-issued">Issued On</a></a></h4>
+<p>Mendefinisikan tanggal identitas dikeluarkan</p>
+<h4><a class="header" href="#a-namefield-id-number-place-issuanceplace-of-issuancea" id="a-namefield-id-number-place-issuanceplace-of-issuancea"><a name="field-id-number-place-issuance">Place of Issuance</a></a></h4>
+<p>Mendefinisikan tempat diterbitkannya nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-valid-fromvalid-froma" id="a-namefield-id-number-valid-fromvalid-froma"><a name="field-id-number-valid-from">Valid From</a></a></h4>
+<p>Mendefinisikan tanggal mulai validnya nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-valid-untilvalid-untila" id="a-namefield-id-number-valid-untilvalid-untila"><a name="field-id-number-valid-Until">Valid Until</a></a></h4>
+<p>Mendefinisikan tanggal akhir validnya nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-statusstatusa" id="a-namefield-id-number-statusstatusa"><a name="field-id-number-status">Status</a></a></h4>
+<p>Mendefinisikan status identitas. Terbagi atas 4 pilihan, yaitu:<br /></p>
+<ul>
+<li><strong>New:</strong> Identitas baru</li>
+<li><strong>Running:</strong> Identitas yang sedang berjalan</li>
+<li><strong>To Renew:</strong> Identitas perlu diperpanjang</li>
+<li><strong>Expired:</strong> Identitas sudah tidak aktif</li>
+</ul>
+<h4><a class="header" href="#a-namefield-id-number-notesnotesa" id="a-namefield-id-number-notesnotesa"><a name="field-id-number-notes">Notes</a></a></h4>
+<p>Catatan tambahan terkait nomor identitas</p>
+<h3><a class="header" href="#a-nametab-payment-follow-uptab-payment-follow-upa" id="a-nametab-payment-follow-uptab-payment-follow-upa"><a name="tab-payment-follow-up">TAB PAYMENT FOLLOW-UP</a></a></h3>
+<h3><a class="header" href="#a-nametab-payment-follow-up-headerheadera" id="a-nametab-payment-follow-up-headerheadera"><a name="tab-payment-follow-up-header">HEADER</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-payment-follow-up-header.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-payment-follow-up-payment-responsible-idfollow-up-responsiblea" id="a-namefield-payment-follow-up-payment-responsible-idfollow-up-responsiblea"><a name="field-payment-follow-up-payment-responsible-id">Follow-up Responsible</a></a></h4>
+<p>Mendefinisikan <em>User</em> yang akan bertanggung jawab untuk melakukan <em>Follow-up</em> pembayaran</p>
+<h4><a class="header" href="#a-namefield-payment-follow-up-payment-next-actionnext-actiona" id="a-namefield-payment-follow-up-payment-next-actionnext-actiona"><a name="field-payment-follow-up-payment-next-action">Next Action</a></a></h4>
+<p>Mendefinisikan tanggal tindakan selajutnya beserta catatan terkait tindakan yang akan dilakukan</p>
+<h4><a class="header" href="#a-namefield-payment-follow-up-notecustomer-payment-promisea" id="a-namefield-payment-follow-up-notecustomer-payment-promisea"><a name="field-payment-follow-up-note">Customer Payment Promise</a></a></h4>
+<p>Isian untuk janji pembayaran yang diberikan oleh <em>Customer</em>(Pelanggan)</p>
+<h3><a class="header" href="#a-nametab-payment-follow-up-historyhistorya" id="a-nametab-payment-follow-up-historyhistorya"><a name="tab-payment-follow-up-history">HISTORY</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-payment-follow-up-history.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-payment-follow-up-historyhistorya" id="a-namefield-payment-follow-up-historyhistorya"><a name="field-payment-follow-up-history">History</a></a></h4>
+<p>Todo</p>
+<h3><a class="header" href="#a-nametab-accountingtab-accountinga" id="a-nametab-accountingtab-accountinga"><a name="tab-accounting">TAB ACCOUNTING</a></a></h3>
+<h3><a class="header" href="#a-nametab-accounting-headerheadera" id="a-nametab-accounting-headerheadera"><a name="tab-accounting-header">HEADER</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-accounting-header.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-accounting-header-property-account-positionfiscal-positiona" id="a-nametab-accounting-header-property-account-positionfiscal-positiona"><a name="tab-accounting-header-property-account-position">Fiscal Position</a></a></h4>
+<p>Terbagi atas 2 pilihan, yaitu:<br/></p>
+<ul>
+<li><strong>Normal Taxes:</strong> Todo</li>
+<li><strong>Tax Exempt:</strong> Todo</li>
+</ul>
+<h4><a class="header" href="#a-nametab-accounting-header-tintina" id="a-nametab-accounting-header-tintina"><a name="tab-accounting-header-tin">TIN</a></a></h4>
+<p>Mendefiniskan dan melakukan pengecekan terkait nomor identifikasi pajak. </p>
+<blockquote>
+<p><strong>Catatan:</strong> TIN(Inggris: <em>Tax Identification Number</em> disingkat TIN)</p>
+</blockquote>
+<h4><a class="header" href="#a-nametab-accounting-header-property-account-receivableaccount-receivablea" id="a-nametab-accounting-header-property-account-receivableaccount-receivablea"><a name="tab-accounting-header-property-account-receivable">Account Receivable</a></a></h4>
+<p>Mendefiniskan akun piutang dagang</p>
+<h4><a class="header" href="#a-nametab-accounting-header-property-payment-termcustomer-payment-terma" id="a-nametab-accounting-header-property-payment-termcustomer-payment-terma"><a name="tab-accounting-header-property-payment-term">Customer Payment Term</a></a></h4>
+<p>Mendefiniskan jangka waktu pembayaran <em>Customer</em>(Pelanggan)</p>
+<h4><a class="header" href="#a-nametab-accounting-header-credittotal-receivablea" id="a-nametab-accounting-header-credittotal-receivablea"><a name="tab-accounting-header-credit">Total Receivable</a></a></h4>
+<p>Informasi terkait total piutang</p>
+<h4><a class="header" href="#a-nametab-accounting-header-debtdebta" id="a-nametab-accounting-header-debtdebta"><a name="tab-accounting-header-debt">Debt</a></a></h4>
+<p>Informasi terkait hutang</p>
+<h4><a class="header" href="#a-nametab-accounting-header-last-reconcile-datelatest-full-reconciliation-datea" id="a-nametab-accounting-header-last-reconcile-datelatest-full-reconciliation-datea"><a name="tab-accounting-header-last-reconcile-date">Latest Full Reconciliation Date</a></a></h4>
+<p>Todo</p>
+<h4><a class="header" href="#a-nametab-accounting-header-property-account-payableaccount-payablea" id="a-nametab-accounting-header-property-account-payableaccount-payablea"><a name="tab-accounting-header-property-account-payable">Account Payable</a></a></h4>
+<p>Mendefiniskan akun piutang hutang</p>
+<h4><a class="header" href="#a-nametab-accounting-header-property-supplier-payment-termsupplier-payment-terma" id="a-nametab-accounting-header-property-supplier-payment-termsupplier-payment-terma"><a name="tab-accounting-header-property-supplier-payment-term">Supplier Payment Term</a></a></h4>
+<p>Mendefiniskan jangka waktu pembayaran <em>Supplier</em>(Pemasok)</p>
+<h4><a class="header" href="#a-nametab-accounting-header-debittotal-payablea" id="a-nametab-accounting-header-debittotal-payablea"><a name="tab-accounting-header-debit">Total Payable</a></a></h4>
+<p>Informasi terkait total yang harus dibayar</p>
+<h3><a class="header" href="#a-nametab-accounting-detail-bankdetail-banka" id="a-nametab-accounting-detail-bankdetail-banka"><a name="tab-accounting-detail-bank">DETAIL BANK</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-accounting-bank.png" alt="" />
+<img src="company-partner/../img/company-partner/tab-accounting-bank-form.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-statebank-account-typea" id="a-nametab-accounting-detail-bank-statebank-account-typea"><a name="tab-accounting-detail-bank-state">Bank Account Type</a></a></h4>
+<p>Tipe akun bank</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-acc-numberaccount-numbera" id="a-nametab-accounting-detail-bank-acc-numberaccount-numbera"><a name="tab-accounting-detail-bank-acc-number">Account Number</a></a></h4>
+<p>Nomor akun bank</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-partner-idaccount-ownera" id="a-nametab-accounting-detail-bank-partner-idaccount-ownera"><a name="tab-accounting-detail-bank-partner-id">Account Owner</a></a></h4>
+<p>Pemilik akun bank</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-addressaddressa" id="a-nametab-accounting-detail-bank-addressaddressa"><a name="tab-accounting-detail-bank-address">Address</a></a></h4>
+<p>Alamat Bank. Terbagi atas beberapa isian, yaitu:<br /></p>
+<ul>
+<li>Name - Nama pemilik akun bank</li>
+<li>Street - Alamat akun bank</li>
+<li>Zip - Nomor kode POS akun bank</li>
+<li>City - Kota akun bank</li>
+<li>State - Provinsi akun bank</li>
+<li>Country - Negara akun bank</li>
+</ul>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-bankbanka" id="a-nametab-accounting-detail-bank-bankbanka"><a name="tab-accounting-detail-bank-bank">Bank</a></a></h4>
+<p>Mendefinisikan bank yang akan digunakan</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-bank_namebank-namea" id="a-nametab-accounting-detail-bank-bank_namebank-namea"><a name="tab-accounting-detail-bank-bank_name">Bank Name</a></a></h4>
+<p>Nama bank</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-bicbank-identifier-codea" id="a-nametab-accounting-detail-bank-bicbank-identifier-codea"><a name="tab-accounting-detail-bank-bic">Bank Identifier Code</a></a></h4>
+<p>Kode bank</p>
+<h3><a class="header" href="#a-nametab-accounting-pph21-infopph21-informationa" id="a-nametab-accounting-pph21-infopph21-informationa"><a name="tab-accounting-pph21-info">PPH21 Information</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-accounting-pph21-info.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-accounting-pph21-info-pktp-categorypktp-categorya" id="a-nametab-accounting-pph21-info-pktp-categorypktp-categorya"><a name="tab-accounting-pph21-info-pktp-category">PKTP Category</a></a></h4>
+<p>Mendefiniskan kategori PTKP(Penghasilan Tidak Kena Pajak)</p>
+<h3><a class="header" href="#a-nametab-consigneetab-consigneea" id="a-nametab-consigneetab-consigneea"><a name="tab-consignee">TAB CONSIGNEE</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-consignee.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-consignee-is-consigneeconsigneea" id="a-nametab-consignee-is-consigneeconsigneea"><a name="tab-consignee-is-consignee">Consignee</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> merupakan penerima barang</p>
+<h3><a class="header" href="#a-nametab-point-of-saletab-point-of-salea" id="a-nametab-point-of-saletab-point-of-salea"><a name="tab-point-of-sale">TAB POINT OF SALE</a></a></h3>
+<p><img src="company-partner/../img/company-partner/tab-point-of-sale.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-point-of-sale-available-in-posavailable-for-posa" id="a-nametab-point-of-sale-available-in-posavailable-for-posa"><a name="tab-point-of-sale-available-in-pos">Available for POS</a></a></h4>
+<p>Jika dipilih, maka data <em>Partner</em> akan tersedia pada POS</p>
+<h4><a class="header" href="#a-nametab-point-of-sale-ean13ean13a" id="a-nametab-point-of-sale-ean13ean13a"><a name="tab-point-of-sale-EAN13">EAN13</a></a></h4>
+<p>Mendefiniskan nomor barcode</p>
+<h1><a class="header" href="#petunjuk-pengisian-company-partner" id="petunjuk-pengisian-company-partner">Petunjuk Pengisian Company Partner</a></h1>
+<ol>
+<li>Isi <strong>Name</strong>. Wajib diisi.</li>
+<li>Lakukan <a href="company-partner/./petunjuk-pengisian-informasi-usaha.html">Pengisian Informasi Usaha</a> untuk melengkapi data tambahan terkait karakteristik perusahaan. Tidak harus dilakukan.</li>
+<li>Lakukan <a href="company-partner/./petunjuk-pengisian-kontak.html">Pengisian Kontak</a> untuk melengkapi data kontak perusahaan. Tidak harus dilakukan.</li>
+<li>Lakukan <a href="company-partner/./petunjuk-pengisian-nara-hubung.html">Pengisian Nara Hubung</a> untuk melengkapi nara hubung perusahaan. Tidak harus dilakukan.</li>
+</ol>
+<h1><a class="header" href="#petunjuk-pengisian-informasi-usaha" id="petunjuk-pengisian-informasi-usaha">Petunjuk Pengisian Informasi Usaha</a></h1>
+<ol>
+<li>Perhatikan bagian <strong>Header</strong></li>
+<li>Pilih <strong>Main Sector</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>Secondary Sector</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>Title</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>Ownership Type</strong>. Tidak harus diisi.</li>
+<li>Buka tab <strong>Accounting</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>TIN</strong>. Tidak harus diisi.</li>
+<li>Klik tombol <strong>Check Validity</strong> paba sebelah kanan isian <strong>TIN</strong></li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-check-validity.png" alt="" /></p>
+<h1><a class="header" href="#petunjuk-pengisian-kontak-company-partner" id="petunjuk-pengisian-kontak-company-partner">Petunjuk Pengisian Kontak Company Partner</a></h1>
+<ol>
+<li>Mulai pengisian bagian <strong>Address</strong></li>
+<li>Isi <strong>Street</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Number</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>State</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>Country</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>Local Admin Unit 1</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>Local Admin Unit 2</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>Local Admin Unit 3</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Website</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Phone</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Mobile</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Fax</strong>. Tidak harus diisi.</li>
+</ol>
+<h1><a class="header" href="#petunjuk-pengisian-nara-hubung-company-partner" id="petunjuk-pengisian-nara-hubung-company-partner">Petunjuk Pengisian Nara Hubung Company Partner</a></h1>
+<h2><a class="header" href="#pembuatan-data-nara-hubung-baru" id="pembuatan-data-nara-hubung-baru">Pembuatan Data Nara Hubung Baru</a></h2>
+<ol>
+<li>Buka tab <strong>Contacts</strong>.</li>
+<li><a name="l2">Klik</a> tombol <strong>Create</strong> pada bagian atas-kanan kanban <strong>Contacts</strong></li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-create-contact.png" alt="" /></p>
+<p>Pop-up <strong>Contacts</strong> akan muncul</p>
+<p><img src="company-partner/../img/company-partner/pop-up-contact.png" alt="" /></p>
+<ol start="3">
+<li>Lakukan <a href="company-partner/petunjuk-pengisian-nara-hubung.html#pengisian">Pengisian Data Nara Hubung</a></li>
+<li>Klik tombol <strong>Save &amp; Close</strong> atau <strong>Save &amp; New</strong> untuk menyimpan data. Ulangi <a href="company-partner/petunjuk-pengisian-nara-hubung.html#l2">langkah ke-2</a> apabila <strong>Save &amp; New</strong> yang dipilih.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-save-new-contact.png" alt="" /></p>
+<p><img src="company-partner/../img/company-partner/tombol-save-close-contact.png" alt="" /></p>
+<h2><a class="header" href="#a-namesuntingpenyuntingan-data-nara-hubunga" id="a-namesuntingpenyuntingan-data-nara-hubunga"><a name="sunting">Penyuntingan Data Nara Hubung</a></a></h2>
+<ol>
+<li>Buka tab <strong>Contacts</strong>.</li>
+<li>Klik data nara hubung yang ingin disunting</li>
+</ol>
+<p>Pop-up <strong>Contacts</strong> akan muncul</p>
+<p><img src="company-partner/../img/company-partner/pop-up-contact.png" alt="" /></p>
+<ol start="3">
+<li>Lakukan <a href="company-partner/petunjuk-pengisian-nara-hubung.html#pengisian">Pengisian Data Nara Hubung</a></li>
+<li>Klik tombol <strong>Save</strong> untuk menyimpan data.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-save-contact.png" alt="" /></p>
+<h2><a class="header" href="#a-namehapuspenghapusan-data-nara-hubunga" id="a-namehapuspenghapusan-data-nara-hubunga"><a name="hapus">Penghapusan Data Nara Hubung</a></a></h2>
+<ol>
+<li>Buka tab <strong>Contacts</strong>.</li>
+<li>Klik icon x pada data nara hubung yang ingin dihapus</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-hapus-contact.png" alt="" /></p>
+<h2><a class="header" href="#a-namepengisianpengisian-data-nara-hubunga" id="a-namepengisianpengisian-data-nara-hubunga"><a name="pengisian">Pengisian Data Nara Hubung</a></a></h2>
+<ol>
+<li>Pilih <strong>Contact Type</strong>. Lanjutkan langkah ke-3 apabila <strong>Standalone Contact</strong> yang dipilih. Lanjutkan ke langkah ke-4 apabila <strong>Attach to Existing Contact</strong> yang dipilih.</li>
+<li>Isi <strong>Name</strong>. Harus diisi.</li>
+<li>Pilih <strong>Name</strong>. Harus diisi.</li>
+<li>Pilih <strong>Tags</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Job Position</strong>. Tidak harus diisi.</li>
+<li>Pilih <strong>Department</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Email</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Phone</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Mobile</strong>. Tidak harus diisi.</li>
+<li>Aktifkan <strong>Use Company Address</strong>.</li>
+<li>Pastikan pilihan <strong>Address Type</strong> adalah <strong>Contact</strong></li>
+</ol>
+<h1><a class="header" href="#membuat-company-partner" id="membuat-company-partner">Membuat Company Partner</a></h1>
+<h2><a class="header" href="#a-input" id="a-input">A. INPUT</a></h2>
+<p><em>tidak ada instruksi khusus</em></p>
+<h2><a class="header" href="#b-langkah-kerja" id="b-langkah-kerja">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Company Partner</strong>.</li>
+<li>Klik tombol <strong>Create</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-create.png" alt="" /></p>
+<ol start="3">
+<li>Lakukan <a href="company-partner/./petunjuk-pengisian.html">Prosedur Pengisian Company Partner</a></li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-save.png" alt="" /></p>
+<h2><a class="header" href="#c-output" id="c-output">C. OUTPUT</a></h2>
+<ul>
+<li>Data company partner akan terbuat</li>
+</ul>
+<h1><a class="header" href="#menyunting-company-partner" id="menyunting-company-partner">Menyunting Company Partner</a></h1>
+<h2><a class="header" href="#a-input-1" id="a-input-1">A. INPUT</a></h2>
+<p><em>(tidak ada instruksi khusus)</em></p>
+<h2><a class="header" href="#b-langkah-kerja-1" id="b-langkah-kerja-1">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Company Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data company partner yang akan disunting. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Edit</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-edit.png" alt="" /></p>
+<ol start="3">
+<li>Lakukan <a href="company-partner/./petunjuk-pengisian.html">Prosedur Pengisian Company Partner</a></li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-save.png" alt="" /></p>
+<h2><a class="header" href="#c-output-1" id="c-output-1">C. OUTPUT</a></h2>
+<ul>
+<li>Data company partner akan berubah sesuai dengan perubahan yang dilakukan</li>
+</ul>
+<h1><a class="header" href="#menghapus-company-partner" id="menghapus-company-partner">Menghapus Company Partner</a></h1>
+<p>Company partner dapat dihapus secara:</p>
+<ul>
+<li><a href="company-partner/./hapus-satu.html">Satu per satu</a></li>
+<li><a href="company-partner/./hapus-masal.html">Beberapa data sekaligus</a></li>
+</ul>
+<h1><a class="header" href="#menghapus-company-partner-satu-per-satu" id="menghapus-company-partner-satu-per-satu">Menghapus Company Partner Satu Per Satu</a></h1>
+<h2><a class="header" href="#a-input-2" id="a-input-2">A. INPUT</a></h2>
+<ul>
+<li>Data company partner yang akan dihapus harus belum pernah digunakan dalam transaksi. Apabila data company partner sudah pernah digunakan dalam transaksi lakukan prosedur <a href="company-partner/./deaktivasi.html">Deaktivasi Company Partner</a></li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-2" id="b-langkah-kerja-2">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Company Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data company partner yang akan dihapus. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>More</strong> pada bagian atas-tengah form</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-more.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Delete</strong> pada drop-down yang muncul di tombol <strong>More</strong></li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-delete.png" alt="" /></p>
+<p>Pop-up konfirmasi penghapusan akan muncul</p>
+<p><img src="company-partner/../img/company-partner/pop-up-konfirmasi-penghapusan.png" alt="" /></p>
+<ol start="5">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi penghapusan data.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-ok-hapus.png" alt="" /></p>
+<h2><a class="header" href="#c-output-2" id="c-output-2">C. OUTPUT</a></h2>
+<ul>
+<li>Data company partner akan terhapus</li>
+</ul>
+<h1><a class="header" href="#menghapus-beberapa-company-partner" id="menghapus-beberapa-company-partner">Menghapus Beberapa Company Partner</a></h1>
+<h2><a class="header" href="#a-input-3" id="a-input-3">A. INPUT</a></h2>
+<ul>
+<li>Data company partner yang akan dihapus harus belum pernah digunakan dalam transaksi. Apabila data company partner sudah pernah digunakan dalam transaksi lakukan prosedur <a href="company-partner/./deaktivasi.html">Deaktivasi Company Partner</a></li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-3" id="b-langkah-kerja-3">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Company Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Klik tombol <strong>List View Toogle</strong> pada bagian atas-kanan tabel untuk merubah tampilan menjadi list view.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-list-view-toogle.png" alt="" /></p>
+<ol start="3">
+<li>Seleksi data company partner yang akan dihapus.</li>
+<li>Klik tombol <strong>More</strong> pada bagian atas-tengah.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-more-list.png" alt="" /></p>
+<ol start="5">
+<li>Klik tombol <strong>Delete</strong> pada drop-down yang muncul di tombol <strong>More</strong>.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-delete-list.png" alt="" /></p>
+<p>Pop-up konfirmasi penghapusan akan muncul</p>
+<p><img src="company-partner/../img/company-partner/pop-up-konfirmasi-penghapusan.png" alt="" /></p>
+<ol start="5">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi penghapusan data.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-ok-hapus.png" alt="" /></p>
+<h2><a class="header" href="#c-output-3" id="c-output-3">C. OUTPUT</a></h2>
+<ul>
+<li>Data company partner akan terhapus</li>
+</ul>
+<h1><a class="header" href="#menandai-sebagai-konsumen" id="menandai-sebagai-konsumen">Menandai Sebagai Konsumen</a></h1>
+<h2><a class="header" href="#a-input-4" id="a-input-4">A. INPUT</a></h2>
+<ul>
+<li>Data company partner yang akan ditandai sebagai konsumen harus memiliki nilai <strong>Customer</strong> False/Tidak Aktif/Tidak dicheck.</li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-4" id="b-langkah-kerja-4">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Company Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data company partner yang ingin dijadikan sebagai konsumen. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Mark as Customer</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-mark-as-customer.png" alt="" /></p>
+<h2><a class="header" href="#c-output-4" id="c-output-4">C. OUTPUT</a></h2>
+<ul>
+<li>Nilai <strong>Customer</strong> akan berubah menjadi True/Aktif/Check.</li>
+<li>Data company partner akan dapat dipilih pada fitur sales order, customer invoice, atau credit note.</li>
+</ul>
+<h1><a class="header" href="#menandai-sebagai-supplier" id="menandai-sebagai-supplier">Menandai Sebagai Supplier</a></h1>
+<h2><a class="header" href="#a-input-5" id="a-input-5">A. INPUT</a></h2>
+<ul>
+<li>Data company partner yang akan ditandai sebagai konsumen harus memiliki nilai <strong>Supplier</strong> False/Tidak Aktif/Tidak dicheck.</li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-5" id="b-langkah-kerja-5">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Company Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data company partner yang ingin dijadikan sebagai konsumen. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Mark as Supplier</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-mark-as-supplier.png" alt="" /></p>
+<h2><a class="header" href="#c-output-5" id="c-output-5">C. OUTPUT</a></h2>
+<ul>
+<li>Nilai <strong>Supplier</strong> akan berubah menjadi True/Aktif/Check.</li>
+<li>Data company partner akan dapat dipilih pada fitur purchase order, supplier invoice, atau supplier refund</li>
+</ul>
+<h1><a class="header" href="#menandai-sebagai-bukan-konsumen" id="menandai-sebagai-bukan-konsumen">Menandai Sebagai Bukan Konsumen</a></h1>
+<h2><a class="header" href="#a-input-6" id="a-input-6">A. INPUT</a></h2>
+<ul>
+<li>Data company partner yang akan ditandai sebagai konsumen harus memiliki nilai <strong>Customer</strong> True/Aktif/Check.</li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-6" id="b-langkah-kerja-6">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Company Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data company partner yang tidak ingin dijadikan sebagai konsumen. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Unmark as Customer</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-unmark-as-customer.png" alt="" /></p>
+<h2><a class="header" href="#c-output-6" id="c-output-6">C. OUTPUT</a></h2>
+<ul>
+<li>Nilai <strong>Customer</strong> akan berubah menjadi False/Tidak Aktif/Tidak dicheck.</li>
+<li>Data company partner tidak akan dapat dipilih pada fitur sales order, customer invoice, atau credit note.</li>
+</ul>
+<h1><a class="header" href="#menandai-sebagai-bukan-supplier" id="menandai-sebagai-bukan-supplier">Menandai Sebagai Bukan Supplier</a></h1>
+<h2><a class="header" href="#a-input-7" id="a-input-7">A. INPUT</a></h2>
+<ul>
+<li>Data company partner yang akan ditandai sebagai konsumen harus memiliki nilai <strong>Supplier</strong> True/Aktif/Check.</li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-7" id="b-langkah-kerja-7">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Company Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data company partner yang tidak ingin dijadikan sebagai supplier. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Unmark as Supplier</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="company-partner/../img/company-partner/tombol-unmark-as-customer.png" alt="" /></p>
+<h2><a class="header" href="#c-output-7" id="c-output-7">C. OUTPUT</a></h2>
+<ul>
+<li>Nilai <strong>Supplier</strong> akan berubah menjadi False/Tidak Aktif/Tidak dicheck.</li>
+<li>Data company partner tidak akan dapat dipilih pada fitur purchase order, supplier invoice, atau supplier refund</li>
+</ul>
+<h1><a class="header" href="#individual-partner" id="individual-partner">Individual Partner</a></h1>
+<p><strong>Individual Partner</strong> adalah fitur untuk mendata semua entitas luar berupa orang pribadi</p>
+<ul>
+<li><a href="./individual-partner/penjelasan.html">Penjelasan</a></li>
+<li><a href="./individual-partner/petunjuk-pengisian.html">Petunjuk Pengisian</a></li>
+<li><a href="./individual-partner/membuat.html">Membuat</a></li>
+<li><a href="./individual-partner/sunting.html">Menyunting</a></li>
+<li><a href="./individual-partner/mark-as-customer.html">Menandai Sebagai Konsumen</a></li>
+<li><a href="./individual-partner/mark-as-supplier.html">Menandai Sebagai Supplier</a></li>
+<li><a href="./individual-partner/unmark-as-customer.html">Menandai Sebagai Bukan Konsumen</a></li>
+<li><a href="./individual-partner/unmark-as-supplier.html">Menandai Sebagai Bukan Supplier</a></li>
+</ul>
+<h1><a class="header" href="#penjelasan-1" id="penjelasan-1">Penjelasan</a></h1>
+<p>Informasi pada Individual Partner dibagi menjadi beberapa area, diantaranya:</p>
+<ul>
+<li><a href="individual-partner/penjelasan.html#bagian-header">Header</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-other-positions">Tab Other Positions</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-internal-notes">Tab Internal Notes</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-personal-information">Tab Personal Information</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-sales-purchases">Tab Sales &amp; Purchases</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-id-numbers">Tab ID Numbers</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-payment-follow-up">Tab Payment Follow-up</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-accounting">Tab Accounting</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-consignee">Tab Consignee</a></li>
+<li><a href="individual-partner/penjelasan.html#tab-point-of-sale">Tab Point Of Sale</a></li>
+</ul>
+<h3><a class="header" href="#a-namebagian-headerheadera-1" id="a-namebagian-headerheadera-1"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/header.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-imageimagea-1" id="a-namefield-imageimagea-1"><a name="field-image">Image</a></a></h4>
+<p><img src="individual-partner/../img/individual-partner/image.png" alt="" /><br/>
+Foto <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-namenamea-1" id="a-namefield-namenamea-1"><a name="field-name">Name</a></a></h4>
+<p>Nama <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-tagstagsa-1" id="a-namefield-tagstagsa-1"><a name="field-tags">Tags</a></a></h4>
+<p><em>Tags Partner</em></p>
+<h4><a class="header" href="#a-namefield-smart-buttonsmart-buttona-1" id="a-namefield-smart-buttonsmart-buttona-1"><a name="field-smart-button">Smart Button</a></a></h4>
+<p><img src="individual-partner/../img/individual-partner/header-smart-button.png" alt="" /><br/></p>
+<p>Tombol-tombol yang berfungsi sebagai <em>Shortcut</em> untuk masuk ke dalam menu yang berkaitan dan juga sebagai pemberi informasi mengenai seberapa banyak data, total, dll <br /></p>
+<h4><a class="header" href="#a-namefield-addressaddressa-1" id="a-namefield-addressaddressa-1"><a name="field-address">Address</a></a></h4>
+<p>Mendefinisikan alamat. Terbagi atas beberapa isian, yaitu:<br /></p>
+<ul>
+<li><strong>Street:</strong> Alamat <em>Partner</em></li>
+<li><strong>Number:</strong> Nomor jalan <em>Partner</em></li>
+<li><strong>City completion:</strong> Informasi kota secara lengkap</li>
+<li><strong>City:</strong> Kota dimana <em>Partner</em> berada</li>
+<li><strong>State:</strong> Provinsi dimana <em>Partner</em> berada</li>
+<li><strong>Zip:</strong> Nomor kode POS <em>Partner</em></li>
+<li><strong>Country:</strong> Negara dimana <em>Partner</em> berada</li>
+</ul>
+<h4><a class="header" href="#a-namefield-lau1local-admin-unit-1a-1" id="a-namefield-lau1local-admin-unit-1a-1"><a name="field-lau1">Local Admin. Unit 1</a></a></h4>
+<p>Mendefinisikan unit administrasi dimana levelnya adalah 1</p>
+<h4><a class="header" href="#a-namefield-lau2local-admin-unit-2a-1" id="a-namefield-lau2local-admin-unit-2a-1"><a name="field-lau2">Local Admin. Unit 2</a></a></h4>
+<p>Mendefinisikan unit administrasi dimana levelnya adalah 2</p>
+<h4><a class="header" href="#a-namefield-lau3local-admin-unit-3a-1" id="a-namefield-lau3local-admin-unit-3a-1"><a name="field-lau3">Local Admin. Unit 3</a></a></h4>
+<p>Mendefinisikan unit administrasi dimana levelnya adalah 3</p>
+<h4><a class="header" href="#a-namefield-websitewebsitea-1" id="a-namefield-websitewebsitea-1"><a name="field-website">Website</a></a></h4>
+<p>Alamat website <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-functionjob-positiona" id="a-namefield-functionjob-positiona"><a name="field-function">Job Position</a></a></h4>
+<p>Jabatan <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-departmentdepartmenta" id="a-namefield-departmentdepartmenta"><a name="field-department">Department</a></a></h4>
+<p>Departement <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-phonephonea-1" id="a-namefield-phonephonea-1"><a name="field-phone">Phone</a></a></h4>
+<p>Nomor telepon <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-mobilemobilea-1" id="a-namefield-mobilemobilea-1"><a name="field-mobile">Mobile</a></a></h4>
+<p>Nomor handphone/mobile <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-faxfaxa-1" id="a-namefield-faxfaxa-1"><a name="field-fax">Fax</a></a></h4>
+<p>Nomor fax <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-emailemaila-1" id="a-namefield-emailemaila-1"><a name="field-email">Email</a></a></h4>
+<p>Alamat email <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-titletitlea-1" id="a-namefield-titletitlea-1"><a name="field-title">Title</a></a></h4>
+<p>Bentuk usaha <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-academic-title-idsacademic-titlesa" id="a-namefield-academic-title-idsacademic-titlesa"><a name="field-academic-title-ids">Academic Titles</a></a></h4>
+<p>Gelar akademik <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-formal-education-level-idlatest-formal-level-educationa" id="a-namefield-formal-education-level-idlatest-formal-level-educationa"><a name="field-formal-education-level-id">Latest Formal Level Education</a></a></h4>
+<p>Pendidikan terakhir <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-field-of-studylatest-field-of-studya" id="a-namefield-field-of-studylatest-field-of-studya"><a name="field-field-of-study">Latest Field of Study</a></a></h4>
+<p>Bidang studi terakhir <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-gpagpaa" id="a-namefield-gpagpaa"><a name="field-gpa">GPA</a></a></h4>
+<p>Nilai IPK terakhir <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-diplomalatest-diplomaa" id="a-namefield-diplomalatest-diplomaa"><a name="field-diploma">Latest Diploma</a></a></h4>
+<p>Diploma terakhir <em>Partner</em></p>
+<h3><a class="header" href="#a-nametab-other-positionstab-other-positionsa" id="a-nametab-other-positionstab-other-positionsa"><a name="tab-other-positions">TAB OTHER POSITIONS</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-other-positions.png" alt="" />
+<img src="individual-partner/../img/individual-partner/tab-other-positions-form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-other-positions-imageimagea" id="a-namefield-other-positions-imageimagea"><a name="field-other-positions-image">Image</a></a></h4>
+<p><img src="individual-partner/../img/company-partner/image.png" alt="" /><br/>
+Foto kontak</p>
+<h4><a class="header" href="#a-namefield-other-positions-namenamea" id="a-namefield-other-positions-namenamea"><a name="field-other-positions-name">Name</a></a></h4>
+<p>Nama kontak </p>
+<h4><a class="header" href="#a-namefield-other-positions-tagstagsa" id="a-namefield-other-positions-tagstagsa"><a name="field-other-positions-tags">Tags</a></a></h4>
+<p><em>Tags</em> kontak</p>
+<h4><a class="header" href="#a-namefield-other-positions-company-idrelated-companya" id="a-namefield-other-positions-company-idrelated-companya"><a name="field-other-positions-company-id">Related Company</a></a></h4>
+<p>Mendefinisikan relasi company kontak</p>
+<h4><a class="header" href="#a-namefield-other-positions-job-posisitionjob-positiona" id="a-namefield-other-positions-job-posisitionjob-positiona"><a name="field-other-positions-job-posisition">Job Position</a></a></h4>
+<p>Posisi/jabatan kontak</p>
+<h4><a class="header" href="#a-namefield-other-positions-job-emailemaila" id="a-namefield-other-positions-job-emailemaila"><a name="field-other-positions-job-email">Email</a></a></h4>
+<p>Alamat email kontak</p>
+<h4><a class="header" href="#a-namefield-other-positions-job-phonephonea" id="a-namefield-other-positions-job-phonephonea"><a name="field-other-positions-job-phone">Phone</a></a></h4>
+<p>Nomor telepon kontak</p>
+<h4><a class="header" href="#a-namefield-other-positions-job-mobilemobilea" id="a-namefield-other-positions-job-mobilemobilea"><a name="field-other-positions-job-mobile">Mobile</a></a></h4>
+<p>Nomor handphone/mobile kontak</p>
+<h4><a class="header" href="#a-namefield-other-positions-company-addressuse-company-addressa" id="a-namefield-other-positions-company-addressuse-company-addressa"><a name="field-other-positions-company-address">Use Company Address</a></a></h4>
+<p>Jika dipilih, maka alamat kontak akan menggunakan alamat perusahaan.</p>
+<h4><a class="header" href="#a-namefield-other-positions-job-address-typeaddress-typea" id="a-namefield-other-positions-job-address-typeaddress-typea"><a name="field-other-positions-job-address-type">Address Type</a></a></h4>
+<p>Tipe alamat. Terbagi atas 5 tipe, yaitu:<br /></p>
+<ul>
+<li><strong>Default:</strong> Todo</li>
+<li><strong>Invoice:</strong> Todo</li>
+<li><strong>Shipping:</strong> Todo</li>
+<li><strong>Contact:</strong> Todo</li>
+<li><strong>Other:</strong> Todo</li>
+</ul>
+<h3><a class="header" href="#a-nametab-internal-notestab-internal-notesa-1" id="a-nametab-internal-notestab-internal-notesa-1"><a name="tab-internal-notes">TAB INTERNAL NOTES</a></a></h3>
+<p><img src="individual-partner/../img/company-partner/tab-internal-notes.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-internal-notesinternal-notesa-1" id="a-namefield-internal-notesinternal-notesa-1"><a name="field-internal-notes">Internal Notes</a></a></h4>
+<p>Catatan internal terkait <em>Partner</em></p>
+<h3><a class="header" href="#a-nametab-personal-informationtab-personal-informationa" id="a-nametab-personal-informationtab-personal-informationa"><a name="tab-personal-information">TAB PERSONAL INFORMATION</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-personal-information.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-personal-information-birthdatebirthdatea" id="a-namefield-personal-information-birthdatebirthdatea"><a name="field-personal-information-birthdate">Birthdate</a></a></h4>
+<p>Tanggal lahir <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-personal-information-nationalitynationalitya" id="a-namefield-personal-information-nationalitynationalitya"><a name="field-personal-information-nationality">Nationality</a></a></h4>
+<p>Kebangsaan <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-personal-information-gendergendera" id="a-namefield-personal-information-gendergendera"><a name="field-personal-information-gender">Gender</a></a></h4>
+<p>Jenis Kelamin <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-personal-information-ethnicityethnicitya" id="a-namefield-personal-information-ethnicityethnicitya"><a name="field-personal-information-ethnicity">Ethnicity</a></a></h4>
+<p>Etnis <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-personal-information-religionreligiona" id="a-namefield-personal-information-religionreligiona"><a name="field-personal-information-religion">Religion</a></a></h4>
+<p>Agama <em>Partner</em></p>
+<h3><a class="header" href="#a-nametab-sales-purchasestab-sales--purchasesa-1" id="a-nametab-sales-purchasestab-sales--purchasesa-1"><a name="tab-sales-purchases">TAB SALES &amp; PURCHASES</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-sales-purchases.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-user-idsalespersona-1" id="a-namefield-sale-purchase-user-idsalespersona-1"><a name="field-sale-purchase-user-id">Salesperson</a></a></h4>
+<p>Mendefinisikan <em>Salesperson</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-section-idsales-teama-1" id="a-namefield-sale-purchase-section-idsales-teama-1"><a name="field-sale-purchase-section-id">Sales Team</a></a></h4>
+<p>Mendefinisikan <em>Sales Team</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-refcontact-referencea-1" id="a-namefield-sale-purchase-refcontact-referencea-1"><a name="field-sale-purchase-ref">Contact Reference</a></a></h4>
+<p>Referensi <em>Partner</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-languagelanguangea-1" id="a-namefield-sale-purchase-languagelanguangea-1"><a name="field-sale-purchase-language">Languange</a></a></h4>
+<p>Mendefinisikan bahasa yang digunakan</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-datedatea-1" id="a-namefield-sale-purchase-datedatea-1"><a name="field-sale-purchase-date">Date</a></a></h4>
+<p>Tanggal</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-partner-product-ullogistic-unita-1" id="a-namefield-sale-purchase-partner-product-ullogistic-unita-1"><a name="field-sale-purchase-partner-product-ul">Logistic Unit</a></a></h4>
+<p>Mendefinisikan <em>Logistic Unit</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-product-pricelistsale-pricelista-1" id="a-namefield-sale-purchase-property-product-pricelistsale-pricelista-1"><a name="field-sale-purchase-property-product-pricelist">Sale Pricelist</a></a></h4>
+<p>Mendefinisikan daftar harga penjualan</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-product-pricelist-purchasepurchase-pricelista-1" id="a-namefield-sale-purchase-property-product-pricelist-purchasepurchase-pricelista-1"><a name="field-sale-purchase-property-product-pricelist-purchase">Purchase Pricelist</a></a></h4>
+<p>Mendefinisikan daftar harga pembelian</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-customercustomera-1" id="a-namefield-sale-purchase-customercustomera-1"><a name="field-sale-purchase-customer">Customer</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> akan ditandai sebagai <em>Customer</em>(Pelanggan)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-suppliersuppliera-1" id="a-namefield-sale-purchase-suppliersuppliera-1"><a name="field-sale-purchase-supplier">Supplier</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> akan ditandai sebagai <em>Supplier</em>(Pemasok)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-acticeactivea-1" id="a-namefield-sale-purchase-acticeactivea-1"><a name="field-sale-purchase-actice">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-publishpublisha-1" id="a-namefield-sale-purchase-publishpublisha-1"><a name="field-sale-purchase-publish">Publish</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> akan ter-<em>publish</em> pada website </p>
+<h4><a class="header" href="#a-namefield-sale-purchase-opt-outopt-outa-1" id="a-namefield-sale-purchase-opt-outopt-outa-1"><a name="field-sale-purchase-opt-out">Opt-Out</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> tidak akan menerima email untuk <em>Mass Mailing</em> dan <em>Marketing Campaign</em></p>
+<h4><a class="header" href="#a-namefield-sale-purchase-notify-emailreceive-inbox-notifications-by-emaila-1" id="a-namefield-sale-purchase-notify-emailreceive-inbox-notifications-by-emaila-1"><a name="field-sale-purchase-notify-email">Receive Inbox Notifications by Email</a></a></h4>
+<p>Terbagi atas 2 pilihan, yaitu:<br /></p>
+<ul>
+<li><strong>Never:</strong> Jika dipilih, <em>Partner</em> tidak akan menerima notifikasi email</li>
+<li><strong>All Messages:</strong> Jika dipilih, <em>Partner</em> akan menerima notifikasi email</li>
+</ul>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-stock-customercustomer-locationa-1" id="a-namefield-sale-purchase-property-stock-customercustomer-locationa-1"><a name="field-sale-purchase-property-stock-customer">Customer Location</a></a></h4>
+<p>Mendefinisikan lokasi <em>Customer</em>(Pelanggan)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-stock-customer-promotioncustomer-promotion-locationa-1" id="a-namefield-sale-purchase-property-stock-customer-promotioncustomer-promotion-locationa-1"><a name="field-sale-purchase-property-stock-customer-promotion">Customer Promotion Location</a></a></h4>
+<p>Mendefinisikan lokasi <em>Customer Promotion</em>(Promosi Pelanggan)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-stock-supplier-promotionsupplier-promotion-locationa-1" id="a-namefield-sale-purchase-property-stock-supplier-promotionsupplier-promotion-locationa-1"><a name="field-sale-purchase-property-stock-supplier-promotion">Supplier Promotion Location</a></a></h4>
+<p>Mendefinisikan lokasi <em>Supplier Promotion</em>(Promosi Pemasok)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-stock-suppliersupplier-locationa-1" id="a-namefield-sale-purchase-property-stock-suppliersupplier-locationa-1"><a name="field-sale-purchase-property-stock-supplier">Supplier Location</a></a></h4>
+<p>Mendefinisikan lokasi <em>Supplier</em>(Pemasok)</p>
+<h4><a class="header" href="#a-namefield-sale-purchase-property-delivery-carrierdelivery-methoda-1" id="a-namefield-sale-purchase-property-delivery-carrierdelivery-methoda-1"><a name="field-sale-purchase-property-delivery-carrier">Delivery Method</a></a></h4>
+<p>Mendefinisikan metode pengiriman yang digunakan</p>
+<h3><a class="header" href="#a-nametab-id-numberstab-id-numbersa-1" id="a-nametab-id-numberstab-id-numbersa-1"><a name="tab-id-numbers">TAB ID NUMBERS</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-id-numbers.png" alt="" />
+<img src="individual-partner/../img/individual-partner/tab-id-numbers-form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-id-number-category-idcategorya-1" id="a-namefield-id-number-category-idcategorya-1"><a name="field-id-number-category-id">Category</a></a></h4>
+<p>Mendefinisikan kategori dari nomor identitas yang akan digunakan<br/>
+<em>Ex:</em> SIM, KTP</p>
+<h4><a class="header" href="#a-namefield-id-number-nameid-numbera-1" id="a-namefield-id-number-nameid-numbera-1"><a name="field-id-number-name">ID Number</a></a></h4>
+<p>Nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-partner-issued-idissued-bya-1" id="a-namefield-id-number-partner-issued-idissued-bya-1"><a name="field-id-number-partner-issued-id">Issued By</a></a></h4>
+<p>Mendefinisikan siapa yang mengeluarkan nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-partner-date-issuedissued-ona-1" id="a-namefield-id-number-partner-date-issuedissued-ona-1"><a name="field-id-number-partner-date-issued">Issued On</a></a></h4>
+<p>Mendefinisikan tanggal identitas dikeluarkan</p>
+<h4><a class="header" href="#a-namefield-id-number-place-issuanceplace-of-issuancea-1" id="a-namefield-id-number-place-issuanceplace-of-issuancea-1"><a name="field-id-number-place-issuance">Place of Issuance</a></a></h4>
+<p>Mendefinisikan tempat diterbitkannya nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-valid-fromvalid-froma-1" id="a-namefield-id-number-valid-fromvalid-froma-1"><a name="field-id-number-valid-from">Valid From</a></a></h4>
+<p>Mendefinisikan tanggal mulai validnya nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-valid-untilvalid-untila-1" id="a-namefield-id-number-valid-untilvalid-untila-1"><a name="field-id-number-valid-Until">Valid Until</a></a></h4>
+<p>Mendefinisikan tanggal akhir validnya nomor identitas</p>
+<h4><a class="header" href="#a-namefield-id-number-statusstatusa-1" id="a-namefield-id-number-statusstatusa-1"><a name="field-id-number-status">Status</a></a></h4>
+<p>Mendefinisikan status identitas. Terbagi atas 4 pilihan, yaitu:<br /></p>
+<ul>
+<li><strong>New:</strong> Identitas baru</li>
+<li><strong>Running:</strong> Identitas yang sedang berjalan</li>
+<li><strong>To Renew:</strong> Identitas perlu diperpanjang</li>
+<li><strong>Expired:</strong> Identitas sudah tidak aktif</li>
+</ul>
+<h4><a class="header" href="#a-namefield-id-number-notesnotesa-1" id="a-namefield-id-number-notesnotesa-1"><a name="field-id-number-notes">Notes</a></a></h4>
+<p>Catatan tambahan terkait nomor identitas</p>
+<h3><a class="header" href="#a-nametab-payment-follow-uptab-payment-follow-upa-1" id="a-nametab-payment-follow-uptab-payment-follow-upa-1"><a name="tab-payment-follow-up">TAB PAYMENT FOLLOW-UP</a></a></h3>
+<h3><a class="header" href="#a-nametab-payment-follow-up-headerheadera-1" id="a-nametab-payment-follow-up-headerheadera-1"><a name="tab-payment-follow-up-header">HEADER</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-payment-follow-up-header.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-payment-follow-up-payment-responsible-idfollow-up-responsiblea-1" id="a-namefield-payment-follow-up-payment-responsible-idfollow-up-responsiblea-1"><a name="field-payment-follow-up-payment-responsible-id">Follow-up Responsible</a></a></h4>
+<p>Mendefinisikan <em>User</em> yang akan bertanggung jawab untuk melakukan <em>Follow-up</em> pembayaran</p>
+<h4><a class="header" href="#a-namefield-payment-follow-up-payment-next-actionnext-actiona-1" id="a-namefield-payment-follow-up-payment-next-actionnext-actiona-1"><a name="field-payment-follow-up-payment-next-action">Next Action</a></a></h4>
+<p>Mendefinisikan tanggal tindakan selajutnya beserta catatan terkait tindakan yang akan dilakukan</p>
+<h4><a class="header" href="#a-namefield-payment-follow-up-notecustomer-payment-promisea-1" id="a-namefield-payment-follow-up-notecustomer-payment-promisea-1"><a name="field-payment-follow-up-note">Customer Payment Promise</a></a></h4>
+<p>Isian untuk janji pembayaran yang diberikan oleh <em>Customer</em>(Pelanggan)</p>
+<h3><a class="header" href="#a-nametab-payment-follow-up-historyhistorya-1" id="a-nametab-payment-follow-up-historyhistorya-1"><a name="tab-payment-follow-up-history">HISTORY</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-payment-follow-up-history.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-payment-follow-up-historyhistorya-1" id="a-namefield-payment-follow-up-historyhistorya-1"><a name="field-payment-follow-up-history">History</a></a></h4>
+<p>Todo</p>
+<h3><a class="header" href="#a-nametab-accountingtab-accountinga-1" id="a-nametab-accountingtab-accountinga-1"><a name="tab-accounting">TAB ACCOUNTING</a></a></h3>
+<h3><a class="header" href="#a-nametab-accounting-headerheadera-1" id="a-nametab-accounting-headerheadera-1"><a name="tab-accounting-header">HEADER</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-accounting-header.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-accounting-header-property-account-positionfiscal-positiona-1" id="a-nametab-accounting-header-property-account-positionfiscal-positiona-1"><a name="tab-accounting-header-property-account-position">Fiscal Position</a></a></h4>
+<p>Terbagi atas 2 pilihan, yaitu:<br/></p>
+<ul>
+<li><strong>Normal Taxes:</strong> Todo</li>
+<li><strong>Tax Exempt:</strong> Todo</li>
+</ul>
+<h4><a class="header" href="#a-nametab-accounting-header-tintina-1" id="a-nametab-accounting-header-tintina-1"><a name="tab-accounting-header-tin">TIN</a></a></h4>
+<p>Mendefiniskan dan melakukan pengecekan terkait nomor identifikasi pajak. </p>
+<blockquote>
+<p><strong>Catatan:</strong> TIN(Inggris: <em>Tax Identification Number</em> disingkat TIN)</p>
+</blockquote>
+<h4><a class="header" href="#a-nametab-accounting-header-property-account-receivableaccount-receivablea-1" id="a-nametab-accounting-header-property-account-receivableaccount-receivablea-1"><a name="tab-accounting-header-property-account-receivable">Account Receivable</a></a></h4>
+<p>Mendefiniskan akun piutang dagang</p>
+<h4><a class="header" href="#a-nametab-accounting-header-property-payment-termcustomer-payment-terma-1" id="a-nametab-accounting-header-property-payment-termcustomer-payment-terma-1"><a name="tab-accounting-header-property-payment-term">Customer Payment Term</a></a></h4>
+<p>Mendefiniskan jangka waktu pembayaran <em>Customer</em>(Pelanggan)</p>
+<h4><a class="header" href="#a-nametab-accounting-header-credittotal-receivablea-1" id="a-nametab-accounting-header-credittotal-receivablea-1"><a name="tab-accounting-header-credit">Total Receivable</a></a></h4>
+<p>Informasi terkait total piutang</p>
+<h4><a class="header" href="#a-nametab-accounting-header-debtdebta-1" id="a-nametab-accounting-header-debtdebta-1"><a name="tab-accounting-header-debt">Debt</a></a></h4>
+<p>Informasi terkait hutang</p>
+<h4><a class="header" href="#a-nametab-accounting-header-last-reconcile-datelatest-full-reconciliation-datea-1" id="a-nametab-accounting-header-last-reconcile-datelatest-full-reconciliation-datea-1"><a name="tab-accounting-header-last-reconcile-date">Latest Full Reconciliation Date</a></a></h4>
+<p>Todo</p>
+<h4><a class="header" href="#a-nametab-accounting-header-property-account-payableaccount-payablea-1" id="a-nametab-accounting-header-property-account-payableaccount-payablea-1"><a name="tab-accounting-header-property-account-payable">Account Payable</a></a></h4>
+<p>Mendefiniskan akun piutang hutang</p>
+<h4><a class="header" href="#a-nametab-accounting-header-property-supplier-payment-termsupplier-payment-terma-1" id="a-nametab-accounting-header-property-supplier-payment-termsupplier-payment-terma-1"><a name="tab-accounting-header-property-supplier-payment-term">Supplier Payment Term</a></a></h4>
+<p>Mendefiniskan jangka waktu pembayaran <em>Supplier</em>(Pemasok)</p>
+<h4><a class="header" href="#a-nametab-accounting-header-debittotal-payablea-1" id="a-nametab-accounting-header-debittotal-payablea-1"><a name="tab-accounting-header-debit">Total Payable</a></a></h4>
+<p>Informasi terkait total yang harus dibayar</p>
+<h3><a class="header" href="#a-nametab-accounting-detail-bankdetail-banka-1" id="a-nametab-accounting-detail-bankdetail-banka-1"><a name="tab-accounting-detail-bank">DETAIL BANK</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-accounting-bank.png" alt="" />
+<img src="individual-partner/../img/individual-partner/tab-accounting-bank-form.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-statebank-account-typea-1" id="a-nametab-accounting-detail-bank-statebank-account-typea-1"><a name="tab-accounting-detail-bank-state">Bank Account Type</a></a></h4>
+<p>Tipe akun bank</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-acc-numberaccount-numbera-1" id="a-nametab-accounting-detail-bank-acc-numberaccount-numbera-1"><a name="tab-accounting-detail-bank-acc-number">Account Number</a></a></h4>
+<p>Nomor akun bank</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-partner-idaccount-ownera-1" id="a-nametab-accounting-detail-bank-partner-idaccount-ownera-1"><a name="tab-accounting-detail-bank-partner-id">Account Owner</a></a></h4>
+<p>Pemilik akun bank</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-addressaddressa-1" id="a-nametab-accounting-detail-bank-addressaddressa-1"><a name="tab-accounting-detail-bank-address">Address</a></a></h4>
+<p>Alamat Bank. Terbagi atas beberapa isian, yaitu:<br /></p>
+<ul>
+<li>Name - Nama pemilik akun bank</li>
+<li>Street - Alamat akun bank</li>
+<li>Zip - Nomor kode POS akun bank</li>
+<li>City - Kota akun bank</li>
+<li>State - Provinsi akun bank</li>
+<li>Country - Negara akun bank</li>
+</ul>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-bankbanka-1" id="a-nametab-accounting-detail-bank-bankbanka-1"><a name="tab-accounting-detail-bank-bank">Bank</a></a></h4>
+<p>Mendefinisikan bank yang akan digunakan</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-bank_namebank-namea-1" id="a-nametab-accounting-detail-bank-bank_namebank-namea-1"><a name="tab-accounting-detail-bank-bank_name">Bank Name</a></a></h4>
+<p>Nama bank</p>
+<h4><a class="header" href="#a-nametab-accounting-detail-bank-bicbank-identifier-codea-1" id="a-nametab-accounting-detail-bank-bicbank-identifier-codea-1"><a name="tab-accounting-detail-bank-bic">Bank Identifier Code</a></a></h4>
+<p>Kode bank</p>
+<h3><a class="header" href="#a-nametab-accounting-pph21-infopph21-informationa-1" id="a-nametab-accounting-pph21-infopph21-informationa-1"><a name="tab-accounting-pph21-info">PPH21 Information</a></a></h3>
+<p><img src="individual-partner/../img/individual-partner/tab-accounting-pph21-info.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-accounting-pph21-info-pktp-categorypktp-categorya-1" id="a-nametab-accounting-pph21-info-pktp-categorypktp-categorya-1"><a name="tab-accounting-pph21-info-pktp-category">PKTP Category</a></a></h4>
+<p>Mendefiniskan kategori PTKP(Penghasilan Tidak Kena Pajak)</p>
+<h3><a class="header" href="#a-nametab-consigneetab-consigneea-1" id="a-nametab-consigneetab-consigneea-1"><a name="tab-consignee">TAB CONSIGNEE</a></a></h3>
+<p><img src="individual-partner/../img/company-partner/tab-consignee.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-consignee-is-consigneeconsigneea-1" id="a-nametab-consignee-is-consigneeconsigneea-1"><a name="tab-consignee-is-consignee">Consignee</a></a></h4>
+<p>Jika dipilih, maka <em>Partner</em> merupakan penerima barang</p>
+<h3><a class="header" href="#a-nametab-point-of-saletab-point-of-salea-1" id="a-nametab-point-of-saletab-point-of-salea-1"><a name="tab-point-of-sale">TAB POINT OF SALE</a></a></h3>
+<p><img src="individual-partner/../img/company-partner/tab-point-of-sale.png" alt="" /></p>
+<h4><a class="header" href="#a-nametab-point-of-sale-available-in-posavailable-for-posa-1" id="a-nametab-point-of-sale-available-in-posavailable-for-posa-1"><a name="tab-point-of-sale-available-in-pos">Available for POS</a></a></h4>
+<p>Jika dipilih, maka data <em>Partner</em> akan tersedia pada POS</p>
+<h4><a class="header" href="#a-nametab-point-of-sale-ean13ean13a-1" id="a-nametab-point-of-sale-ean13ean13a-1"><a name="tab-point-of-sale-EAN13">EAN13</a></a></h4>
+<p>Mendefiniskan nomor barcode</p>
+<h1><a class="header" href="#petunjuk-pengisian-individual-partner" id="petunjuk-pengisian-individual-partner">Petunjuk Pengisian Individual Partner</a></h1>
+<ol>
+<li>Isi <strong>Name</strong>. Wajib diisi.</li>
+</ol>
+<h1><a class="header" href="#petunjuk-pengisian-informasi-usaha-1" id="petunjuk-pengisian-informasi-usaha-1">Petunjuk Pengisian Informasi Usaha</a></h1>
+<h1><a class="header" href="#petunjuk-pengisian-kontak" id="petunjuk-pengisian-kontak">Petunjuk Pengisian Kontak</a></h1>
+<h1><a class="header" href="#petunjuk-pengisian-nara-hubung" id="petunjuk-pengisian-nara-hubung">Petunjuk Pengisian Nara Hubung</a></h1>
+<h1><a class="header" href="#membuat-individual-partner" id="membuat-individual-partner">Membuat Individual Partner</a></h1>
+<h2><a class="header" href="#a-input-8" id="a-input-8">A. INPUT</a></h2>
+<p><em>tidak ada instruksi khusus</em></p>
+<h2><a class="header" href="#b-langkah-kerja-8" id="b-langkah-kerja-8">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Individual Partner</strong>.</li>
+<li>Klik tombol <strong>Create</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-create.png" alt="" /></p>
+<ol start="3">
+<li>Lakukan <a href="individual-partner/./petunjuk-pengisian.html">Prosedur Pengisian Individual Partner</a></li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-save.png" alt="" /></p>
+<h2><a class="header" href="#c-output-8" id="c-output-8">C. OUTPUT</a></h2>
+<ul>
+<li>Data individual partner akan terbuat</li>
+</ul>
+<h1><a class="header" href="#menyunting-individual-partner" id="menyunting-individual-partner">Menyunting Individual Partner</a></h1>
+<h2><a class="header" href="#a-input-9" id="a-input-9">A. INPUT</a></h2>
+<p><em>(tidak ada instruksi khusus)</em></p>
+<h2><a class="header" href="#b-langkah-kerja-9" id="b-langkah-kerja-9">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Individual Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data individual partner yang akan disunting. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Edit</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-edit.png" alt="" /></p>
+<ol start="3">
+<li>Lakukan <a href="individual-partner/./petunjuk-pengisian.html">Prosedur Pengisian Individual Partner</a></li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-save.png" alt="" /></p>
+<h2><a class="header" href="#c-output-9" id="c-output-9">C. OUTPUT</a></h2>
+<ul>
+<li>Data individual partner akan berubah sesuai dengan perubahan yang dilakukan</li>
+</ul>
+<h1><a class="header" href="#menghapus" id="menghapus">Menghapus</a></h1>
+<p>Individual partner dapat dihapus secara:</p>
+<ul>
+<li><a href="individual-partner/./hapus-satu.html">Satu per satu</a></li>
+<li><a href="individual-partner/./hapus-masal.html">Beberapa data sekaligus</a></li>
+</ul>
+<h1><a class="header" href="#menghapus-individual-partner-satu-per-satu" id="menghapus-individual-partner-satu-per-satu">Menghapus Individual Partner Satu Per Satu</a></h1>
+<h2><a class="header" href="#a-input-10" id="a-input-10">A. INPUT</a></h2>
+<ul>
+<li>Data individual partner yang akan dihapus harus belum pernah digunakan dalam transaksi. Apabila data individual partner sudah pernah digunakan dalam transaksi lakukan prosedur <a href="individual-partner/./deaktivasi.html">Deaktivasi Individual Partner</a></li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-10" id="b-langkah-kerja-10">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Individual Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data individual partner yang akan dihapus. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>More</strong> pada bagian atas-tengah form</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-more.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Delete</strong> pada drop-down yang muncul di tombol <strong>More</strong></li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-delete.png" alt="" /></p>
+<p>Pop-up konfirmasi penghapusan akan muncul</p>
+<p><img src="individual-partner/../img/individual-partner/pop-up-konfirmasi-penghapusan.png" alt="" /></p>
+<ol start="5">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi penghapusan data.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-ok-hapus.png" alt="" /></p>
+<h2><a class="header" href="#c-output-10" id="c-output-10">C. OUTPUT</a></h2>
+<ul>
+<li>Data individual partner akan terhapus</li>
+</ul>
+<h1><a class="header" href="#menghapus-beberapa-individual-partner" id="menghapus-beberapa-individual-partner">Menghapus Beberapa Individual Partner</a></h1>
+<h2><a class="header" href="#a-input-11" id="a-input-11">A. INPUT</a></h2>
+<ul>
+<li>Data individual partner yang akan dihapus harus belum pernah digunakan dalam transaksi. Apabila data individual partner sudah pernah digunakan dalam transaksi lakukan prosedur <a href="individual-partner/./deaktivasi.html">Deaktivasi Individual Partner</a></li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-11" id="b-langkah-kerja-11">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Individual Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Klik tombol <strong>List View Toogle</strong> pada bagian atas-kanan tabel untuk merubah tampilan menjadi list view.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-list-view-toogle.png" alt="" /></p>
+<ol start="3">
+<li>Seleksi data individual partner yang akan dihapus.</li>
+<li>Klik tombol <strong>More</strong> pada bagian atas-tengah.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-more-list.png" alt="" /></p>
+<ol start="5">
+<li>Klik tombol <strong>Delete</strong> pada drop-down yang muncul di tombol <strong>More</strong>.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-delete-list.png" alt="" /></p>
+<p>Pop-up konfirmasi penghapusan akan muncul</p>
+<p><img src="individual-partner/../img/individual-partner/pop-up-konfirmasi-penghapusan.png" alt="" /></p>
+<ol start="5">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi penghapusan data.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-ok-hapus.png" alt="" /></p>
+<h2><a class="header" href="#c-output-11" id="c-output-11">C. OUTPUT</a></h2>
+<ul>
+<li>Data individual partner akan terhapus</li>
+</ul>
+<h1><a class="header" href="#menandai-sebagai-konsumen-1" id="menandai-sebagai-konsumen-1">Menandai Sebagai Konsumen</a></h1>
+<h2><a class="header" href="#a-input-12" id="a-input-12">A. INPUT</a></h2>
+<ul>
+<li>Data individual partner yang akan ditandai sebagai konsumen harus memiliki nilai <strong>Customer</strong> False/Tidak Aktif/Tidak dicheck.</li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-12" id="b-langkah-kerja-12">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Individual Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data individual partner yang ingin dijadikan sebagai konsumen. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Mark as Customer</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-mark-as-customer.png" alt="" /></p>
+<h2><a class="header" href="#c-output-12" id="c-output-12">C. OUTPUT</a></h2>
+<ul>
+<li>Nilai <strong>Customer</strong> akan berubah menjadi True/Aktif/Check.</li>
+<li>Data individual partner akan dapat dipilih pada fitur sales order, customer invoice, atau credit note.</li>
+</ul>
+<h1><a class="header" href="#menandai-sebagai-supplier-1" id="menandai-sebagai-supplier-1">Menandai Sebagai Supplier</a></h1>
+<h2><a class="header" href="#a-input-13" id="a-input-13">A. INPUT</a></h2>
+<ul>
+<li>Data individual partner yang akan ditandai sebagai konsumen harus memiliki nilai <strong>Supplier</strong> False/Tidak Aktif/Tidak dicheck.</li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-13" id="b-langkah-kerja-13">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Individual Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data individual partner yang ingin dijadikan sebagai konsumen. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Mark as Supplier</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-mark-as-supplier.png" alt="" /></p>
+<h2><a class="header" href="#c-output-13" id="c-output-13">C. OUTPUT</a></h2>
+<ul>
+<li>Nilai <strong>Supplier</strong> akan berubah menjadi True/Aktif/Check.</li>
+<li>Data individual partner akan dapat dipilih pada fitur purchase order, supplier invoice, atau supplier refund</li>
+</ul>
+<h1><a class="header" href="#menandai-sebagai-bukan-konsumen-1" id="menandai-sebagai-bukan-konsumen-1">Menandai Sebagai Bukan Konsumen</a></h1>
+<h2><a class="header" href="#a-input-14" id="a-input-14">A. INPUT</a></h2>
+<ul>
+<li>Data individual partner yang akan ditandai sebagai konsumen harus memiliki nilai <strong>Customer</strong> True/Aktif/Check.</li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-14" id="b-langkah-kerja-14">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Individual Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data individual partner yang tidak ingin dijadikan sebagai konsumen. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Unmark as Customer</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-unmark-as-customer.png" alt="" /></p>
+<h2><a class="header" href="#c-output-14" id="c-output-14">C. OUTPUT</a></h2>
+<ul>
+<li>Nilai <strong>Customer</strong> akan berubah menjadi False/Tidak Aktif/Tidak dicheck.</li>
+<li>Data individual partner tidak akan dapat dipilih pada fitur sales order, customer invoice, atau credit note.</li>
+</ul>
+<h1><a class="header" href="#menandai-sebagai-bukan-supplier-1" id="menandai-sebagai-bukan-supplier-1">Menandai Sebagai Bukan Supplier</a></h1>
+<h2><a class="header" href="#a-input-15" id="a-input-15">A. INPUT</a></h2>
+<ul>
+<li>Data individual partner yang akan ditandai sebagai konsumen harus memiliki nilai <strong>Supplier</strong> True/Aktif/Check.</li>
+</ul>
+<h2><a class="header" href="#b-langkah-kerja-15" id="b-langkah-kerja-15">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner -&gt; Individual Partner</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data individual partner yang tidak ingin dijadikan sebagai supplier. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Unmark as Supplier</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="individual-partner/../img/individual-partner/tombol-unmark-as-customer.png" alt="" /></p>
+<h2><a class="header" href="#c-output-15" id="c-output-15">C. OUTPUT</a></h2>
+<ul>
+<li>Nilai <strong>Supplier</strong> akan berubah menjadi False/Tidak Aktif/Tidak dicheck.</li>
+<li>Data individual partner tidak akan dapat dipilih pada fitur purchase order, supplier invoice, atau supplier refund</li>
+</ul>
+<h1><a class="header" href="#risk-limit-change-request" id="risk-limit-change-request">Risk Limit Change Request</a></h1>
+<p><strong>Risk Limit Change Request</strong> adalah fitur yang digunakan untuk meminta perubahan risk limit konsumen tertentu.</p>
+<ul>
+<li><a href="./risk-limit-change-request/penjelasan.html">Penjelasan Risk Limit Change Request</a></li>
+<li><a href="./risk-limit-change-request/membuat.html">Membuat Risk Limit Change Request</a></li>
+<li><a href="./risk-limit-change-request/konfirmasi.html">Mengkonfirmasi Risk Limit Change Request</a></li>
+<li><a href="./risk-limit-change-request/validasi.html">Memvalidasi Risk Limit Change Request</a></li>
+<li><a href="./risk-limit-change-request/batal.html">Membatalkan Risk Limit Change Request</a></li>
+<li><a href="./risk-limit-change-request/restart.html">Merestart Risk Limit Change Request</a></li>
+</ul>
+<h1><a class="header" href="#penjelasan-risk-limit-change-request" id="penjelasan-risk-limit-change-request">Penjelasan Risk Limit Change Request</a></h1>
+<h1><a class="header" href="#membuat-risk-limit-change-request" id="membuat-risk-limit-change-request">Membuat Risk Limit Change Request</a></h1>
+<h2><a class="header" href="#a-input-16" id="a-input-16">A. INPUT</a></h2>
+<p><em>(Tidak ada instruksi khusus)</em></p>
+<h2><a class="header" href="#b-instruksi-kerja" id="b-instruksi-kerja">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Risk -&gt; Risk Limit Change Request</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Klik tombol <strong>Create</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/tombol-create.png" alt="" /></p>
+<ol start="3">
+<li>Ubah <strong># Change Request</strong> jika diperlukan. Harus diisi.</li>
+<li>Pilih <strong>Customer</strong>. Harus diisi.</li>
+<li>Isi <strong>Total Risk Limit</strong>. Biarkan 0.0 jika tidak ada perubahan</li>
+<li>Isi <strong>Draft Invoice Risk Limit</strong>. Biarkan 0.0 jika tidak ada perubahan</li>
+<li>Isi <strong>Open Invoice Risk Limit</strong>. Biarkan 0.0 jika tidak ada perubahan</li>
+<li>Isi <strong>Unpaid Invoice Adjustment</strong>. Biarkan 0.0 jika tidak ada perubahan</li>
+<li>Isi <strong>Account Amount Risk Limit</strong>. Biarkan 0.0 jika tidak ada perubahan</li>
+<li>Isi <strong>Sale Order Risk</strong>. Biarkan 0.0 jika tidak ada perubahan</li>
+<li>Isi <strong>Single Sale Order Risk</strong>. Biarkan 0.0 jika tidak ada perubahan</li>
+<li>Buka tab <strong>Reason</strong>.</li>
+<li>Isi <strong>Reason</strong>. Harus diisi.</li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/tombol-simpan.png" alt="" /></p>
+<h2><a class="header" href="#c-output-16" id="c-output-16">C. OUTPUT</a></h2>
+<ul>
+<li>Data risk limit change request akan terbuat dengan status <strong>Draft</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-draft.png" alt="" /></p>
+<h1><a class="header" href="#mengkonfirmasi-risk-limit-change-request" id="mengkonfirmasi-risk-limit-change-request">Mengkonfirmasi Risk Limit Change Request</a></h1>
+<h2><a class="header" href="#a-input-17" id="a-input-17">A. INPUT</a></h2>
+<ul>
+<li>Data risk limit change request yang akan dikonfirmasi harus memiliki status <strong>Draft</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-draft.png" alt="" /></p>
+<ul>
+<li>User yang mengkonfirmasi harus memiliki akses untuk mengkonfirmasi risk limit change request.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-1" id="b-instruksi-kerja-1">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Risk -&gt; Risk Limit Change Request</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data risk limit change request yang akan dikonfirmasi. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Confirm</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/tombol-confirm.png" alt="" /></p>
+<h2><a class="header" href="#c-output-17" id="c-output-17">C. OUTPUT</a></h2>
+<ul>
+<li>Status risk limit change request akan berubah menjadi <strong>Waiting for Approval</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-waiting-approval.png" alt="" /></p>
+<ul>
+<li>Data risk limit change request tidak dapat dimodifikasi.</li>
+</ul>
+<h1><a class="header" href="#memvalidasi-risk-limit-change-request" id="memvalidasi-risk-limit-change-request">Memvalidasi Risk Limit Change Request</a></h1>
+<h2><a class="header" href="#a-input-18" id="a-input-18">A. INPUT</a></h2>
+<ul>
+<li>Data risk limit change request yang akan divalidasi harus memiliki status <strong>Waiting for Approval</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-waiting-approval.png" alt="" /></p>
+<ul>
+<li>User yang memvalidasi harus memiliki akses untuk memvalidasi risk limit change request.</li>
+<li>User yang memvalidasi harus memiliki kewenangan untuk merubah limit sebesar yang akan divalidasi.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-2" id="b-instruksi-kerja-2">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Risk -&gt; Risk Limit Change Request</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data risk limit change request yang akan divalidasi. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Valid</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/tombol-valid.png" alt="" /></p>
+<h2><a class="header" href="#c-output-18" id="c-output-18">C. OUTPUT</a></h2>
+<ul>
+<li>Status risk limit change request akan berubah menjadi <strong>Valid</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-valid.png" alt="" /></p>
+<ul>
+<li>Risk limit partner akan berubah sesuai dengan nilai perubahan yang tidak bernilai 0.0</li>
+</ul>
+<h1><a class="header" href="#membatalkan-risk-limit-change-request" id="membatalkan-risk-limit-change-request">Membatalkan Risk Limit Change Request</a></h1>
+<h2><a class="header" href="#a-input-19" id="a-input-19">A. INPUT</a></h2>
+<ul>
+<li>Data risk limit change request yang akan dibatalkan harus memiliki status <strong>Draft</strong>, atau <strong>Waiting for Approval</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-draft.png" alt="" /></p>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-waiting-approval.png" alt="" /></p>
+<ul>
+<li>User yang membatalkan harus memiliki akses untuk membatalkan risk limit change request.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-3" id="b-instruksi-kerja-3">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Risk -&gt; Risk Limit Change Request</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data risk limit change request yang akan dibatalkan. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Cancel</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/tombol-cancel.png" alt="" /></p>
+<h2><a class="header" href="#c-output-19" id="c-output-19">C. OUTPUT</a></h2>
+<ul>
+<li>Status risk limit change request akan berubah menjadi <strong>Cancelled</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-cancel.png" alt="" /></p>
+<h1><a class="header" href="#merestart-risk-limit-change-request" id="merestart-risk-limit-change-request">Merestart Risk Limit Change Request</a></h1>
+<h2><a class="header" href="#a-input-20" id="a-input-20">A. INPUT</a></h2>
+<ul>
+<li>Data risk limit change request yang akan direstart harus memiliki status <strong>Cancelled</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-cancel.png" alt="" /></p>
+<ul>
+<li>User yang merestart harus memiliki akses untuk merestart risk limit change request.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-4" id="b-instruksi-kerja-4">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Risk -&gt; Risk Limit Change Request</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data risk limit change request yang akan direstart. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Restart</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/tombol-restart.png" alt="" /></p>
+<h2><a class="header" href="#c-output-20" id="c-output-20">C. OUTPUT</a></h2>
+<ul>
+<li>Status risk limit change request akan berubah menjadi <strong>Draft</strong>.</li>
+</ul>
+<p><img src="risk-limit-change-request/../img/risk-limit-change-request/status-draft.png" alt="" /></p>
+<ul>
+<li>Data risk limit change request kembali dapat dimodifikasi.</li>
+</ul>
+<h1><a class="header" href="#partner-evaluation" id="partner-evaluation">Partner Evaluation</a></h1>
+<ul>
+<li><a href="partner-evaluation/penjelasan.html">Penjelasan Partner Evaluation</a></li>
+<li><a href="partner-evaluation/membuat.html">Membuat Partner Evaluation</a></li>
+<li><a href="partner-evaluation/mengedit.html">Mengedit Partner Evaluation</a></li>
+<li><a href="partner-evaluation/menghapus.html">Menghapus Partner Evaluation</a></li>
+<li><a href="partner-evaluation/mengkonfirmasi.html">Mengkonfirmasi Partner Evaluation</a></li>
+<li><a href="partner-evaluation/menyetujui.html">Menyetujui Partner Evaluation</a></li>
+<li><a href="partner-evaluation/memulai.html">Memulai Partner Evaluation</a></li>
+<li><a href="partner-evaluation/mengisi.html">Mengisi Penilaian Partner Evaluation</a></li>
+<li><a href="partner-evaluation/menyelesaikan.html">Menyelesaikan Partner Evaluation</a></li>
+<li><a href="partner-evaluation/membatalkan.html">Membatalkan Partner Evaluation</a></li>
+<li><a href="partner-evaluation/merestart.html">Merestart Partner Evaluation</a></li>
+</ul>
+<h1><a class="header" href="#penjelasan-partner-evaluation" id="penjelasan-partner-evaluation">Penjelasan Partner Evaluation</a></h1>
+<p>Informasi pada Partner Evaluation dibagi menjadi beberapa area, diantaranya:</p>
+<ul>
+<li><a href="partner-evaluation/penjelasan.html#bagian-header">A. Header</a></li>
+<li><a href="partner-evaluation/penjelasan.html#tab-measurement-items">B. Tab Measurement Items</a></li>
+<li><a href="partner-evaluation/penjelasan.html#tab-notes">C. Tab Notes</a></li>
+<li><a href="partner-evaluation/penjelasan.html#tab-policies">D. Tab Policies</a></li>
+<li><a href="partner-evaluation/penjelasan.html#tab-logs">E. Tab Logs</a></li>
+</ul>
+<h3><a class="header" href="#a-namebagian-headera-headera" id="a-namebagian-headera-headera"><a name="bagian-header">A. HEADER</a></a></h3>
+<p><img src="partner-evaluation/../img/partner-evaluation/bagian-header.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-document-documenta" id="a-namefield-document-documenta"><a name="field-document"># Document</a></a></h4>
+<p>Nomor dokumen</p>
+<h4><a class="header" href="#a-namefield-templatetemplatea" id="a-namefield-templatetemplatea"><a name="field-template">Template</a></a></h4>
+<p>Template evaluasi. Tiap template memiliki set pertanyaan yang berbeda-beda. Tiap template juga mempunyai kategorisasi hasil evaluasi yang berbeda.</p>
+<h4><a class="header" href="#a-namefield-partnerpartnera" id="a-namefield-partnerpartnera"><a name="field-partner">Partner</a></a></h4>
+<p>Partner yang dievaluasi.</p>
+<h4><a class="header" href="#a-namefield-responsibleresponsiblea" id="a-namefield-responsibleresponsiblea"><a name="field-responsible">Responsible</a></a></h4>
+<p>User yang bertanggung jawab untuk melakukan evaluasi.</p>
+<h4><a class="header" href="#a-namefield-date-startdate-starta" id="a-namefield-date-startdate-starta"><a name="field-date-start">Date Start</a></a></h4>
+<p>Tanggal mulai data partner dievaluasi. Tiap template dapat diset apakah mengharuskan untuk pengisian Date Start dan Date End. Contoh: Evaluasi bulanan pembelian supplier diharuskan untuk mengisi tanggal mulai (Date Start) dan tanggal akhir (Date End) untuk memilih data pembelian yang menjadi dasar evaluasi.</p>
+<h4><a class="header" href="#a-namefield-date-enddate-enda" id="a-namefield-date-enddate-enda"><a name="field-date-end">Date End</a></a></h4>
+<p>Tanggal mulai data partner dievaluasi (lihat penjelasan <strong>Date Start</strong>).</p>
+<h4><a class="header" href="#a-namefield-resultresulta" id="a-namefield-resultresulta"><a name="field-result">Result</a></a></h4>
+<p>Kategorisasi hasil evaluasi. Hasil evaluasi dapat (1) dipilih manual, atau (2) dikomputasi otomatis berdasarkan perhitungan tertentu. Lihat langkah kerja <strong>Menyelesaikan Partner Evaluation</strong>.</p>
+<h4><a class="header" href="#a-namefield-schedule-date-startevaluation-schedule-date-starta" id="a-namefield-schedule-date-startevaluation-schedule-date-starta"><a name="field-schedule-date-start">Evaluation Schedule Date Start</a></a></h4>
+<p>Tanggal estimasi partner evaluation akan mulai dilakukan.</p>
+<h4><a class="header" href="#a-namefield-schedule-date-endevaluation-schedule-date-enda" id="a-namefield-schedule-date-endevaluation-schedule-date-enda"><a name="field-schedule-date-end">Evaluation Schedule Date End</a></a></h4>
+<p>Tanggal estimasi partner evaluation akan selesai.</p>
+<h4><a class="header" href="#a-namefield-real-date-startreal-date-starta" id="a-namefield-real-date-startreal-date-starta"><a name="field-real-date-start">Real Date Start</a></a></h4>
+<p>Tanggal mulai partner evaluation yang sesungguhnya.</p>
+<h4><a class="header" href="#a-namefield-real-date-endreal-date-enda" id="a-namefield-real-date-endreal-date-enda"><a name="field-real-date-end">Real Date End</a></a></h4>
+<p>Tanggal akhir partner evaluation yang sesungguhnya.</p>
+<h3><a class="header" href="#a-nametab-measurement-itemsb-tab-measurement-itemsa" id="a-nametab-measurement-itemsb-tab-measurement-itemsa"><a name="tab-measurement-items">B. TAB MEASUREMENT ITEMS</a></a></h3>
+<p><img src="partner-evaluation/../img/partner-evaluation/tab-measurement-items.png" alt="" /></p>
+<h3><a class="header" href="#a-nametab-measurement-itemsb1-tabel-measurement-itemsa" id="a-nametab-measurement-itemsb1-tabel-measurement-itemsa"><a name="tab-measurement-items">B.1 TABEL MEASUREMENT ITEMS</a></a></h3>
+<p>Tabel ini akan berisi kumpulan pertanyaan beserta jawaban dari partner evaluation.</p>
+<p><img src="partner-evaluation/../img/partner-evaluation/tabel-measurement-items.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-itemitema" id="a-namefield-itemitema"><a name="field-item">Item</a></a></h4>
+<p>Item evaluasi.</p>
+<h4><a class="header" href="#a-namefield-typetypea" id="a-namefield-typetypea"><a name="field-type">Type</a></a></h4>
+<p><em>Qualitative</em>: User diharuskan untuk memilih satu dari beberapa pilihan. <em>Quantitative</em>: User diharuskan untuk menginput jawaban berupa angka.</p>
+<h4><a class="header" href="#a-namefield-methodmethoda" id="a-namefield-methodmethoda"><a name="field-method">Method</a></a></h4>
+<p><em>Manual</em>: Jawaban harus diinput oleh user. <em>Automatic</em>: Jawaban akan dikomputasi secara otomatis berdasarkan data-data yang ada di dalam Odoo terkait dengan partner yang sedang dievaluasi.</p>
+<h4><a class="header" href="#a-namefield-answeranswera" id="a-namefield-answeranswera"><a name="field-answer">Answer</a></a></h4>
+<p>Jawaban dari item yang dievaluasi.</p>
+<h3><a class="header" href="#a-nametab-notesc-tab-notesa" id="a-nametab-notesc-tab-notesa"><a name="tab-notes">C. TAB NOTES</a></a></h3>
+<p><img src="partner-evaluation/../img/partner-evaluation/tab-notes.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-notenotea" id="a-namefield-notenotea"><a name="field-note">Note</a></a></h4>
+<p><img src="partner-evaluation/../img/partner-evaluation/field-notes.png" alt="" /></p>
+<p>Catatan tambahan terkait dengan partner evaluation.</p>
+<h3><a class="header" href="#a-nametab-policiesd-tab-policiesa" id="a-nametab-policiesd-tab-policiesa"><a name="tab-policies">D. TAB POLICIES</a></a></h3>
+<p>Tab ini akan berisi informasi readonly mengenai boleh/tidaknya user untuk menjalankan aksi tertentu terhadap data.</p>
+<p><img src="partner-evaluation/../img/partner-evaluation/tab-policies.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-can-confirmcan-confirma" id="a-namefield-can-confirmcan-confirma"><a name="field-can-confirm">Can Confirm</a></a></h4>
+<p>Apabila aktif maka user dapat mengkonfirmasi partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-can-approvecan-approvea" id="a-namefield-can-approvecan-approvea"><a name="field-can-approve">Can Approve</a></a></h4>
+<p>Apabila aktif maka user dapat menyetujui partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-can-startcan-starta" id="a-namefield-can-startcan-starta"><a name="field-can-start">Can Start</a></a></h4>
+<p>Apabila aktif maka user dapat memulai partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-can-finishcan-finisha" id="a-namefield-can-finishcan-finisha"><a name="field-can-finish">Can Finish</a></a></h4>
+<p>Apabila aktif maka user dapat menyelesaikan partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-can-cancelcan-cancela" id="a-namefield-can-cancelcan-cancela"><a name="field-can-cancel">Can Cancel</a></a></h4>
+<p>Apabila aktif maka user dapat membatalkan partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-can-restartcan-restarta" id="a-namefield-can-restartcan-restarta"><a name="field-can-restart">Can Restart</a></a></h4>
+<p>Apabila aktif maka user dapat merestart partner evaluation.</p>
+<h3><a class="header" href="#a-nametab-logse-tab-logsa" id="a-nametab-logse-tab-logsa"><a name="tab-logs">E. TAB LOGS</a></a></h3>
+<p><img src="partner-evaluation/../img/partner-evaluation/tab-logs.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-confirmationconfirmationa" id="a-namefield-confirmationconfirmationa"><a name="field-confirmation">Confirmation</a></a></h4>
+<p>User yang mengkonfirmasi partner evaluation dan waktu konfirmasi partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-approvalapprovala" id="a-namefield-approvalapprovala"><a name="field-approval">Approval</a></a></h4>
+<p>User yang menyetujui partner evaluation dan waktu disetujuinya partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-startstarta" id="a-namefield-startstarta"><a name="field-start">Start</a></a></h4>
+<p>User yang memulai partner evaluation dan waktu dimulainya partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-finishfinisha" id="a-namefield-finishfinisha"><a name="field-finish">Finish</a></a></h4>
+<p>User yang meyelesaikan partner evaluation dan waktu diselesaikannya partner evaluation.</p>
+<h4><a class="header" href="#a-namefield-cancellationcancellationa" id="a-namefield-cancellationcancellationa"><a name="field-cancellation">Cancellation</a></a></h4>
+<p>User yang membatalkan partner evaluation dan waktu dibatalkannya partner evaluation.</p>
+<h1><a class="header" href="#membuat-partner-evaluation" id="membuat-partner-evaluation">Membuat Partner Evaluation</a></h1>
+<h2><a class="header" href="#a-input-21" id="a-input-21">A. INPUT</a></h2>
+<p><em>(Tidak ada instruksi khusus)</em></p>
+<h2><a class="header" href="#b-instruksi-kerja-5" id="b-instruksi-kerja-5">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluation</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Klik tombol <strong>Create</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-create.png" alt="" /></p>
+<ol start="3">
+<li>Ubah <strong><a href="partner-evaluation/./penjelasan.html#field-document"># Document</a></strong> jika diperlukan. Harus diisi.</li>
+<li>Pilih <strong><a href="partner-evaluation/./penjelasan.html#field-template">Template</a></strong>. Harus diisi.</li>
+<li>Pilih <strong><a href="partner-evaluation/./penjelasan.html#field-partner">Partner</a></strong>. Harus diisi.</li>
+<li>Ubah <strong><a href="partner-evaluation/./penjelasan.html#field-responsible">Responsible</a></strong> jika diperlukan. Harus diisi.</li>
+<li>Isi <strong><a href="partner-evaluation/./penjelasan.html#field-date-start">Date Start</a></strong>. Harus diisi tergantung dari isian <strong>Template</strong>.</li>
+<li>Isi <strong><a href="partner-evaluation/./penjelasan.html#field-date-end">Date End</a></strong>. Harus diisi tergantung dari isian <strong>Template</strong>.</li>
+<li>Isi <strong><a href="partner-evaluation/./penjelasan.html#field-schedule-date-start">Evaluation Schedule Date Start</a></strong>. Harus diisi.</li>
+<li>Isi <strong><a href="partner-evaluation/./penjelasan.html#field-schedule-date-end">Evaluation Schedule Date End</a></strong>. Harus diisi.</li>
+<li>Buka tab <strong><a href="partner-evaluation/./penjelasan.html#tab-notes">Notes</a></strong></li>
+<li>Isi <strong><a href="partner-evaluation/./penjelasan.html#field-notes">Note</a></strong>. Tidak harus diisi.</li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-simpan.png" alt="" /></p>
+<h2><a class="header" href="#c-output-21" id="c-output-21">C. OUTPUT</a></h2>
+<ul>
+<li>Data partner evaluation akan terbuat dengan status <strong>Draft</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-draft.png" alt="" /></p>
+<h1><a class="header" href="#mengedit-partner-evaluation" id="mengedit-partner-evaluation">Mengedit Partner Evaluation</a></h1>
+<h2><a class="header" href="#a-input-22" id="a-input-22">A. INPUT</a></h2>
+<ul>
+<li>Data partner evaluation yang akan dikonfirmasi harus memiliki status <strong>Draft</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-draft.png" alt="" /></p>
+<h2><a class="header" href="#b-instruksi-kerja-6" id="b-instruksi-kerja-6">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluation</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan diedit. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Edit</strong> pada bagian atas-kiri form</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-edit.png" alt="" /></p>
+<ol start="4">
+<li>Ubah <strong><a href="partner-evaluation/./penjelasan.html#field-document"># Document</a></strong> jika diperlukan. Harus diisi.</li>
+<li>Pilih dan sesuaikan <strong><a href="partner-evaluation/./penjelasan.html#field-template">Template</a></strong> jika dibutuhkan. Harus diisi.</li>
+<li>Pilih dan sesuaikan <strong><a href="partner-evaluation/./penjelasan.html#field-partner">Partner</a></strong> jika dibutuhkan. Harus diisi.</li>
+<li>Ubah <strong><a href="partner-evaluation/./penjelasan.html#field-responsible">Responsible</a></strong> jika dibutuhkan. Harus diisi.</li>
+<li>Isi dan sesuaikan <strong><a href="partner-evaluation/./penjelasan.html#field-date-start">Date Start</a></strong> jika dibutuhkan. Harus diisi tergantung dari isian <strong>Template</strong>.</li>
+<li>Isi dan sesuaikan <strong><a href="partner-evaluation/./penjelasan.html#field-date-end">Date End</a></strong> jika dibutuhkan. Harus diisi tergantung dari isian <strong>Template</strong>.</li>
+<li>Isi dan sesuaikan <strong><a href="partner-evaluation/./penjelasan.html#field-schedule-date-start">Evaluation Schedule Date Start</a></strong> jika dibutuhkan. Harus diisi.</li>
+<li>Isi dan sesuaikan <strong><a href="partner-evaluation/./penjelasan.html#field-schedule-date-end">Evaluation Schedule Date End</a></strong> jika dibutuhkan. Harus diisi.</li>
+<li>Buka tab <strong><a href="partner-evaluation/./penjelasan.html#tab-notes">Notes</a></strong></li>
+<li>Isi dan sesuaikan <strong><a href="partner-evaluation/./penjelasan.html#field-notes">Note</a></strong> jika dibutuhkan. Tidak harus diisi.</li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-simpan.png" alt="" /></p>
+<h2><a class="header" href="#c-output-22" id="c-output-22">C. OUTPUT</a></h2>
+<ul>
+<li>Data partner evaluation berubah sesuai dengan perubahan yang dilakukan</li>
+</ul>
+<h1><a class="header" href="#menghapus-partner-evaluation" id="menghapus-partner-evaluation">Menghapus Partner Evaluation</a></h1>
+<h2><a class="header" href="#a-input-23" id="a-input-23">A. INPUT</a></h2>
+<ul>
+<li>Data partner evaluation yang akan dihapus harus memiliki status <strong>Draft</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../../img/partner-evaluation/status-draft.png" alt="" /></p>
+<h2><a class="header" href="#b-langkah-kerja-16" id="b-langkah-kerja-16">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluation</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan dihapus. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>More</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../../img/partner-evaluation/tombol-more.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Delete</strong> pada drop-down yang muncul pada tombol <strong>More</strong>.</li>
+</ol>
+<p><img src="partner-evaluation/../../img/partner-evaluation/tombol-hapus-form.png" alt="" /></p>
+<ol start="5">
+<li>Klik tombol <strong>Ok</strong> pada dialog konfirmasi penghapusan yang muncul.</li>
+</ol>
+<p><img src="partner-evaluation/../../img/partner-evaluation/tombol-ok-hapus.png" alt="" /></p>
+<h2><a class="header" href="#c-output-23" id="c-output-23">C. OUTPUT</a></h2>
+<ul>
+<li>Data partner evaluation akan terhapus.</li>
+</ul>
+<h1><a class="header" href="#mengkonfirmasi-partner-evaluation" id="mengkonfirmasi-partner-evaluation">Mengkonfirmasi Partner Evaluation</a></h1>
+<h2><a class="header" href="#a-input-24" id="a-input-24">A. INPUT</a></h2>
+<ul>
+<li>Data partner evaluation yang akan dikonfirmasi harus memiliki status <strong>Draft</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-draft.png" alt="" /></p>
+<ul>
+<li>Checklist <strong><a href="partner-evaluation/./penjelasan.html#field-can-confirm">Can Confirm</a></strong> pada tab <strong><a href="partner-evaluation/./penjelasan.html#tab-policies">Policies</a></strong> harus berada pada kondisi aktif.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-7" id="b-instruksi-kerja-7">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluations</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan dikonfirmasi. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Confirm</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-confirm.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi yang muncul.</li>
+</ol>
+<h2><a class="header" href="#c-output-24" id="c-output-24">C. OUTPUT</a></h2>
+<ul>
+<li>Status partner evaluation akan berubah menjadi <strong>Waiting for Approval</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-waiting-for-approval.png" alt="" /></p>
+<ul>
+<li>Data partner evaluation tidak dapat dimodifikasi.</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-confirmation">Confirmation</a></strong> akan terisi dengan user yang mengkonfirmasi dan waktu konfirmasi (sesuai dengan waktu server).</li>
+</ul>
+<h1><a class="header" href="#menyetujui-partner-evaluation" id="menyetujui-partner-evaluation">Menyetujui Partner Evaluation</a></h1>
+<ul>
+<li>Data partner evaluation yang akan disetujui harus memiliki status <strong>Waiting for Approval</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-waiting-for-approval.png" alt="" /></p>
+<ul>
+<li>Checklist <strong><a href="partner-evaluation/./penjelasan.html#field-can-approve">Can Approve</a></strong> pada tab <strong><a href="partner-evaluation/./penjelasan.html#tab-policies">Policies</a></strong> harus berada pada kondisi aktif.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-8" id="b-instruksi-kerja-8">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluations</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan disetujui. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Approve</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-approve.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi yang muncul.</li>
+</ol>
+<h2><a class="header" href="#c-output-25" id="c-output-25">C. OUTPUT</a></h2>
+<ul>
+<li>Status partner evaluation akan berubah menjadi <strong>Ready To Start</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-ready-to-prosess.png" alt="" /></p>
+<ul>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-approval">Approval</a></strong> akan terisi dengan user yang menyetujui dan waktu persetujuan (sesuai dengan waktu server).</li>
+</ul>
+<h1><a class="header" href="#memulai-partner-evaluation" id="memulai-partner-evaluation">Memulai Partner Evaluation</a></h1>
+<ul>
+<li>Data partner evaluation yang akan disetujui harus memiliki status <strong>Ready to Start</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-waiting-for-approval.png" alt="" /></p>
+<ul>
+<li>Checklist <strong><a href="partner-evaluation/./penjelasan.html#field-can-start">Can Start</a></strong> pada tab <strong><a href="partner-evaluation/./penjelasan.html#tab-policies">Policies</a></strong> harus berada pada kondisi aktif.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-9" id="b-instruksi-kerja-9">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluations</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan disetujui. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Start</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-start.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi yang muncul.</li>
+</ol>
+<p>Pop-up form <strong>Start Evaluation</strong> akan muncul</p>
+<ol start="5">
+<li>Isi <strong>Date Start</strong>. Harus diisi.</li>
+<li>Klik tombol <strong>Start</strong> pada bagian bawah-kiri pop-up form <strong>Start Evaluation</strong></li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-start-popup-start-evaluation.png" alt="" /></p>
+<h2><a class="header" href="#c-output-26" id="c-output-26">C. OUTPUT</a></h2>
+<ul>
+<li>Status partner evaluation akan berubah menjadi <strong>In Progress</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-on-progress.png" alt="" /></p>
+<ul>
+<li>Isian <strong>Real Date Start</strong> akan berubah sesuai dengan nilai yang diinput pada langkah ke-5</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-start">Start</a></strong> akan terisi dengan user yang memulai dan waktu mulai (sesuai dengan waktu server).</li>
+</ul>
+<h1><a class="header" href="#mengisi-penilaian-partner-evaluation" id="mengisi-penilaian-partner-evaluation">Mengisi Penilaian Partner Evaluation</a></h1>
+<ul>
+<li>Data partner evaluation yang akan diisi penilaiannya harus memiliki status <strong>In Progress</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-on-progress.png" alt="" /></p>
+<h2><a class="header" href="#b-instruksi-kerja-10" id="b-instruksi-kerja-10">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluations</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan diisi penilaiannya. Abaikan jika data sudah dibuka.</li>
+<li>Buka tab <a href="partner-evaluation/./penjelasan.html#tab-measurement-items">Measurement Items</a>.</li>
+<li>Jawab pertanyaan evaluasi tiap data item evaluasi pada tabel <strong><a href="partner-evaluation/./penjelasan.html#tabel-measurement-items">Measurement Items</a></strong> dengan isian <strong><a href="partner-evaluation/./penjelasan.html#field-method">Method</a></strong> == Manual. <a href="partner-evaluation/./memilih-jawaban-qualitative.html">Pilih jawaban</a> apabila isian <strong>Type</strong> == Qualitative atau <a href="partner-evaluation/./mengisi-jawaban-quantitative.html">Isi jawaban</a> jika isian <strong>Type</strong> == Quantitative. Ulangi sampai semua jawaban sesuai dengan keadaan.</li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-simpan.png" alt="" /></p>
+<h2><a class="header" href="#c-output-27" id="c-output-27">C. OUTPUT</a></h2>
+<ul>
+<li>Tabel <strong><a href="partner-evaluation/./penjelasan.html#tabel-measurement-items">Measurement Items</a></strong> akan berubah sesuai dengan perubahan yang dilakukan.</li>
+</ul>
+<h1><a class="header" href="#memilih-jawaban-item-evaluasi-qualitative" id="memilih-jawaban-item-evaluasi-qualitative">Memilih Jawaban Item Evaluasi Qualitative</a></h1>
+<p><em>(Instruksi kerja ini merupakan sub instruksi dari <a href="partner-evaluation/./mengisi.html">Mengisi Partner Evaluation</a>. Instruksi kerja ini tidak bisa berdiri sendiri)</em></p>
+<h2><a class="header" href="#a-input-25" id="a-input-25">A. INPUT</a></h2>
+<p><em>(Tidak ada instruksi khusus)</em></p>
+<h2><a class="header" href="#b-langkah-kerja-17" id="b-langkah-kerja-17">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka data item evaluasi pada tabel <strong><a href="partner-evaluation/./penjelasan.html#tabel-measurement-items">Measurement Items</a></strong> yang akan diisi jawabannya.</li>
+</ol>
+<p>Pop-up form <strong>Open: Items</strong> akan muncul.</p>
+<p><img src="partner-evaluation/../../img/partner-evaluation/pop-up-open-item-qualitative.png" alt="" /></p>
+<ol start="2">
+<li>Pilih <strong>Qualitative Value</strong>. Harus diisi.</li>
+<li>Klik tombol <strong>Save</strong> pada bagian bawah-kiri pop-up form <strong>Open: Items</strong></li>
+</ol>
+<p><img src="partner-evaluation/../../img/partner-evaluation/tombol-save-pop-up-items-qualitative.png" alt="" /></p>
+<ol start="11">
+<li>Lanjutkan instruksi kerja <strong>Mengisi Partner Evaluation</strong> <a href="partner-evaluation/./mengisi.html#langkah-4">langkah ke-4</a></li>
+</ol>
+<h2><a class="header" href="#c-output-28" id="c-output-28">C. OUTPUT</a></h2>
+<p><em>(Tidak ada instruksi khusus)</em></p>
+<h1><a class="header" href="#mengisi-jawaban-item-evaluasi-quantitative" id="mengisi-jawaban-item-evaluasi-quantitative">Mengisi Jawaban Item Evaluasi Quantitative</a></h1>
+<p><em>(Instruksi kerja ini merupakan sub instruksi dari <a href="partner-evaluation/./mengisi.html">Mengisi Partner Evaluation</a>. Instruksi kerja ini tidak bisa berdiri sendiri)</em></p>
+<h2><a class="header" href="#a-input-26" id="a-input-26">A. INPUT</a></h2>
+<p><em>(Tidak ada instruksi khusus)</em></p>
+<h2><a class="header" href="#b-langkah-kerja-18" id="b-langkah-kerja-18">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka data item evaluasi pada tabel <strong><a href="partner-evaluation/./penjelasan.html#tabel-measurement-items">Measurement Items</a></strong> yang akan diisi jawabannya.</li>
+</ol>
+<p>Pop-up form <strong>Open: Items</strong> akan muncul.</p>
+<p><img src="partner-evaluation/../../img/partner-evaluation/pop-up-open-item-quantitatvie.png" alt="" /></p>
+<ol start="2">
+<li>Pilih <strong>Quantitative Value</strong>. Harus diisi.</li>
+<li>Klik tombol <strong>Save</strong> pada bagian bawah-kiri pop-up form <strong>Open: Items</strong></li>
+</ol>
+<p><img src="partner-evaluation/../../img/partner-evaluation/tombol-save-pop-up-items-qualitative.png" alt="" /></p>
+<ol start="11">
+<li>Lanjutkan instruksi kerja <strong>Mengisi Partner Evaluation</strong> <a href="partner-evaluation/./mengisi.html#langkah-4">langkah ke-4</a></li>
+</ol>
+<h2><a class="header" href="#c-output-29" id="c-output-29">C. OUTPUT</a></h2>
+<p><em>(Tidak ada instruksi khusus)</em></p>
+<h1><a class="header" href="#menyelesaikan-partner-evaluation" id="menyelesaikan-partner-evaluation">Menyelesaikan Partner Evaluation</a></h1>
+<ul>
+<li>Data partner evaluation yang akan diselesaikan harus memiliki status <strong>In Progress</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-on-progress.png" alt="" /></p>
+<ul>
+<li>Checklist <strong><a href="partner-evaluation/./penjelasan.html#field-can-finish">Can Finish</a></strong> pada tab <strong><a href="partner-evaluation/./penjelasan.html#tab-policies">Policies</a></strong> harus berada pada kondisi aktif.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-11" id="b-instruksi-kerja-11">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluations</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan diselesaikan. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Finish</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-finish.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi yang muncul.</li>
+</ol>
+<p>Pop-up form <strong>Finish Evaluation</strong> akan muncul</p>
+<ol start="5">
+<li>Isi <strong>Date End</strong>. Harus diisi.</li>
+<li>Apabila isian <strong>Result</strong> tampil maka pilih <strong>Result</strong>. Harus diisi.</li>
+<li>Klik tombol <strong>Done</strong> pada bagian bawah-kiri pop-up form <strong>Finish Evaluation</strong></li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-finish-popup-finish-evaluation.png" alt="" /></p>
+<h2><a class="header" href="#c-output-30" id="c-output-30">C. OUTPUT</a></h2>
+<ul>
+<li>Status partner evaluation akan berubah menjadi <strong>Done</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-done.png" alt="" /></p>
+<ul>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-real-date-end">Real Date End</a></strong> akan berubah sesuai dengan nilai yang diinput pada langkah ke-5</li>
+<li>Data penilaian dengan <strong><a href="partner-evaluation/./penjelasan.html#field-method">Method</a></strong> == Automatic pada tabel <strong><a href="partner-evaluation/./penjelasan.html#tabel-measurement-items">Measurement Items</a></strong> akan diisi secara otomatis</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-result">Result</a></strong> akan diisi sesuai dengan (1) komputasi otomatis, atau (2) sesuai dengan nilai yang diinput pada langkah ke-6</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-finish">Finish</a></strong> akan terisi dengan user yang menyelesaikan dan waktu penyelesaian (sesuai dengan waktu server).</li>
+</ul>
+<h1><a class="header" href="#membatalkan-partner-evaluation" id="membatalkan-partner-evaluation">Membatalkan Partner Evaluation</a></h1>
+<h2><a class="header" href="#a-input-27" id="a-input-27">A. INPUT</a></h2>
+<ul>
+<li>Data partner evaluation yang akan dibatalkan harus memiliki status selain <strong>Cancelled</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-cancel.png" alt="" /></p>
+<ul>
+<li>Checklist <strong><a href="partner-evaluation/./penjelasan.html#field-can-cancel">Can Cancel</a></strong> pada tab <strong><a href="partner-evaluation/./penjelasan.html#tab-policies">Policies</a></strong> harus berada pada kondisi aktif.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-12" id="b-instruksi-kerja-12">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluations</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan dibatalkan. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Cancel</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-cancel.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi yang muncul.</li>
+</ol>
+<p>Pop-up form <strong>Cancellation Reason</strong> akan muncul</p>
+<p><img src="partner-evaluation/../img/partner-evaluation/pop-up-cancellation-reason.png" alt="" /></p>
+<ol start="5">
+<li>Pilih <strong>Reason</strong>. Harus diisi.</li>
+<li>Klik tombol <strong>Confirm</strong> pada bagian bawah-kiri pop-up form <strong>Cancellation Reason</strong>.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-cancel-pop-up-cancellation-reason.png" alt="" /></p>
+<ol start="7">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi yang muncul.</li>
+</ol>
+<h2><a class="header" href="#c-output-31" id="c-output-31">C. OUTPUT</a></h2>
+<ul>
+<li>Status partner evaluation akan berubah menjadi <strong>Cancelled</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-cancel.png" alt="" /></p>
+<ul>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-cancellation">Cancellation</a></strong> akan terisi dengan user yang membatalkan dan waktu pembatalan (sesuai dengan waktu server).</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-cancel-reason">Cancel Reason</a></strong> akan terisi alasan pembatalan yang dipilih pada langkah ke-5</li>
+</ul>
+<h1><a class="header" href="#merestart-partner-evaluation" id="merestart-partner-evaluation">Merestart Partner Evaluation</a></h1>
+<h2><a class="header" href="#a-input-28" id="a-input-28">A. INPUT</a></h2>
+<ul>
+<li>Data partner evaluation yang akan direstart harus memiliki status <strong>Cancelled</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-cancel.png" alt="" /></p>
+<ul>
+<li>Checklist <strong><a href="partner-evaluation/./penjelasan.html#field-can-cancel">Can Cancel</a></strong> pada tab <strong><a href="partner-evaluation/./penjelasan.html#tab-policies">Policies</a></strong> harus berada pada kondisi aktif.</li>
+</ul>
+<h2><a class="header" href="#b-instruksi-kerja-13" id="b-instruksi-kerja-13">B. INSTRUKSI KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Partner Evaluation -&gt; Partner Evaluations</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Buka data partner evaluation yang akan direstart. Abaikan jika data sudah dibuka.</li>
+<li>Klik tombol <strong>Restart</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="partner-evaluation/../img/partner-evaluation/tombol-restart.png" alt="" /></p>
+<ol start="4">
+<li>Klik tombol <strong>Ok</strong> pada pop-up konfirmasi yang muncul.</li>
+</ol>
+<h2><a class="header" href="#c-output-32" id="c-output-32">C. OUTPUT</a></h2>
+<ul>
+<li>Status partner evaluation akan berubah menjadi <strong>Draft</strong>.</li>
+</ul>
+<p><img src="partner-evaluation/../img/partner-evaluation/status-draft.png" alt="" /></p>
+<ul>
+<li>Data partner evaluation dapat dimodifikasi kembali</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-confirmation">Confirmation</a></strong> dikosongkan.</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-approval">Approval</a></strong> dikosongkan.</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-start">Start</a></strong> dikosongkan.</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-finish">Finish</a></strong> dikosongkan.</li>
+<li>Isian <strong><a href="partner-evaluation/./penjelasan.html#field-cancellation">Cancellation</a></strong> dikosongkan.</li>
+</ul>
+<h1><a class="header" href="#konfigurasi" id="konfigurasi">Konfigurasi</a></h1>
+<ul>
+<li><a href="./konfigurasi/partner.html">Konfigurasi Terkait Company Partner dan Individual Partner</a></li>
+<li><a href="./konfigurasi/company-partner.html">Konfigirasi Terkait Company Partner</a></li>
+<li><a href="./konfigurasi/individual-partner.html">Konfigurasi Terkait Individual Partner</a></li>
+</ul>
+<h1><a class="header" href="#konfigurasi-terkait-company-partner-dan-individual-partner" id="konfigurasi-terkait-company-partner-dan-individual-partner">Konfigurasi Terkait Company Partner dan Individual Partner</a></h1>
+<ul>
+<li><a href="konfigurasi/./partner/bank/bank.html">Bank</a></li>
+<li><a href="konfigurasi/./partner/bank-account-type/bank-account-type.html">Bank Account Type</a></li>
+<li><a href="konfigurasi/./partner/bank-account/bank-account.html">Bank Account</a></li>
+<li><a href="konfigurasi/./partner/negara/negara.html">Negara</a></li>
+<li><a href="konfigurasi/./partner/propinsi/propinsi.html">Propinsi</a></li>
+<li><a href="konfigurasi/./partner/kota/kota.html">Kota/Lokasi</a></li>
+<li><a href="konfigurasi/./partner/unit-administrasi/unit-administrasi.html">Unit Administrasi</a></li>
+</ul>
+<h1><a class="header" href="#bank" id="bank">Bank</a></h1>
+<h1><a class="header" href="#penjelasan-2" id="penjelasan-2">Penjelasan</a></h1>
+<h3><a class="header" href="#a-namebagian-formheadera" id="a-namebagian-formheadera"><a name="bagian-form">HEADER</a></a></h3>
+<p><img src="konfigurasi/partner/bank/../../../img/bank/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namenamea-2" id="a-namefield-namenamea-2"><a name="field-name">Name</a></a></h4>
+<p>Nama Bank</p>
+<h4><a class="header" href="#a-namefield-bicbank-identifier-codea" id="a-namefield-bicbank-identifier-codea"><a name="field-bic">Bank Identifier Code</a></a></h4>
+<p>Kode bank</p>
+<h4><a class="header" href="#a-namefield-addressaddressa-2" id="a-namefield-addressaddressa-2"><a name="field-address">Address</a></a></h4>
+<p>Alamat Bank. Terbagi atas beberapa isian, yaitu:<br /></p>
+<ul>
+<li>Street - Alamat bank</li>
+<li>Zip - Nomor kode POS bank</li>
+<li>City - Kota bank</li>
+<li>State - Provinsi bank</li>
+<li>Country - Negara bank</li>
+</ul>
+<h4><a class="header" href="#a-namefield-phonephonea-2" id="a-namefield-phonephonea-2"><a name="field-phone">Phone</a></a></h4>
+<p>Nomor telepon bank</p>
+<h4><a class="header" href="#a-namefield-faxfaxa-2" id="a-namefield-faxfaxa-2"><a name="field-fax">Fax</a></a></h4>
+<p>Nomor fax bank</p>
+<h4><a class="header" href="#a-namefield-emailemaila-2" id="a-namefield-emailemaila-2"><a name="field-email">Email</a></a></h4>
+<p>Alamat email bank</p>
+<h4><a class="header" href="#a-namefield-activeactivea" id="a-namefield-activeactivea"><a name="field-active">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h1><a class="header" href="#membuat-data-bank" id="membuat-data-bank">Membuat Data Bank</a></h1>
+<h2><a class="header" href="#a-input-29" id="a-input-29">A. INPUT</a></h2>
+<p><em>(Tidak ada instruksi khusus)</em></p>
+<h2><a class="header" href="#b-langkah-kerja-19" id="b-langkah-kerja-19">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Configuration -&gt; Banks -&gt; Banks</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Klik tombol <strong>Create</strong> pada bagian atas-kanan form.</li>
+</ol>
+<p><img src="konfigurasi/partner/bank/../../../img/bank/tombol-create.png" alt="" /></p>
+<ol start="3">
+<li>Isi <strong>Name</strong>. Harus diisi.</li>
+<li>Isi <strong>Bank Identifier Code</strong>. Tidak harus diisi.</li>
+<li>Lengkapi bagian <strong>Address</strong></li>
+<li>Isi <strong>Street</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Street2</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Zip</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>City</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>State</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Country</strong>. Tidak harus diisi.</li>
+<li>Lengkapi bagian <strong>Communication</strong>.</li>
+<li>Isi <strong>Phone</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Fax</strong>. Tidak harus diisi.</li>
+<li>Isi <strong>Email</strong>. Tidak harus diisi.</li>
+<li>Pastikan <strong>Active</strong> aktif.</li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="konfigurasi/partner/bank/../../../img/bank/tombol-simpan.png" alt="" /></p>
+<h2><a class="header" href="#c-output-33" id="c-output-33">C. OUTPUT</a></h2>
+<ul>
+<li>Data bank akan terbuat.</li>
+</ul>
+<h1><a class="header" href="#bank-account-type" id="bank-account-type">Bank Account Type</a></h1>
+<h1><a class="header" href="#bank-account-type-1" id="bank-account-type-1">Bank Account Type</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-2" id="a-namebagian-headerheadera-2"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/partner/bank-account-type/../../../img/bank-account-type/header.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namenamea-3" id="a-namefield-namenamea-3"><a name="field-name">Name</a></a></h4>
+<p>Nama tipe akun bank</p>
+<h4><a class="header" href="#a-namefield-codecodea" id="a-namefield-codecodea"><a name="field-code">Code</a></a></h4>
+<p>Kode tipe akun bank</p>
+<h3><a class="header" href="#a-namebagian-detail-fieldsdetail-fieldsa" id="a-namebagian-detail-fieldsdetail-fieldsa"><a name="bagian-detail-fields">DETAIL FIELDS</a></a></h3>
+<p><img src="konfigurasi/partner/bank-account-type/../../../../img/bank-account-type/detail-fields.png" alt="" />
+<img src="konfigurasi/partner/bank-account-type/../../../../img/bank-account-type/detail-fields-form.png" alt="" /></p>
+<h3><a class="header" href="#a-namebagian-detail-fields-namefield-namea" id="a-namebagian-detail-fields-namefield-namea"><a name="bagian-detail-fields-name">Field Name</a></a></h3>
+<p>Nama Field</p>
+<h3><a class="header" href="#a-namebagian-detail-fields-requiredrequireda" id="a-namebagian-detail-fields-requiredrequireda"><a name="bagian-detail-fields-required">Required</a></a></h3>
+<p>Sebagai penanda apakah data wajib/tidak wajib diisi</p>
+<h3><a class="header" href="#a-namebagian-detail-fields-readonlyreadonlya" id="a-namebagian-detail-fields-readonlyreadonlya"><a name="bagian-detail-fields-readonly">Readonly</a></a></h3>
+<p>Sebagai penanda apakah data memiliki atribut readonly.</p>
+<blockquote>
+<p><strong>Catatan</strong>: Atribut readonly akan memberikan fungsi baca-saja pada data dimana hanya akan bisa dibaca namun tidak bisa diubah.</p>
+</blockquote>
+<h3><a class="header" href="#a-namebagian-detail-fields-bank-type-idbank-typea" id="a-namebagian-detail-fields-bank-type-idbank-typea"><a name="bagian-detail-fields-bank-type-id">Bank Type</a></a></h3>
+<p>Tipe Bank</p>
+<h3><a class="header" href="#a-namebagian-detail-fields-sizemax-sizea" id="a-namebagian-detail-fields-sizemax-sizea"><a name="bagian-detail-fields-size">Max. Size</a></a></h3>
+<p>Mendefinisikan maksimal <em>size</em>(ukuran) pada field</p>
+<h3><a class="header" href="#a-namebagian-footerfootera" id="a-namebagian-footerfootera"><a name="bagian-footer">FOOTER</a></a></h3>
+<p><img src="konfigurasi/partner/bank-account-type/../../../../img/bank-account-type/footer.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-format-layoutformat-layouta" id="a-namefield-format-layoutformat-layouta"><a name="field-format-layout">Format Layout</a></a></h4>
+<p>Format tampilan yang akan digunakan.</p>
+<h1><a class="header" href="#membuat-data-bank-account-type" id="membuat-data-bank-account-type">Membuat Data Bank Account Type</a></h1>
+<h1><a class="header" href="#bank-account" id="bank-account">Bank Account</a></h1>
+<h1><a class="header" href="#bank-account-1" id="bank-account-1">Bank Account</a></h1>
+<h3><a class="header" href="#a-namebagian-formheadera-1" id="a-namebagian-formheadera-1"><a name="bagian-form">HEADER</a></a></h3>
+<p><img src="konfigurasi/partner/bank-account/../../../img/bank-account/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-statebank-account-typea" id="a-namefield-statebank-account-typea"><a name="field-state">Bank Account Type</a></a></h4>
+<p>Tipe akun bank</p>
+<h4><a class="header" href="#a-namefield-acc-numberaccount-numbera" id="a-namefield-acc-numberaccount-numbera"><a name="field-acc-number">Account Number</a></a></h4>
+<p>Nomor akun bank</p>
+<h4><a class="header" href="#a-namefield-partner-idaccount-ownera" id="a-namefield-partner-idaccount-ownera"><a name="field-partner-id">Account Owner</a></a></h4>
+<p>Pemilik akun bank</p>
+<h4><a class="header" href="#a-namefield-addressaddressa-3" id="a-namefield-addressaddressa-3"><a name="field-address">Address</a></a></h4>
+<p>Alamat Bank. Terbagi atas beberapa isian, yaitu:<br /></p>
+<ul>
+<li>Name - Nama pemilik akun bank</li>
+<li>Street - Alamat akun bank</li>
+<li>Zip - Nomor kode POS akun bank</li>
+<li>City - Kota akun bank</li>
+<li>State - Provinsi akun bank</li>
+<li>Country - Negara akun bank</li>
+</ul>
+<h4><a class="header" href="#a-namefield-bankbanka" id="a-namefield-bankbanka"><a name="field-bank">Bank</a></a></h4>
+<p>Mendefinisikan bank yang akan digunakan</p>
+<h4><a class="header" href="#a-namefield-bank_namebank-namea" id="a-namefield-bank_namebank-namea"><a name="field-bank_name">Bank Name</a></a></h4>
+<p>Nama bank</p>
+<h4><a class="header" href="#a-namefield-bicbank-identifier-codea-1" id="a-namefield-bicbank-identifier-codea-1"><a name="field-bic">Bank Identifier Code</a></a></h4>
+<p>Kode bank</p>
+<h1><a class="header" href="#membuat-data-bank-account" id="membuat-data-bank-account">Membuat Data Bank Account</a></h1>
+<h2><a class="header" href="#a-input-30" id="a-input-30">A. INPUT</a></h2>
+<p><em>(Tidak ada instruksi khusus)</em></p>
+<h2><a class="header" href="#b-langkah-kerja-20" id="b-langkah-kerja-20">B. LANGKAH KERJA</a></h2>
+<ol>
+<li>Buka menu <strong>Partner -&gt; Configuration -&gt; Banks -&gt; Bank Accounts</strong>. Abaikan jika sudah berada pada menu yang dimaksud.</li>
+<li>Klik tombol <strong>Create</strong> pada bagian atas-kanan form.</li>
+</ol>
+<p><img src="konfigurasi/partner/bank-account/../../../img/bank-account/tombol-create.png" alt="" /></p>
+<ol start="3">
+<li>Isi <strong>Bank Account Type</strong>. Harus diisi.</li>
+<li>Isi <strong>Account Number</strong>. Harus diisi.</li>
+<li>Lengkapi bagian <strong>Bank Account Owner</strong>.</li>
+<li>Isi <strong>Account Owner</strong>. Harus diisi.</li>
+<li>Isi dan sesuaikan <strong>Name</strong> jika dibutuhkan. Harus diisi.</li>
+<li>Isi dan sesuaikan <strong>Street</strong> jika dibutuhkan. Tidak harus diisi.</li>
+<li>Isi dan sesuaikan <strong>Zip</strong> jika dibutuhkan. Tidak harus diisi.</li>
+<li>Isi dan sesuaikan <strong>City</strong> jika dibutuhkan. Tidak harus diisi.</li>
+<li>Lengkapi bagian <strong>Information About The Bank</strong>.</li>
+<li>Pilih <strong>Bank</strong>. Tidak harus diisi.</li>
+<li>Isi dan sesuaikan <strong>Bank Name</strong> jika dibutuhkan. Tidak harus diisi.</li>
+<li>Isi dan sesuaikan <strong>Bank Identifier Code</strong> jika dibutuhkan. Tidak harus diisi.</li>
+<li>Klik tombol <strong>Save</strong> pada bagian atas-kiri form.</li>
+</ol>
+<p><img src="konfigurasi/partner/bank-account/../../../img/bank-account/tombol-simpan.png" alt="" /></p>
+<h2><a class="header" href="#c-output-34" id="c-output-34">C. OUTPUT</a></h2>
+<ul>
+<li>Data bank account akan terbuat.</li>
+</ul>
+<h1><a class="header" href="#negara" id="negara">Negara</a></h1>
+<h1><a class="header" href="#negara-1" id="negara-1">Negara</a></h1>
+<h3><a class="header" href="#a-namebagian-negaraheadera" id="a-namebagian-negaraheadera"><a name="bagian-negara">HEADER</a></a></h3>
+<p><img src="konfigurasi/partner/negara/../../../img/negara/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namecountry-namea" id="a-namefield-namecountry-namea"><a name="field-name">Country Name</a></a></h4>
+<p>Nama negara</p>
+<h4><a class="header" href="#a-namefield-codecountry-codea" id="a-namefield-codecountry-codea"><a name="field-code">Country Code</a></a></h4>
+<p>Kode negara</p>
+<h4><a class="header" href="#a-namefield-currency-idcurrencya" id="a-namefield-currency-idcurrencya"><a name="field-currency-id">Currency</a></a></h4>
+<p>Mata uang negara</p>
+<h4><a class="header" href="#a-namefield-address-formataddress-layouta" id="a-namefield-address-formataddress-layouta"><a name="field-address-format">Address Layout</a></a></h4>
+<p>Format tampilan untuk alamat yang akan digunakan.</p>
+<h1><a class="header" href="#membuat-data-negara" id="membuat-data-negara">Membuat Data Negara</a></h1>
+<h1><a class="header" href="#propinsi" id="propinsi">Propinsi</a></h1>
+<h1><a class="header" href="#propinsi-1" id="propinsi-1">Propinsi</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-3" id="a-namebagian-headerheadera-3"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/partner/propinsi/../../../img/propinsi/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namestate-namea" id="a-namefield-namestate-namea"><a name="field-name">State Name</a></a></h4>
+<p>Nama propinsi</p>
+<h4><a class="header" href="#a-namefield-codestate-codea" id="a-namefield-codestate-codea"><a name="field-code">State Code</a></a></h4>
+<p>Kode propinsi</p>
+<h4><a class="header" href="#a-namefield-country-idcountrya" id="a-namefield-country-idcountrya"><a name="field-country-id">Country</a></a></h4>
+<p>Negara</p>
+<h4><a class="header" href="#a-namefield-zip-namezipa" id="a-namefield-zip-namezipa"><a name="field-zip-name">ZIP</a></a></h4>
+<p>Kode Pos</p>
+<h4><a class="header" href="#a-namefield-zip-city-codecity-codea" id="a-namefield-zip-city-codecity-codea"><a name="field-zip-city-code">City Code</a></a></h4>
+<p>Kode Kota</p>
+<h4><a class="header" href="#a-namefield-zip-citycitya" id="a-namefield-zip-citycitya"><a name="field-zip-city">City</a></a></h4>
+<p>Kota</p>
+<h4><a class="header" href="#a-namefield-zip-country-idcountrya" id="a-namefield-zip-country-idcountrya"><a name="field-zip-country-id">Country</a></a></h4>
+<p>Negara</p>
+<h1><a class="header" href="#membuat-data-propinsi" id="membuat-data-propinsi">Membuat Data Propinsi</a></h1>
+<h1><a class="header" href="#kotalokasi" id="kotalokasi">Kota/Lokasi</a></h1>
+<h1><a class="header" href="#kotalokasi-1" id="kotalokasi-1">Kota/Lokasi</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-4" id="a-namebagian-headerheadera-4"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/partner/kota/../../../img/kota/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namezipa" id="a-namefield-namezipa"><a name="field-name">ZIP</a></a></h4>
+<p>Kode pos</p>
+<h4><a class="header" href="#a-namefield-codecity-codea" id="a-namefield-codecity-codea"><a name="field-code">City Code</a></a></h4>
+<p>Kode kota/lokasi</p>
+<h4><a class="header" href="#a-namefield-citycitya" id="a-namefield-citycitya"><a name="field-city">City</a></a></h4>
+<p>Nama kota/lokasi</p>
+<h4><a class="header" href="#a-namefield-state-idstatea" id="a-namefield-state-idstatea"><a name="field-state-id">State</a></a></h4>
+<p>Propinsi kota/lokasi</p>
+<h4><a class="header" href="#a-namefield-country-idcountrya-1" id="a-namefield-country-idcountrya-1"><a name="field-country-id">Country</a></a></h4>
+<p>Negara kota/lokasi</p>
+<h1><a class="header" href="#membuat-data-kotalokasi" id="membuat-data-kotalokasi">Membuat Data Kota/Lokasi</a></h1>
+<h1><a class="header" href="#unit-administrasi" id="unit-administrasi">Unit Administrasi</a></h1>
+<h1><a class="header" href="#unit-administrasi--lau-items" id="unit-administrasi--lau-items">Unit Administrasi / LAU Items</a></h1>
+<blockquote>
+<p><strong>Catatan:</strong> (Inggris: <em>Local Administrative Unit</em> registry disingkat LAU)</p>
+</blockquote>
+<h3><a class="header" href="#a-namebagian-headerheadera-5" id="a-namebagian-headerheadera-5"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/partner/unit-administrasi/../../../img/unit-administrasi/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-levellevela" id="a-namefield-levellevela"><a name="field-level">Level</a></a></h4>
+<p>Level unit administrasi</p>
+<h4><a class="header" href="#a-namefield-codecodea-1" id="a-namefield-codecodea-1"><a name="field-code">Code</a></a></h4>
+<p>Kode unit administrasi</p>
+<h4><a class="header" href="#a-namefield-parent-idparenta" id="a-namefield-parent-idparenta"><a name="field-parent-id">Parent</a></a></h4>
+<p>Parent/induk unit administrasi</p>
+<h4><a class="header" href="#a-namefield-namenamea-4" id="a-namefield-namenamea-4"><a name="field-name">Name</a></a></h4>
+<p>Nama unit administrasi</p>
+<h4><a class="header" href="#a-namefield-country-idcountrya-2" id="a-namefield-country-idcountrya-2"><a name="field-country-id">Country</a></a></h4>
+<p>Mendefinisikan negara unit adminstrasi</p>
+<h4><a class="header" href="#a-namefield-state-idstatea-1" id="a-namefield-state-idstatea-1"><a name="field-state-id">State</a></a></h4>
+<p>Mendefinisikan propinsi unit adminstrasi</p>
+<h1><a class="header" href="#membuat-data-unit-administrasi" id="membuat-data-unit-administrasi">Membuat Data Unit Administrasi</a></h1>
+<h1><a class="header" href="#konfigurasi-terkait-company-partner" id="konfigurasi-terkait-company-partner">Konfigurasi Terkait Company Partner</a></h1>
+<ul>
+<li><a href="konfigurasi/./company-partner/kepemilikan/kepemilikan.html">Kepemilikan</a></li>
+<li><a href="konfigurasi/./company-partner/bidang-usaha/bidang-usaha.html">Bidang Usaha</a></li>
+<li><a href="konfigurasi/./company-partner/unit-kerja/unit-kerja.html">Unit Kerja</a></li>
+</ul>
+<h1><a class="header" href="#kepemilikan" id="kepemilikan">Kepemilikan</a></h1>
+<h1><a class="header" href="#penjelasan-3" id="penjelasan-3">Penjelasan</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-6" id="a-namebagian-headerheadera-6"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/company-partner/kepemilikan/../../../img/kepemilikan/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-nameownership-typea" id="a-namefield-nameownership-typea"><a name="field-name">Ownership Type</a></a></h4>
+<p>Nama tipe kepemilikan</p>
+<h4><a class="header" href="#a-namefield-activeactivea-1" id="a-namefield-activeactivea-1"><a name="field-active">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h4><a class="header" href="#a-namefield-notesnotesa" id="a-namefield-notesnotesa"><a name="field-notes">Notes</a></a></h4>
+<p>Catatan</p>
+<h1><a class="header" href="#membuat-data-kepemilikan" id="membuat-data-kepemilikan">Membuat Data Kepemilikan</a></h1>
+<h1><a class="header" href="#bidang-usaha" id="bidang-usaha">Bidang Usaha</a></h1>
+<h1><a class="header" href="#bidang-usaha-1" id="bidang-usaha-1">Bidang Usaha</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-7" id="a-namebagian-headerheadera-7"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/company-partner/bidang-usaha/../../../img/bidang-usaha/tree.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namenamea-5" id="a-namefield-namenamea-5"><a name="field-name">Name</a></a></h4>
+<p>Nama bidang usaha</p>
+<h4><a class="header" href="#a-namefield-parent-idparent-ida" id="a-namefield-parent-idparent-ida"><a name="field-parent-id">Parent ID</a></a></h4>
+<p>Parent/induk bidang usaha</p>
+<h1><a class="header" href="#membuat-data-bidang-usaha" id="membuat-data-bidang-usaha">Membuat Data Bidang Usaha</a></h1>
+<h1><a class="header" href="#unit-kerja" id="unit-kerja">Unit Kerja</a></h1>
+<h1><a class="header" href="#penjelasan-4" id="penjelasan-4">Penjelasan</a></h1>
+<h1><a class="header" href="#membuat-data-unit-kerja" id="membuat-data-unit-kerja">Membuat Data Unit Kerja</a></h1>
+<h1><a class="header" href="#konfigurasi-terkait-individual-partner" id="konfigurasi-terkait-individual-partner">Konfigurasi Terkait Individual Partner</a></h1>
+<ul>
+<li><a href="konfigurasi/./individual-partner/titel-akademik/titel-akademik.html">Titel Akademik</a></li>
+<li><a href="konfigurasi/./individual-partner/jenjang-pendidikan/jenjang-pendidikan.html">Jenjang Pendidikan</a></li>
+<li><a href="konfigurasi/./individual-partner/bidang-studi/bidang-studi.html">Bidang Studi</a></li>
+<li><a href="konfigurasi/./individual-partner/jenjang-karir/jenjang-karir.html">Jenjang Karir</a></li>
+<li><a href="konfigurasi/./individual-partner/etnis/etnis.html">Etnis</a></li>
+<li><a href="konfigurasi/./individual-partner/agama/agama.html">Agama</a></li>
+</ul>
+<h1><a class="header" href="#titel-akademik" id="titel-akademik">Titel Akademik</a></h1>
+<h1><a class="header" href="#titel-akademik-1" id="titel-akademik-1">Titel Akademik</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-8" id="a-namebagian-headerheadera-8"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/individual-partner/titel-akademik/../../../img/titel-akademik/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namenamea-6" id="a-namefield-namenamea-6"><a name="field-name">Name</a></a></h4>
+<p>Nama titel akademik</p>
+<h4><a class="header" href="#a-namefield-sequence-idsequencea" id="a-namefield-sequence-idsequencea"><a name="field-sequence-id">Sequence</a></a></h4>
+<p>Nomor urut</p>
+<h4><a class="header" href="#a-namefield-activeactivea-2" id="a-namefield-activeactivea-2"><a name="field-active">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h1><a class="header" href="#membuat-data-titel-akademik" id="membuat-data-titel-akademik">Membuat Data Titel Akademik</a></h1>
+<h1><a class="header" href="#jenjang-pendidikan" id="jenjang-pendidikan">Jenjang Pendidikan</a></h1>
+<h1><a class="header" href="#jenjang-pendidikan-1" id="jenjang-pendidikan-1">Jenjang Pendidikan</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-9" id="a-namebagian-headerheadera-9"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/individual-partner/jenjang-pendidikan/../../../img/jenjang-pendidikan/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-nameeducation-levela" id="a-namefield-nameeducation-levela"><a name="field-name">Education Level</a></a></h4>
+<p>Nama jenjang pendidikan</p>
+<h4><a class="header" href="#a-namefield-codecodea-2" id="a-namefield-codecodea-2"><a name="field-code">Code</a></a></h4>
+<p>Kode jenjang pendidikan</p>
+<h4><a class="header" href="#a-namefield-sequence-idsequencea-1" id="a-namefield-sequence-idsequencea-1"><a name="field-sequence-id">Sequence</a></a></h4>
+<p>Nomor urut</p>
+<h4><a class="header" href="#a-namefield-activeactivea-3" id="a-namefield-activeactivea-3"><a name="field-active">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h4><a class="header" href="#a-namefield-notesnotea" id="a-namefield-notesnotea"><a name="field-notes">Note</a></a></h4>
+<p>Catatan</p>
+<h1><a class="header" href="#membuat-data-jenjang-pendidikan" id="membuat-data-jenjang-pendidikan">Membuat Data Jenjang Pendidikan</a></h1>
+<h1><a class="header" href="#bidang-studi" id="bidang-studi">Bidang Studi</a></h1>
+<h1><a class="header" href="#bidang-studi-1" id="bidang-studi-1">Bidang Studi</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-10" id="a-namebagian-headerheadera-10"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/individual-partner/bidang-studi/../../../img/bidang-studi/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namefield-of-studya" id="a-namefield-namefield-of-studya"><a name="field-name">Field of Study</a></a></h4>
+<p>Nama bidang studi</p>
+<h4><a class="header" href="#a-namefield-codecodea-3" id="a-namefield-codecodea-3"><a name="field-code">Code</a></a></h4>
+<p>Kode bidang studi</p>
+<h4><a class="header" href="#a-namefield-parent-idparenta-1" id="a-namefield-parent-idparenta-1"><a name="field-parent-id">Parent</a></a></h4>
+<p>Parent/Induk bidang studi</p>
+<h4><a class="header" href="#a-namefield-activeactivea-4" id="a-namefield-activeactivea-4"><a name="field-active">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h4><a class="header" href="#a-namefield-notesnotea-1" id="a-namefield-notesnotea-1"><a name="field-notes">Note</a></a></h4>
+<p>Catatan</p>
+<h1><a class="header" href="#membuat-data-bidang-studi" id="membuat-data-bidang-studi">Membuat Data Bidang Studi</a></h1>
+<h1><a class="header" href="#jenjang-karir" id="jenjang-karir">Jenjang Karir</a></h1>
+<h1><a class="header" href="#penjelasan-5" id="penjelasan-5">Penjelasan</a></h1>
+<h1><a class="header" href="#membuat-data-jenjang-karir" id="membuat-data-jenjang-karir">Membuat Data Jenjang Karir</a></h1>
+<h1><a class="header" href="#etnis" id="etnis">Etnis</a></h1>
+<h1><a class="header" href="#etnis-1" id="etnis-1">Etnis</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-11" id="a-namebagian-headerheadera-11"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/individual-partner/etnis/../../../img/etnis/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-nameethnicitya" id="a-namefield-nameethnicitya"><a name="field-name">Ethnicity</a></a></h4>
+<p>Nama etnis</p>
+<h4><a class="header" href="#a-namefield-codecodea-4" id="a-namefield-codecodea-4"><a name="field-code">Code</a></a></h4>
+<p>Kode etnis</p>
+<h4><a class="header" href="#a-namefield-activeactivea-5" id="a-namefield-activeactivea-5"><a name="field-active">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h4><a class="header" href="#a-namefield-notenotea-1" id="a-namefield-notenotea-1"><a name="field-note">Note</a></a></h4>
+<p>Catatan</p>
+<h1><a class="header" href="#membuat-data-etnis" id="membuat-data-etnis">Membuat Data Etnis</a></h1>
+<h1><a class="header" href="#agama" id="agama">Agama</a></h1>
+<h1><a class="header" href="#agama-1" id="agama-1">Agama</a></h1>
+<h3><a class="header" href="#a-namebagian-headerheadera-12" id="a-namebagian-headerheadera-12"><a name="bagian-header">HEADER</a></a></h3>
+<p><img src="konfigurasi/individual-partner/agama/../../../img/agama/form.png" alt="" /></p>
+<h4><a class="header" href="#a-namefield-namereligiona" id="a-namefield-namereligiona"><a name="field-name">Religion</a></a></h4>
+<p>Nama agama</p>
+<h4><a class="header" href="#a-namefield-codecodea-5" id="a-namefield-codecodea-5"><a name="field-code">Code</a></a></h4>
+<p>Kode agama</p>
+<h4><a class="header" href="#a-namefield-activeactivea-6" id="a-namefield-activeactivea-6"><a name="field-active">Active</a></a></h4>
+<p>Sebagai penanda apakah data adalah aktif/non-aktif</p>
+<h4><a class="header" href="#a-namefield-notenotea-2" id="a-namefield-notenotea-2"><a name="field-note">Note</a></a></h4>
+<p>Catatan</p>
+<h1><a class="header" href="#membuat-data-etnis-1" id="membuat-data-etnis-1">Membuat Data Etnis</a></h1>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+
+        
+
+        
+        
+        
+        <script type="text/javascript">
+            window.playpen_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
