@@ -15,12 +15,12 @@
 4. Isi dan sesuaikan **[Name](./penjelasan.md#field-name)** jika dibutuhkan. Harus diisi.
 5. Isi dan sesuaikan **[Bank Identifier Code](./penjelasan.md#field-bic)** jika dibutuhkan. Tidak harus diisi.
 6. Lengkapi dan sesuaikan bagian **[Address](./penjelasan.md#field-address)** jika dibutuhkan.
-7. Isi dan sesuaikan **Street** jika dibutuhkan. Tidak harus diisi.
-8. Isi dan sesuaikan **Street2** jika dibutuhkan. Tidak harus diisi.
-9. Isi dan sesuaikan **Zip** jika dibutuhkan. Tidak harus diisi.
-10. Isi dan sesuaikan **City** jika dibutuhkan. Tidak harus diisi.
-11. Isi dan sesuaikan **State** jika dibutuhkan. Tidak harus diisi.
-12. Isi dan sesuaikan **Country** jika dibutuhkan. Tidak harus diisi.
+7. Isi dan sesuaikan **[Street](./penjelasan.md#field-address)** jika dibutuhkan. Tidak harus diisi.
+8. Isi dan sesuaikan **[Street2](./penjelasan.md#field-address)** jika dibutuhkan. Tidak harus diisi.
+9. Isi dan sesuaikan **[ZIP](./penjelasan.md#field-address)** jika dibutuhkan. Tidak harus diisi.
+10. Isi dan sesuaikan **[City](./penjelasan.md#field-address)** jika dibutuhkan. Tidak harus diisi.
+11. Isi dan sesuaikan **[State](./penjelasan.md#field-address)** jika dibutuhkan. Tidak harus diisi.
+12. Isi dan sesuaikan **[Country](./penjelasan.md#field-address)** jika dibutuhkan. Tidak harus diisi.
 13. Lengkapi dan sesuaikan bagian **Communication** jika dibutuhkan.
 14. Isi dan sesuaikan **[Phone](./penjelasan.md#field-phone)** jika dibutuhkan. Tidak harus diisi.
 15. Isi dan sesuaikan **[Fax](./penjelasan.md#field-fax)** jika dibutuhkan. Tidak harus diisi.
