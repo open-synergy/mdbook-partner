@@ -1,8 +1,13 @@
 # Jenjang Pendidikan
 
+Informasi pada *Jenjang Pendidikan* dibagi menjadi beberapa bagian, yaitu:
+
+  * [Header](#bagian-header)
+  * [Tab Note](#tab-note)
+
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../img/jenjang-pendidikan/form.png)
+![](../../../img/jenjang-pendidikan/bagian-header.png)
 
 #### <a name="field-name">Education Level</a>
 
@@ -20,6 +25,10 @@ Nomor urut
 
 Sebagai penanda apakah data adalah aktif/non-aktif
 
-#### <a name="field-notes">Note</a>
+### <a name="tab-note">NOTE</a>
+
+![](../../../img/jenjang-pendidikan/tab-note.png)
+
+#### <a name="field-note">Note</a>
 
 Catatan

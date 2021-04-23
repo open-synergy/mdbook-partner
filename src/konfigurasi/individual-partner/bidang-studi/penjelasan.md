@@ -1,8 +1,13 @@
 # Bidang Studi
 
+Informasi pada *Bidang Studi* dibagi menjadi beberapa bagian, yaitu:
+
+  * [Header](#bagian-header)
+  * [Tab Note](#tab-note)
+
 ### <a name="bagian-header">HEADER</a>
 
-![](../../../img/bidang-studi/form.png)
+![](../../../img/bidang-studi/bagian-header.png)
 
 #### <a name="field-name">Field of Study</a>
 
@@ -20,6 +25,10 @@ Parent/Induk bidang studi
 
 Sebagai penanda apakah data adalah aktif/non-aktif
 
-#### <a name="field-notes">Note</a>
+### <a name="tab-note">NOTE</a>
+
+![](../../../img/bidang-studi/tab-note.png)
+
+#### <a name="field-note">Note</a>
 
 Catatan
