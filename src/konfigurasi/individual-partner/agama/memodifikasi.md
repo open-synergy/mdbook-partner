@@ -14,10 +14,9 @@
 
 4. Isi dan sesuaikan **[Religion](./penjelasan.md#field-name)** jika dibutuhkan. Harus diisi.
 5. Isi dan sesuaikan **[Code](./penjelasan.md#field-code)** jika dibutuhkan. Tidak harus diisi.
-6. Aktifkan/ Deaktifkan **[Active](./penjelasan.md#field-active)** jika dibutuhkan. Tidak harus diisi.
-7. Beralih ke tab **[Note](./penjelasan.md#tab-note)**.
-8. Isi dan sesuaikan **[Note](./penjelasan.md#field-note)** jika dibutuhkan. Tidak harus diisi.
-9. Klik tombol **Save** pada bagian atas-kiri form.
+6. Beralih ke tab **[Note](./penjelasan.md#tab-note)**.
+7. Isi dan sesuaikan **[Note](./penjelasan.md#field-note)** jika dibutuhkan. Tidak harus diisi.
+8. Klik tombol **Save** pada bagian atas-kiri form.
 
 ![](../../../img/agama/tombol-simpan-modifikasi.png)
 
