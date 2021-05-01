@@ -15,10 +15,9 @@
 4. Isi dan sesuaikan **[Job Level](./penjelasan.md#field-name)** jika dibutuhkan. Harus diisi.
 5. Isi dan sesuaikan **[Code](./penjelasan.md#field-code)** jika dibutuhkan. Tidak harus diisi.
 6. Isi dan sesuaikan **[Sequence](./penjelasan.md#field-sequence-id)** jika dibutuhkan. Harus diisi.
-7. Aktifkan/ Deaktifkan **[Active](./penjelasan.md#field-active)** jika dibutuhkan. Tidak harus diisi.
-8. Beralih ke tab **[Note](./penjelasan.md#tab-note)**.
-9. Isi dan sesuaikan **[Note](./penjelasan.md#field-note)** jika dibutuhkan. Tidak harus diisi.
-10. Klik tombol **Save** pada bagian atas-kiri form.
+7. Beralih ke tab **[Note](./penjelasan.md#tab-note)**.
+8. Isi dan sesuaikan **[Note](./penjelasan.md#field-note)** jika dibutuhkan. Tidak harus diisi.
+9. Klik tombol **Save** pada bagian atas-kiri form.
 
 ![](../../../img/jenjang-karir/tombol-simpan-modifikasi.png)
 
