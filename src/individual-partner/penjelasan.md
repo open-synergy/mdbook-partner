@@ -8,10 +8,11 @@ Informasi pada Individual Partner dibagi menjadi beberapa area, diantaranya:
 * [Tab Personal Information](#tab-personal-information)
 * [Tab Sales & Purchases](#tab-sales-purchases)
 * [Tab ID Numbers](#tab-id-numbers)
-* [Tab Payment Follow-up](#tab-payment-follow-up)
 * [Tab Accounting](#tab-accounting)
-* [Tab Consignee](#tab-consignee)
-* [Tab Point Of Sale](#tab-point-of-sale)
+* [Tab Family](#tab-family)
+* [Tab Emergency Contacts](#tab-emergency-contacts)
+* [Tab Languages](#tab-languages)
+* [Tab Geo Localization](#tab-geo-localization)
 
 ### <a name="bagian-header">HEADER</a>
 
@@ -20,6 +21,7 @@ Informasi pada Individual Partner dibagi menjadi beberapa area, diantaranya:
 #### <a name="field-image">Image</a>
 
 ![](../img/individual-partner/image.png)<br/>
+
 Foto *Partner*
 
 #### <a name="field-name">Name</a>
@@ -38,7 +40,7 @@ Tombol-tombol yang berfungsi sebagai *Shortcut* untuk masuk ke dalam menu yang b
 
 #### <a name="field-address">Address</a>
 
-Mendefinisikan alamat. Terbagi atas beberapa isian, yaitu:<br />
+Alamat partner. Terbagi atas beberapa isian, yaitu:<br />
 * **Street:** Alamat *Partner*
 * **Number:** Nomor jalan *Partner*
 * **City completion:** Informasi kota secara lengkap
@@ -47,21 +49,13 @@ Mendefinisikan alamat. Terbagi atas beberapa isian, yaitu:<br />
 * **Zip:** Nomor kode POS *Partner*
 * **Country:** Negara dimana *Partner* berada
 
-#### <a name="field-lau1">Local Admin. Unit 1</a>
-
-Mendefinisikan unit administrasi dimana levelnya adalah 1
-
-#### <a name="field-lau2">Local Admin. Unit 2</a>
-
-Mendefinisikan unit administrasi dimana levelnya adalah 2
-
-#### <a name="field-lau3">Local Admin. Unit 3</a>
-
-Mendefinisikan unit administrasi dimana levelnya adalah 3
-
 #### <a name="field-website">Website</a>
 
 Alamat website *Partner*
+
+#### <a name="field-category-function">Categorized Job Position</a>
+
+Kategori jabatan *Partner*
 
 #### <a name="field-function">Job Position</a>
 
@@ -74,6 +68,10 @@ Departement *Partner*
 #### <a name="field-phone">Phone</a>
 
 Nomor telepon *Partner*
+
+#### <a name="field-ext">Extension</a>
+
+Nomor telepon extension *Partner*
 
 #### <a name="field-mobile">Mobile</a>
 
@@ -91,9 +89,9 @@ Alamat email *Partner*
 
 Bentuk usaha *Partner*
 
-#### <a name="field-academic-title-ids">Academic Titles</a>
+#### <a name="field-job-level">Job Level</a>
 
-Gelar akademik *Partner*
+Job level *Partner*
 
 #### <a name="field-formal-education-level-id">Latest Formal Level Education</a>
 
@@ -111,6 +109,10 @@ Nilai IPK terakhir *Partner*
 
 Diploma terakhir *Partner*
 
+#### <a name="field-field-of-work">Field of Work</a>
+
+Bidang pekerjaan *Partner*
+
 ### <a name="tab-other-positions">TAB OTHER POSITIONS</a>
 
 ![](../img/individual-partner/tab-other-positions.png)
@@ -118,12 +120,13 @@ Diploma terakhir *Partner*
 
 #### <a name="field-other-positions-image">Image</a>
 
-![](../img/company-partner/image.png)<br/>
+![](../img/individual-partner/image.png)<br/>
+
 Foto kontak
 
 #### <a name="field-other-positions-name">Name</a>
 
-Nama kontak 
+Nama kontak
 
 #### <a name="field-other-positions-tags">Tags</a>
 
@@ -164,7 +167,7 @@ Tipe alamat. Terbagi atas 5 tipe, yaitu:<br />
 
 ### <a name="tab-internal-notes">TAB INTERNAL NOTES</a>
 
-![](../img/company-partner/tab-internal-notes.png)
+![](../img/individual-partner/tab-internal-notes.png)
 
 #### <a name="field-internal-notes">Internal Notes</a>
 
@@ -178,6 +181,10 @@ Catatan internal terkait *Partner*
 
 Tanggal lahir *Partner*
 
+#### <a name="field-personal-information-birthplace">Place of Birth</a>
+
+Tempat lahir *Partner*
+
 #### <a name="field-personal-information-nationality">Nationality</a>
 
 Kebangsaan *Partner*
@@ -186,13 +193,21 @@ Kebangsaan *Partner*
 
 Jenis Kelamin *Partner*
 
-#### <a name="field-personal-information-ethnicity">Ethnicity</a>
+#### <a name="field-personal-information-blood-abo">Blood Type (ABO)</a>
 
-Etnis *Partner*
+Golongan darah *Partner*
+
+#### <a name="field-personal-information-blood-rh">Blood Type (Rh)</a>
+
+Rhesus darah *Partner*
 
 #### <a name="field-personal-information-religion">Religion</a>
 
 Agama *Partner*
+
+#### <a name="field-personal-information-ethnicity">Ethnicity</a>
+
+Etnis *Partner*
 
 ### <a name="tab-sales-purchases">TAB SALES & PURCHASES</a>
 
@@ -200,11 +215,15 @@ Agama *Partner*
 
 #### <a name="field-sale-purchase-user-id">Salesperson</a>
 
-Mendefinisikan *Salesperson*
+Nama *Salesperson*
 
-#### <a name="field-sale-purchase-section-id">Sales Team</a>
+#### <a name="field-sale-purchase-sales-team">Sales Team</a>
 
-Mendefinisikan *Sales Team*
+Nama sales team.
+
+#### <a name="field-sale-purchase-company">Company</a>
+
+Nama perusahaan.
 
 #### <a name="field-sale-purchase-ref">Contact Reference</a>
 
@@ -212,23 +231,11 @@ Referensi *Partner*
 
 #### <a name="field-sale-purchase-language">Languange</a>
 
-Mendefinisikan bahasa yang digunakan
+Bahasa yang digunakan
 
 #### <a name="field-sale-purchase-date">Date</a>
 
 Tanggal
-
-#### <a name="field-sale-purchase-partner-product-ul">Logistic Unit</a>
-
-Mendefinisikan *Logistic Unit*
-
-#### <a name="field-sale-purchase-property-product-pricelist">Sale Pricelist</a>
-
-Mendefinisikan daftar harga penjualan
-
-#### <a name="field-sale-purchase-property-product-pricelist-purchase">Purchase Pricelist</a>
-
-Mendefinisikan daftar harga pembelian
 
 #### <a name="field-sale-purchase-customer">Customer</a>
 
@@ -238,13 +245,13 @@ Jika dipilih, maka *Partner* akan ditandai sebagai *Customer*(Pelanggan)
 
 Jika dipilih, maka *Partner* akan ditandai sebagai *Supplier*(Pemasok)
 
-#### <a name="field-sale-purchase-actice">Active</a>
+#### <a name="field-sale-purchase-active">Active</a>
 
 Sebagai penanda apakah data adalah aktif/non-aktif
 
 #### <a name="field-sale-purchase-publish">Publish</a>
 
-Jika dipilih, maka *Partner* akan ter-*publish* pada website 
+Jika dipilih, maka *Partner* akan ter-*publish* pada website
 
 #### <a name="field-sale-purchase-opt-out">Opt-Out</a>
 
@@ -256,25 +263,103 @@ Terbagi atas 2 pilihan, yaitu:<br />
 * **Never:** Jika dipilih, *Partner* tidak akan menerima notifikasi email
 * **All Messages:** Jika dipilih, *Partner* akan menerima notifikasi email
 
+### <a name="tab-sales-purchases-tabel-cr">TABEL CREDITORS</a>
+
+![](../img/individual-partner/tab-sales-purchases-cr.png)
+
+#### <a name="field-sales-purchases-tabel-cr-primary-creditur">Primary Creditur</a>
+
+Nama kreditur utama
+
+### <a name="tab-sales-purchases-tabel-cr-detail">DETAIL CREDITORS</a>
+
+![](../img/individual-partner/tab-sales-purchases-cr-detail-1.png)
+![](../img/individual-partner/tab-sales-purchases-cr-detail-2.png)
+
+#### <a name="field-sales-purchases-tabel-cr-name">Name</a>
+
+Nama kreditur
+
+#### <a name="field-sales-purchases-tabel-cr-phone">Phone</a>
+
+Nomor telepon kreditur
+
+#### <a name="field-sales-purchases-tabel-cr-email">Email</a>
+
+Alamat email kreditur
+
+#### <a name="field-sales-purchases-tabel-cr-main-sector">Main Sector</a>
+
+Sektor utama kreditur
+
+#### <a name="field-sales-purchases-tabel-cr-partner-review">Next Partner Review</a>
+
+Todo
+
+#### <a name="field-sales-purchases-tabel-cr-grade">Grade</a>
+
+Todo
+
+#### <a name="field-sales-purchases-tabel-cr-activation">Activation</a>
+
+Todo
+
+### <a name="tab-sales-purchases-tabel-db">TABEL DEBITORS</a>
+
+![](../img/individual-partner/tab-sales-purchases-db.png)
+
+### <a name="tab-sales-purchases-tabel-db-detail">DETAIL DEBITORS</a>
+
+![](../img/individual-partner/tab-sales-purchases-db-detail-1.png)
+![](../img/individual-partner/tab-sales-purchases-db-detail-2.png)
+
+#### <a name="field-sales-purchases-tabel-db-name">Name</a>
+
+Nama debitur
+
+#### <a name="field-sales-purchases-tabel-db-phone">Phone</a>
+
+Nomor telepon debitur
+
+#### <a name="field-sales-purchases-tabel-db-email">Email</a>
+
+Alamat email debitur
+
+#### <a name="field-sales-purchases-tabel-db-main-sector">Main Sector</a>
+
+Sektor utama debitur
+
+#### <a name="field-sales-purchases-tabel-db-partner-review">Next Partner Review</a>
+
+Todo
+
+#### <a name="field-sales-purchases-tabel-db-grade">Grade</a>
+
+Todo
+
+#### <a name="field-sales-purchases-tabel-db-activation">Activation</a>
+
+Todo
+
+### <a name="tab-sales-purchases-pricelist">OTHER</a>
+
+![](../img/individual-partner/tab-sales-purchases-pricelist.png)
+
+#### <a name="field-sale-purchase-property-product-pricelist">Sale Pricelist</a>
+
+Daftar harga penjualan
+
+#### <a name="field-sale-purchase-property-product-pricelist-purchase">Purchase Pricelist</a>
+
+Daftar harga pembelian
+
 #### <a name="field-sale-purchase-property-stock-customer">Customer Location</a>
 
-Mendefinisikan lokasi *Customer*(Pelanggan)
-
-#### <a name="field-sale-purchase-property-stock-customer-promotion">Customer Promotion Location</a>
-
-Mendefinisikan lokasi *Customer Promotion*(Promosi Pelanggan)
-
-#### <a name="field-sale-purchase-property-stock-supplier-promotion">Supplier Promotion Location</a>
-
-Mendefinisikan lokasi *Supplier Promotion*(Promosi Pemasok)
+Lokasi *Customer*(Pelanggan)
 
 #### <a name="field-sale-purchase-property-stock-supplier">Supplier Location</a>
 
-Mendefinisikan lokasi *Supplier*(Pemasok)
-
-#### <a name="field-sale-purchase-property-delivery-carrier">Delivery Method</a>
-
-Mendefinisikan metode pengiriman yang digunakan
+Lokasi *Supplier*(Pemasok)
 
 ### <a name="tab-id-numbers">TAB ID NUMBERS</a>
 
@@ -322,76 +407,52 @@ Mendefinisikan status identitas. Terbagi atas 4 pilihan, yaitu:<br />
 
 Catatan tambahan terkait nomor identitas
 
-### <a name="tab-payment-follow-up">TAB PAYMENT FOLLOW-UP</a>
-
-### <a name="tab-payment-follow-up-header">HEADER</a>
-![](../img/individual-partner/tab-payment-follow-up-header.png)
-
-#### <a name="field-payment-follow-up-payment-responsible-id">Follow-up Responsible</a>
-
-Mendefinisikan *User* yang akan bertanggung jawab untuk melakukan *Follow-up* pembayaran
-
-#### <a name="field-payment-follow-up-payment-next-action">Next Action</a>
-
-Mendefinisikan tanggal tindakan selajutnya beserta catatan terkait tindakan yang akan dilakukan
-
-#### <a name="field-payment-follow-up-note">Customer Payment Promise</a>
-
-Isian untuk janji pembayaran yang diberikan oleh *Customer*(Pelanggan)
-
-### <a name="tab-payment-follow-up-history">HISTORY</a>
-![](../img/individual-partner/tab-payment-follow-up-history.png)
-
-#### <a name="field-payment-follow-up-history">History</a>
-
-Todo
-
 ### <a name="tab-accounting">TAB ACCOUNTING</a>
 
 ### <a name="tab-accounting-header">HEADER</a>
 ![](../img/individual-partner/tab-accounting-header.png)
 
-#### <a name="tab-accounting-header-property-account-position">Fiscal Position</a>
+#### <a name="field-accounting-header-property-account-position">Fiscal Position</a>
 
 Terbagi atas 2 pilihan, yaitu:<br/>
 * **Normal Taxes:** Todo
 * **Tax Exempt:** Todo
 
-#### <a name="tab-accounting-header-tin">TIN</a>
+#### <a name="field-accounting-header-tin">TIN</a>
 
-Mendefiniskan dan melakukan pengecekan terkait nomor identifikasi pajak. 
+Pengecekan terkait nomor identifikasi pajak.
 
 > **Catatan:** TIN(Inggris: *Tax Identification Number* disingkat TIN)
 
-#### <a name="tab-accounting-header-property-account-receivable">Account Receivable</a>
+#### <a name="field-accounting-header-property-account-receivable">Account Receivable</a>
 
-Mendefiniskan akun piutang dagang
+Akun piutang dagang
 
-#### <a name="tab-accounting-header-property-payment-term">Customer Payment Term</a>
+#### <a name="field-accounting-header-property-payment-term">Customer Payment Term</a>
 
-Mendefiniskan jangka waktu pembayaran *Customer*(Pelanggan)
+Jangka waktu pembayaran *Customer*(Pelanggan)
 
-#### <a name="tab-accounting-header-credit">Total Receivable</a>
+#### <a name="field-accounting-header-credit">Total Receivable</a>
 
 Informasi terkait total piutang
 
-#### <a name="tab-accounting-header-debt">Debt</a>
+#### <a name="field-accounting-header-credit-limit">Credit Limit</a>
 
-Informasi terkait hutang
+Informasi batas kredit
 
-#### <a name="tab-accounting-header-last-reconcile-date">Latest Full Reconciliation Date</a>
+#### <a name="field-accounting-header-last-reconcile-date">Latest Full Reconciliation Date</a>
 
 Todo
 
-#### <a name="tab-accounting-header-property-account-payable">Account Payable</a>
+#### <a name="field-accounting-header-property-account-payable">Account Payable</a>
 
-Mendefiniskan akun piutang hutang
+Akun piutang hutang
 
-#### <a name="tab-accounting-header-property-supplier-payment-term">Supplier Payment Term</a>
+#### <a name="field-accounting-header-property-supplier-payment-term">Supplier Payment Term</a>
 
-Mendefiniskan jangka waktu pembayaran *Supplier*(Pemasok)
+Jangka waktu pembayaran *Supplier*(Pemasok)
 
-#### <a name="tab-accounting-header-debit">Total Payable</a>
+#### <a name="field-accounting-header-debit">Total Payable</a>
 
 Informasi terkait total yang harus dibayar
 
@@ -399,19 +460,23 @@ Informasi terkait total yang harus dibayar
 ![](../img/individual-partner/tab-accounting-bank.png)
 ![](../img/individual-partner/tab-accounting-bank-form.png)
 
-#### <a name="tab-accounting-detail-bank-state">Bank Account Type</a>
+#### <a name="field-accounting-detail-bank-state">Bank Account Type</a>
 
 Tipe akun bank
 
-#### <a name="tab-accounting-detail-bank-acc-number">Account Number</a>
+#### <a name="field-accounting-detail-bank-acc-number">Account Number</a>
 
 Nomor akun bank
 
-#### <a name="tab-accounting-detail-bank-partner-id">Account Owner</a>
+#### <a name="field-accounting-detail-bank-active">Active</a>
+
+Sebagai penanda apakah data adalah aktif/non-aktif
+
+#### <a name="field-accounting-detail-bank-partner-id">Account Owner</a>
 
 Pemilik akun bank
 
-#### <a name="tab-accounting-detail-bank-address">Address</a>
+#### <a name="field-accounting-detail-bank-address">Address</a>
 
 Alamat Bank. Terbagi atas beberapa isian, yaitu:<br />
 * Name - Nama pemilik akun bank
@@ -421,41 +486,141 @@ Alamat Bank. Terbagi atas beberapa isian, yaitu:<br />
 * State - Provinsi akun bank
 * Country - Negara akun bank
 
-#### <a name="tab-accounting-detail-bank-bank">Bank</a>
+#### <a name="field-accounting-detail-bank-bank">Bank</a>
 
-Mendefinisikan bank yang akan digunakan
+Bank yang akan digunakan
 
-#### <a name="tab-accounting-detail-bank-bank_name">Bank Name</a>
+#### <a name="field-accounting-detail-bank-bank_name">Bank Name</a>
 
 Nama bank
 
-#### <a name="tab-accounting-detail-bank-bic">Bank Identifier Code</a>
+#### <a name="field-accounting-detail-bank-bic">Bank Identifier Code</a>
 
 Kode bank
 
 ### <a name="tab-accounting-pph21-info">PPH21 Information</a>
 ![](../img/individual-partner/tab-accounting-pph21-info.png)
 
-#### <a name="tab-accounting-pph21-info-pktp-category">PKTP Category</a>
+#### <a name="field-accounting-pph21-info-pktp-category">PKTP Category</a>
 
-Mendefiniskan kategori PTKP(Penghasilan Tidak Kena Pajak)
+Kategori PTKP(Penghasilan Tidak Kena Pajak)
 
-### <a name="tab-consignee">TAB CONSIGNEE</a>
+### <a name="tab-family">TAB FAMILY</a>
 
-![](../img/company-partner/tab-consignee.png)
+![](../img/individual-partner/tab-family.png)
 
-#### <a name="tab-consignee-is-consignee">Consignee</a>
+#### <a name="field-family-father">Father</a>
 
-Jika dipilih, maka *Partner* merupakan penerima barang
+Nama ayah *Partner*
 
-### <a name="tab-point-of-sale">TAB POINT OF SALE</a>
+#### <a name="field-family-mother">Mother</a>
 
-![](../img/company-partner/tab-point-of-sale.png)
+Nama ibu *Partner*
 
-#### <a name="tab-point-of-sale-available-in-pos">Available for POS</a>
+#### <a name="field-family-guardian">Guardian</a>
 
-Jika dipilih, maka data *Partner* akan tersedia pada POS
+Nama wali *Partner*
 
-#### <a name="tab-point-of-sale-EAN13">EAN13</a>
+#### <a name="field-family-spouse">Spouse</a>
 
-Mendefiniskan nomor barcode
+Nama pasangan *Partner*
+
+### <a name="tab-emergency-contacts">TAB EMERGENCY CONTACTS</a>
+
+![](../img/individual-partner/tab-emergency-contacts.png)
+
+#### <a name="field-emergency-contacts-name">Name</a>
+
+Nama kontak darurat
+
+#### <a name="field-emergency-contacts-phone">Phone</a>
+
+Nomor telepon kontak darurat
+
+#### <a name="field-emergency-contacts-email">Email</a>
+
+Alamat email kontak darurat
+
+#### <a name="field-emergency-contacts-sector">Main Sector</a>
+
+Sektor utama kontak darurat
+
+#### <a name="field-emergency-contacts-review">Next Partner Review</a>
+
+Todo
+
+#### <a name="field-emergency-contacts-grade">Grade</a>
+
+Todo
+
+#### <a name="field-emergency-contacts-activation">Activation</a>
+
+Todo
+
+### <a name="tab-languages">TAB LANGUAGES</a>
+
+![](../img/individual-partner/tab-languages.png)
+
+#### <a name="field-languages-language">Language</a>
+
+Nama bahasa
+
+#### <a name="field-languages-reading">Reading</a>
+
+Kemampuan membaca
+
+#### <a name="field-languages-writing">Writing</a>
+
+Kemampuan menulis
+
+#### <a name="field-languages-speaking">Speaking</a>
+
+Kemampuan bicara
+
+#### <a name="field-languages-listening">Listening</a>
+
+Kemampuan mendengar
+
+### <a name="tab-geo-localization">TAB GEO LOCALIZATION</a>
+
+![](../img/individual-partner/tab-geo-localization.png)
+
+#### <a name="field-geo-localization-grade">Grade</a>
+
+Todo
+
+#### <a name="field-geo-localization-activation">Activation</a>
+
+Todo
+
+#### <a name="field-geo-localization-implemented-by">Implemented By</a>
+
+Todo
+
+#### <a name="field-geo-localization-grade-weight">Grade Weight</a>
+
+Todo
+
+#### <a name="field-geo-localization-latest-partner-review">Latest Partner Review</a>
+
+Todo
+
+#### <a name="field-geo-localization-next-partner-review">Next Partner Review</a>
+
+Todo
+
+#### <a name="field-geo-localization-partnership-date">Partnership Date</a>
+
+Todo
+
+#### <a name="field-geo-localization-latitude">Geo Latitude</a>
+
+Posisi latitude Lokasi
+
+#### <a name="field-geo-localization-longitude">Geo Longitude</a>
+
+Posisi longitude Lokasi
+
+#### <a name="field-geo-localization-localization-date">Geo Localization Date</a>
+
+Tanggal Geo Localization
