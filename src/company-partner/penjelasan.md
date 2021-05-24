@@ -141,6 +141,10 @@ Nomor telepon extension kontak
 
 Nomor handphone/mobile kontak
 
+#### <a name="field-contact-job-language">Language</a>
+
+Bahasa yang digunakan
+
 #### <a name="field-contact-company-address">Use Company Address</a>
 
 Jika dipilih, maka alamat kontak akan menggunakan alamat perusahaan.
@@ -168,6 +172,10 @@ Foto/gambar untuk logo perusahaan afiliasi
 #### <a name="field-affiliates-name">Name</a>
 
 Nama perusahaan afiliasi
+
+#### <a name="field-affiliates-company">Company</a>
+
+Nama perusahaan
 
 #### <a name="field-affiliates-tags">Tags</a>
 
