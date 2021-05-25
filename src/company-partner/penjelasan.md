@@ -444,47 +444,47 @@ Catatan tambahan terkait nomor identitas
 ### <a name="tab-accounting-header">HEADER</a>
 ![](../img/company-partner/tab-accounting-header.png)
 
-#### <a name="tab-accounting-header-property-account-position">Fiscal Position</a>
+#### <a name="field-accounting-header-property-account-position">Fiscal Position</a>
 
 Terbagi atas 2 pilihan, yaitu:<br/>
 * **Normal Taxes:** Todo
 * **Tax Exempt:** Todo
 
-#### <a name="tab-accounting-header-tin">TIN</a>
+#### <a name="field-accounting-header-tin">TIN</a>
 
 Pengecekan terkait nomor identifikasi pajak.
 
 > **Catatan:** TIN(Inggris: *Tax Identification Number* disingkat TIN)
 
-#### <a name="tab-accounting-header-property-account-receivable">Account Receivable</a>
+#### <a name="field-accounting-header-property-account-receivable">Account Receivable</a>
 
 Akun piutang dagang
 
-#### <a name="tab-accounting-header-property-payment-term">Customer Payment Term</a>
+#### <a name="field-accounting-header-property-payment-term">Customer Payment Term</a>
 
 Jangka waktu pembayaran *Customer* (Pelanggan)
 
-#### <a name="tab-accounting-header-credit">Total Receivable</a>
+#### <a name="field-accounting-header-credit">Total Receivable</a>
 
 Informasi terkait total piutang
 
-#### <a name="tab-accounting-header-credit-limit">Credit Limit</a>
+#### <a name="field-accounting-header-credit-limit">Credit Limit</a>
 
 Informasi batas kredit
 
-#### <a name="tab-accounting-header-last-reconcile-date">Latest Full Reconciliation Date</a>
+#### <a name="field-accounting-header-last-reconcile-date">Latest Full Reconciliation Date</a>
 
 Todo
 
-#### <a name="tab-accounting-header-property-account-payable">Account Payable</a>
+#### <a name="field-accounting-header-property-account-payable">Account Payable</a>
 
 Akun piutang hutang
 
-#### <a name="tab-accounting-header-property-supplier-payment-term">Supplier Payment Term</a>
+#### <a name="field-accounting-header-property-supplier-payment-term">Supplier Payment Term</a>
 
 Jangka waktu pembayaran *Supplier* (Pemasok)
 
-#### <a name="tab-accounting-header-debit">Total Payable</a>
+#### <a name="field-accounting-header-debit">Total Payable</a>
 
 Informasi terkait total yang harus dibayar
 
@@ -492,19 +492,19 @@ Informasi terkait total yang harus dibayar
 ![](../img/company-partner/tab-accounting-bank.png)
 ![](../img/company-partner/tab-accounting-bank-form.png)
 
-#### <a name="tab-accounting-detail-bank-state">Bank Account Type</a>
+#### <a name="field-accounting-detail-bank-state">Bank Account Type</a>
 
 Tipe akun bank
 
-#### <a name="tab-accounting-detail-bank-acc-number">Account Number</a>
+#### <a name="field-accounting-detail-bank-acc-number">Account Number</a>
 
 Nomor akun bank
 
-#### <a name="tab-accounting-detail-bank-partner-id">Account Owner</a>
+#### <a name="field-accounting-detail-bank-partner-id">Account Owner</a>
 
 Pemilik akun bank
 
-#### <a name="tab-accounting-detail-bank-address">Address</a>
+#### <a name="field-accounting-detail-bank-address">Address</a>
 
 Alamat Bank. Terbagi atas beberapa isian, yaitu:<br />
 * Name - Nama pemilik akun bank
@@ -514,22 +514,22 @@ Alamat Bank. Terbagi atas beberapa isian, yaitu:<br />
 * State - Provinsi akun bank
 * Country - Negara akun bank
 
-#### <a name="tab-accounting-detail-bank-bank">Bank</a>
+#### <a name="field-accounting-detail-bank-bank">Bank</a>
 
 Bank yang akan digunakan
 
-#### <a name="tab-accounting-detail-bank-bank_name">Bank Name</a>
+#### <a name="field-accounting-detail-bank-bank_name">Bank Name</a>
 
 Nama bank
 
-#### <a name="tab-accounting-detail-bank-bic">Bank Identifier Code</a>
+#### <a name="field-accounting-detail-bank-bic">Bank Identifier Code</a>
 
 Kode bank
 
 ### <a name="tab-accounting-pph21-info">PPH21 Information</a>
 ![](../img/company-partner/tab-accounting-pph21-info.png)
 
-#### <a name="tab-accounting-pph21-info-pktp-category">PKTP Category</a>
+#### <a name="field-accounting-pph21-info-pktp-category">PKTP Category</a>
 
 Kategori PTKP (Penghasilan Tidak Kena Pajak)
 
