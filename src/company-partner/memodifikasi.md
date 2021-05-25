@@ -46,7 +46,7 @@
 35. Pilih dan sesuaikan **[Customer Location](./penjelasan.md#field-sale-purchase-property-stock-customer)** jika dibutuhkan. Tidak harus diisi.
 36. Pilih dan sesuaikan **[Supplier Location](./penjelasan.md#field-sale-purchase-property-stock-supplier)** jika dibutuhkan. Tidak harus diisi.
 37. Beralih ke tab **[ID Numbers](./penjelasan.md#tab-id-numbers)**.
-38. <a name="l38">[Tambah](./menambah-id-numbers.md)/[Modifikasi](./memodifikasi-id-nmbers.md)/[Hapus](./menghapus-id-numbers.md) **ID Numbers**</a>. Ulangi langkah ini sampai **ID Numbers** sesuai dengan keinginan.
+38. <a name="l38">[Tambah](./menambah-id-numbers.md)/[Modifikasi](./memodifikasi-id-numbers.md)/[Hapus](./menghapus-id-numbers.md) **ID Numbers**</a>. Ulangi langkah ini sampai **ID Numbers** sesuai dengan keinginan.
 39. Beralih ke tab **[Accounting](./penjelasan.md#tab-accounting)**.
 40. Pilih dan sesuaikan**[Fiscal Position](./penjelasan.md#field-accounting-header-property-account-position)** jika dibutuhkan. Tidak harus diisi.
 41. Isi dan sesuaikan **[TIN](./penjelasan.md#field-accounting-header-tin)** jika dibutuhkan. Tidak harus diisi.
