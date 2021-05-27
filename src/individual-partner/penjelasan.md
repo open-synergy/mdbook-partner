@@ -134,9 +134,9 @@ Nama kontak
 
 #### <a name="field-other-positions-company-id">Related Company</a>
 
-Mendefinisikan relasi company kontak
+Relasi company kontak
 
-#### <a name="field-other-positions-job-posisition">Job Position</a>
+#### <a name="field-other-positions-job-position">Job Position</a>
 
 Posisi/jabatan kontak
 
@@ -164,6 +164,10 @@ Tipe alamat. Terbagi atas 5 tipe, yaitu:<br />
 * **Shipping:** Todo
 * **Contact:** Todo
 * **Other:** Todo
+
+#### <a name="field-other-positions-address">Address</a>
+
+Alamat kontak.
 
 ### <a name="tab-internal-notes">TAB INTERNAL NOTES</a>
 
@@ -368,7 +372,7 @@ Lokasi *Supplier*(Pemasok)
 
 #### <a name="field-id-number-category-id">Category</a>
 
-Mendefinisikan kategori dari nomor identitas yang akan digunakan<br/>
+Kategori dari nomor identitas yang akan digunakan<br/>
 *Ex:* SIM, KTP
 
 #### <a name="field-id-number-name">ID Number</a>
@@ -377,27 +381,27 @@ Nomor identitas
 
 #### <a name="field-id-number-partner-issued-id">Issued By</a>
 
-Mendefinisikan siapa yang mengeluarkan nomor identitas
+Informasi yang mengeluarkan nomor identitas
 
 #### <a name="field-id-number-partner-date-issued">Issued On</a>
 
-Mendefinisikan tanggal identitas dikeluarkan
+Tanggal identitas dikeluarkan
 
 #### <a name="field-id-number-place-issuance">Place of Issuance</a>
 
-Mendefinisikan tempat diterbitkannya nomor identitas
+Tempat diterbitkannya nomor identitas
 
 #### <a name="field-id-number-valid-from">Valid From</a>
 
-Mendefinisikan tanggal mulai validnya nomor identitas
+Tanggal mulai validnya nomor identitas
 
-#### <a name="field-id-number-valid-Until">Valid Until</a>
+#### <a name="field-id-number-valid-until">Valid Until</a>
 
-Mendefinisikan tanggal akhir validnya nomor identitas
+Tanggal akhir validnya nomor identitas
 
 #### <a name="field-id-number-status">Status</a>
 
-Mendefinisikan status identitas. Terbagi atas 4 pilihan, yaitu:<br />
+Status identitas. Terbagi atas 4 pilihan, yaitu:<br />
 * **New:** Identitas baru
 * **Running:** Identitas yang sedang berjalan
 * **To Renew:** Identitas perlu diperpanjang
